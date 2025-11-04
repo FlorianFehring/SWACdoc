@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "HSBI",
+        "link": "https://www.hsbi.de",
+        "img": "https://www.hsbi.de/logo.jpg",
+        "ma": 30,
+        "reload": 24
+    },
+    {
+        "id": 2,
+        "name": "Google",
+        "link": "https://www.google.de",
+        "img": "https://www.google.de/logo.jpg",
+        "ma": 30,
+        "reload": 12
+    },
+    {
+        "id": 3,
+        "name": "Youtube",
+        "link": "https://www.youtube.de",
+        "img": "https://www.youtube.de/logo.jpg",
+        "ma": 30,
+        "reload": 16
+    }
+]
