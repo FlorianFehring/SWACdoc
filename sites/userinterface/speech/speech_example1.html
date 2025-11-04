@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>SWAC - speech component - example 4</title>
+        <title>SWAC - speech component - example 1: Recognise commands</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="icon" type="image/png" sizes="32x32" href="../../files/icons/32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../../files/icons/16x16.png">
-        <link rel="stylesheet" type="text/css" href="../../css/global.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
         <noscript>
-        <link rel="stylesheet" type="text/css" href="../../css/noscript.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/noscript.css">
         </noscript>
 
         <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
@@ -16,10 +16,10 @@
         <script src="/SWAC/swac/libs/uikit/js/uikit-icons.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
 
-        <script src="../../js/userinterface/speech_example4.js"></script>
+        <script src="../../../js/userinterface/speech/example1.js"></script>
     </head>
     <body>
-        <header id="head_navigation" swa="Navigation FROM ../../data/routes.json"></header>
+        <header id="head_navigation" swa="Navigation FROM routes.json"></header>
         <noscript>
         <div class="noscript_nav">
             <a href="sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
@@ -28,17 +28,19 @@
         </noscript>
 
         <article>
-            <h3>Example 4: Integrate data sources</h3>
-            <p>Search can integrate data sources, those are defined by the options.</p>
-            <div id="speech_example4" swa="Speech"></div>
+            <h3>Example 1: Recognise commands</h3>
+
+            <p>Detect spoken commands and perform an action. Say "say" to make the program say something or "show" to show something.
+                Also german language is supported. Use the language your browser has as main language.</p>
+            <div id="speech_example1" swa="Speech"></div>
 
             <pre><code class="lang-html">
-&lt;div id="speech_example4" swa="Speech"&gt;&lt;/div&gt;
+&lt;div id="speech_example1" swa="Speech"&gt;&lt;/div&gt;
         </code></pre>
 
             <fieldset>
                 <legend>CONFIGURATION</legend>
-                <div id="speech_example4_conf" swa="Coder FROM ../../js/userinterface/speech/example4.js"></div>
+                <div id="speech_example1_conf" swa="Coder FROM ../../../js/userinterface/speech/example1.js"></div>
             </fieldset>
 
         </article>

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>SWAC - speech component - example 3</title>
+        <title>SWAC - speech component - example 2: React only after keyword</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="icon" type="image/png" sizes="32x32" href="../../files/icons/32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../../files/icons/16x16.png">
-        <link rel="stylesheet" type="text/css" href="../../css/global.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
         <noscript>
-        <link rel="stylesheet" type="text/css" href="../../css/noscript.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/noscript.css">
         </noscript>
 
         <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
@@ -16,10 +16,10 @@
         <script src="/SWAC/swac/libs/uikit/js/uikit-icons.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
 
-        <script src="../../js/userinterface/speech/example3.js"></script>
+        <script src="../../../js/userinterface/speech/example2.js"></script>
     </head>
     <body>
-        <header id="head_navigation" swa="Navigation FROM ../../data/routes.json"></header>
+        <header id="head_navigation" swa="Navigation FROM routes.json"></header>
         <noscript>
         <div class="noscript_nav">
             <a href="sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
@@ -28,17 +28,17 @@
         </noscript>
 
         <article>
-            <h3>Example 3: Useing speech with components</h3>
-            <p>Components can be controlled by speech. This is currently in experimental state. Navigation component supports command "go to PAGENAME"</p>
-            <div id="speech_example3" swa="Speech"></div>
+            <h3>Example 2: React only after keyword</h3>
+            <p>You can define a keyword that must be spoken at the beginning to avoid listening to everything. Here you must say "Computer" than it litstens.</p>
+            <div id="speech_example2" swa="Speech"></div>
 
             <pre><code class="lang-html">
-&lt;div id="speech_example3" swa="Speech"&gt;&lt;/div&gt;
+&lt;div id="speech_example2" swa="Speech"&gt;&lt;/div&gt;
         </code></pre>
 
             <fieldset>
                 <legend>CONFIGURATION</legend>
-                <div id="speech_example3_conf" swa="Coder FROM ../../js/userinterface/speech/example3.js"></div>
+                <div id="speech_example2_conf" swa="Coder FROM ../../../js/userinterface/speech/example2.js"></div>
             </fieldset>
 
         </article>

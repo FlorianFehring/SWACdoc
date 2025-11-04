@@ -2,10 +2,10 @@ var speech_example4_options = {
     lang: 'de-DE',
     startword: 'Computer',
     sources: [{
-            url: 'https://api.openai.com/v1/chat/completions',
-            auth: 'Bearer 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',
+            url: 'https://api.openai.com/v1/responses',
+            auth: 'Bearer Abcdefg',
             method: 'POST',
-            body: '{"messages": [{"role": "user", "content": "%words%"}],"temperature": 0.6, "model": "gpt-3.5-turbo"}',
+            body: '{"input": "%words%", "model": "gpt-4.1"}',
             jpath: 'choices/0/message/content'
         }]
 };
