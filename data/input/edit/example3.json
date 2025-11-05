@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "name": "Datensatz 1",
+        "doubleval": 12.0123,
+        "intval": 1234,
+        "stringval": "string"
+    }
+]

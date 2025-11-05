@@ -1,14 +1,14 @@
 [
     {
         "id": 1,
-        "name": "Datensatz 1 List",
+        "name": "Datensatz 1",
         "doubleval": 12.0123,
         "intval": 1234,
         "stringval": "string",
         "ts": "28.10.2019 7:46:59",
         "dateval": "2016-05-25T09:24:15",
         "refval": "ref://../../data/exampledata_list.json?id=2",
-        "simpelref": 3,
+        "simpleref": 3,
         "mimetype": "audio/mp3",
         "colval": "blue",
         "urlval": "https://somesite",
