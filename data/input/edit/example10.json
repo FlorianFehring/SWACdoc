@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "name": "Datensatz 1",
+        "doubleval": 12.0123,
+        "intval": 1234,
+        "stringval": "string",
+        "dateval": "2016-05-25T09:24:15",
+        "mimetype": "audio/mp3"
+    }
+]

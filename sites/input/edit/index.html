@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SWAC - edit component</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
+
+        <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
+        <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
+        <script src="/SWAC/swac/libs/uikit/js/uikit-icons.min.js"></script>
+        <script src="/SWAC/swac/swac.js" type="module"></script>
+
+        <script src="../../../js/input/edit/index.js"></script>
+    </head>
+    <body>
+        <header id="head_navigation" swa="Navigation FROM routes.json"></header>
+
+        <article>
+            <div id="explaincomponent" swa="ExplainComponents"></div>
+
+            <!--<div id="testcomponent" swa="TestComponents"></div>-->
+
+            <h3>Example 1: Edit form with acordion layout</h3>
+            Will create an editor that allows simple editing of all attributes of an javascript object.
+            <br><a href="example1.html" target="_blank">Open example</a>
+
+            <h3>Example 2: Allow to add new datasets</h3>
+            This editor can create forms for new datasets based on the existing datasets.
+            <br><a href="example2.html" target="_blank">Open example</a>
+
+            <h3>Example 3: Hide attributes from editor</h3>
+            You can easyly hide attributes from the editor, so that those cannot be edited by the user.
+            In this example id and doubleval are hidden.
+            <br><a href="example3.html" target="_blank">Open example</a>
+
+            <h3>Example 4: Editor with list layout</h3>
+            One of the templates shows all datasets in a simple list.
+            <br><a href="example4.html" target="_blank">Open example</a>
+
+            <h3>Example 5: Editor useing a target outside the requestor for displaying the edit form</h3>
+            This editor can create forms for new datasets based on definitions.
+            <br><a href="example5.html" target="_blank">Open example</a>
+
+            <h3>Example 6: Editor with table layout</h3>
+            Useing the table layout for haveing a compact overview over all datasets.
+            <br><a href="example6.html" target="_blank">Open example</a>
+
+            <h3>Example 7: Create input dialog useing data definitions</h3>
+            This editor can create forms for new datasets based on definitions.
+            <br><a href="example7.html" target="_blank">Open example</a>
+
+            <h3>Example 8: Create editable dialog useing data definitions</h3>
+            This editor shows values and respects the data definitions given, to restrict modifications.
+            <br><a href="example8.html" target="_blank">Open example</a>
+
+            <h3>Example 9: Editor with custom definitions</h3>
+            This edit form uses custom definitions from javascript and shows useage
+            of the password type. Also it demonstrates the setting of default values.
+            See last definition for that.
+            <br><a href="example9.html" target="_blank">Open example</a>
+
+            <h3>Example 10: Give a set of possible values</h3>
+            <p>The possible values per attribute can be given as array of values or as string with comma separated values.</p>
+            <br><a href="example10.html" target="_blank">Open example</a>
+
+            <h3>Example 11: Get possible values from datasource</h3>
+            <p>Possible values for an option can be retrived from a datasource useing a reference.
+                <br>Since then data objects are returned you can specify which attributes are used as value and as name.
+            </p>
+            <br><a href="example11.html" target="_blank">Open example</a>
+
+            <h3>Example 12: Hide input fields</h3>
+            <p>You can hide input fields by specifing the visibility.
+                <br>If the input fields are placed inside a reapeadForValue that complete area is hidden.
+            </p>
+            <br><a href="example12.html" target="_blank">Open example</a>
+
+            <h3>Example 13: Hide input fields on conditions</h3>
+            <p>Input fields can be hidden on conditions that match a dataset.
+                <br>In the example the id input field is hidden on sets, where "stringval" is "string".</p>
+            <br><a href="example13.html" target="_blank">Open example</a>
+
+            <h3>Example 14: Automatic calculate values and update them</h3>
+            <p>If you need values that are filled in automatically and calculated you 
+                can use the "auto" object in the data definition.
+                <br>It has two modes "requestor" and "script", that allow fetching data 
+                from standard requestor or calculateing data.
+                <br>With use of options.customOnStartAutoData you can do calculations when 
+                the user starts the automatic mode. (In the example a session id is generated)</p>
+            <br><a href="example14.html" target="_blank">Open example</a>
+
+            <!--        
+                    <h3>Example 99: Editor with child datasets</h3>
+                    
+                    <div id="edit_example99" swa="Edit FROM ../../data/edit/persons.json TEMPLATE fulllist"></div>-->
+
+        </article>
+        <footer>
+            <a href="../about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="../about/imprint.html">Imprint / Impressum</a>
+            <a class="toplink" href="#">Top</a>
+        </footer>
+    </body>
+</html>

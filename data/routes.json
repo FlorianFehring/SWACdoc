@@ -30,7 +30,7 @@
 
 {"id": 60, "rfrom": "*", "rto": "#", "name": "Input Components:"},
 {"id": 61, "rfrom": "*", "rto": "input/form/index.html", "name": "Form", "parent": 60},
-{"id": 62, "rfrom": "*", "rto": "input/edit.html", "name": "Edit", "parent": 60},
+{"id": 62, "rfrom": "*", "rto": "input/edit/index.html", "name": "Edit", "parent": 60},
 {"id": 63, "rfrom": "*", "rto": "input/select.html", "name": "Select", "parent": 60},
 {"id": 64, "rfrom": "*", "rto": "input/selectdatetime.html", "name": "Select Datetime", "parent": 60},
 {"id": 65, "rfrom": "*", "rto": "input/search.html", "name": "Search", "parent": 60},
