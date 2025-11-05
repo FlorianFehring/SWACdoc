@@ -42,13 +42,15 @@
             &lt;img data-src="{image}" height="200" width="200" alt="Image not loaded"&gt;
         &lt;/picture&gt;
         &lt;br&gt;&lt;b>Audio&lt;/b&gt;
-        &lt;br&gt;&lt;audio controls&gt;
-            &lt;source src="{audio}" type="audio/mp3"&gt;
+        &lt;br&gt;
+        &lt;audio controls&gt;
+            &lt;source data-src="{audio}" type="audio/mp3"&gt;
         &lt;/audio&gt;
         &lt;br&gt;&lt;b>Video&lt;/b&gt;
-        &lt;br&gt;&lt;video controls&gt;
-            &lt;source src="{video}" type="video/mp4"&gt;
-                    &lt;/video&gt;
+        &lt;br&gt;
+        &lt;video controls&gt;
+            &lt;source data-src="{video}" type="video/mp4"&gt;
+        &lt;/video&gt;
         &lt;/div&gt;
 &lt;/div&gt;  
         </code></pre>
@@ -70,11 +72,11 @@
                     </picture>
                     <br><b>Audio</b>
                     <br><audio controls>
-                        <source src="{audio}" type="audio/mp3">
+                        <source data-src="{audio}" type="audio/mp3">
                     </audio>
                     <br><b>Video</b>
                     <br><video controls height="200" width="200">
-                        <source src="{video}" type="video/mp4">
+                        <source data-src="{video}" type="video/mp4">
                     </video>
                 </div>
             </div>
