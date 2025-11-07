@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SWAC - Worldmap2d component</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
+
+        <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
+        <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
+        <script src="/SWAC/swac/swac.js" type="module"></script>
+        <script src="../../../js/visualisation/worldmap2d/index.js"></script>
+    </head>
+    <body>
+        <header id="head_navigation" swa="Navigation FROM routes.json"></header>
+
+        <article>
+            <div id="explaincomponent" swa="ExplainComponents"></div>
+
+            The Worldmap2D component can visualise data. It supports GeoJSON and 
+            visualisation of any json data that has a latitude and longitude 
+            information in it. Options and interface are similar to the Worldmap (3D)
+            component.
+
+            <h3>Example 1: Simple Map</h3>
+            <p>This example shows a simple map with default options and no data.</p>
+            <a href="example1.html" target="_blank">Open example</a>
+
+            <h3>Example 2: Position and zoom options</h3>
+            <p>Maps initial position and zoom can be set by configuration.</p>
+            <a href="example2.html" target="_blank">Open example</a>
+
+            <h3>Example 3: Map with Geolocation</h3>
+            <p>Worldmap2D can be combined with the Geolocation component ro track your location.<br>The Worldmap2d automatically detects the geoloation component.</p>
+            <a href="example3.html" target="_blank">Open example</a>
+
+            <h3>Example 4: Map with Search</h3>
+            <p>Use the SearchPlaces Plugin for adding a search function to the map. This allows to find places based on address.</p>
+            <a href="example4.html" target="_blank">Open example</a>
+
+            <h3>Example 5: Use map for navigation</h3>
+            <p>The Navigation plugin can be used to navigate from one point to another.
+                If you are useing the Geolocation plugin along you can navigate from your 
+                current position to a target.</p>
+            <a href="example5.html" target="_blank">Open example</a>
+
+            <h3>Example 6: Visualising GeoJSON on map</h3>
+            <p>This example shows a simple map visualising GeoJSON data.</p>
+            <a href="example6.html" target="_blank">Open example</a>
+
+            <h3>Example 7: Visualising Shapefile on map</h3>
+            <p>Shapefiles are a widely used format for geographic information. Worldmap2D can add them to the map.</p>
+            <a href="example7.html" target="_blank">Open example</a>
+
+            <h3>Example 8: Visualising geotiffs</h3>
+            <p>Geotiffs are coordinate referenced images. This images can be added to the map.</p>
+            <a href="example8.html" target="_blank">Open example</a>
+
+            <h3>Example 9: Use multiple models as map layers</h3>
+            <p>Every added model is added as leyer to the map. So you can show and hide models useign the layer menue.
+                <br>You can add as many models as you need.</p>
+            <a href="example9.html" target="_blank">Open example</a>
+
+            <h3>Example 10: Add models per link</h3>
+            <p>Models can be added to a map useing parameters in the initial map page call.
+                <br>This way you can define one base map and provide different views on that map useing differend models.
+                <br>There is no configuration needed to provide this functionality.</p>
+            <a href="example1.html" target="_blank">Open example</a>
+            <br><b>Some more examples:</b>
+            <br><a href="example1.html?modelurl=https://www.opengeodata.nrw.de/produkte/geologie/boden/BK/MOORKULISSENRW/LandesmoorkulisseNRW_EPSG25832_Shape.zip&type=SHAPE" target="_blank">Landesmoorkulisse NRW</a>
+            <br><a href="example1.html?modelurl=https://www.opengeodata.nrw.de/produkte/umwelt_klima/wasser/oberflaechengewaesser/ogwk3d/OW-Wasserkoerper-3D-NRW_EPSG25832_Shape.zip&type=SHAPE" target="_blank">Oberflächenwasserkörper NRW</a>
+
+            <h3>Example 11: Add model files per input</h3>
+            <p>While data can be added by datasets over the well known component interfaces (addSet())
+                model files are special to the map and can be added by addModelFile(), over input dialog or
+                per url parameter modelurl.</p>
+            <a href="example11.html" target="_blank">Open example</a>
+
+            <h3>Example 12: Add and remove model files per script</h3>
+            <p>To add new model files (gejson / shape) to an map, use the loadModelFile() function.
+                The file will be instantly added to the map.</p>
+            <a href="example12.html" target="_blank">Open example</a>
+
+            <h3>Example 13: Display datasets as markers</h3>
+            <p>If the source datasets contain latitude and longitude information the 
+                datasets can be displayed on the map.</p>
+            <a href="example13.html" target="_blank">Open example</a>
+
+            <h3>Example 14: Show multiple datasources</h3>
+            <p>Map can show data from multiple sources. You also can add and remove data on your needs.
+                It's just done like adding and removing data at any other component.</p>
+            <a href="example14.html" target="_blank">Open example</a>
+
+            <h3>Example 15: Zoom to a dataset</h3>
+            <p>You can esily make the map zoom to a point when it's dataset is added to the map.</p>
+            <a href="example15.html?zoomToSource=../../../data/visualisation/worldmap2d_3d/example13/airquality_measurements.json&zoomToSet=2" target="_blank">Open example</a>
+
+            <h3>Example 16: Show dataset values</h3>
+            <p>With the DataShowModal plugin you can show values from datasets placed on map.</p>
+            <a href="example16.html" target="_blank">Open example</a>
+
+            <h3>Example 17: Show dataset values and media</h3>
+            <p>DataAndMediaShowModal is an advanved modal for showing datasets data and additional information. Also it includes some advanced editing functions.</p>
+            <a href="example17.html" target="_blank">Open example</a>
+
+            <h3>Example 18: Use datadescription component for formatting datasets</h3>
+            <p>You can use the <a href="../datadescription/index.html">Datadescription component</a>
+                for coloring markers. This allows you to reuse a one defined colouring 
+                scheme over multiple components.</p>
+            <a href="example18.html" target="_blank">Open example</a>    
+
+            <h3>Example 19: Use custom icons for datapoints (uncompleted)</h3>
+            <p>For quick comprehension, visual aids such as different colors and various symbols for map markers are helpful. This example shows how you can assign different symbols to data points.</p>
+            <a href="example19.html" target="_blank">Open example</a>
+
+            <h3>Example 20: Cluster datapoints on map</h3>
+            <p>When working with a large numnber of datapoints on map sometimes it gets confusing.
+                Clustering datapoints baseing on the zoom leven can help.</p>
+            <a href="example20.html" target="_blank">Open example</a>  
+
+            <h3>Example 21: Show routes between datapoints</h3>
+            <p>The Navigation plugin allows it to display routes from the given datasets. Routes are calculated
+                as fastest routes, useing Leaflet routing.</p>
+            <a href="example21.html" target="_blank">Open example</a>
+
+            <h3>Example 22: Connecting related datapoints</h3>
+            <p>Sometimes datapoints are releated to another in some way. For example some measurements where done in a route.
+                Those can be visualised.</p>
+            <a href="example22.html" target="_blank">Open example</a> 
+
+            <h3>Example 23: Use datadescription component for formating geojson areas</h3>
+            <p>Areas from geojson files can be colored with use of the datadescription component.</p>
+            <a href="example23.html" target="_blank">Open example</a>
+
+            <h3>Example 24: Interpolate values between points</h3>
+            <p>Values between points can be interpolated useing the Interpolator plugin. (Currently supports only data from geoJSON models)</p>
+            <a href="example24.html" target="_blank">Open example</a>
+
+            <h3>Example 25: Fetch data from API for clicked location</h3>
+            <p>With use of the DataAPIShowModal plugin data from APIs can be shown in a modal dialog after click on the map.</p>
+            <a href="example25.html" target="_blank">Open example</a>
+
+            <h3>Example 26: Use datapoints with coordinates given in subobjects</h3>
+            <p>Sometimes data is delivered in more complex strucutre. You can use the datasources attribute in configuration to add datasources with more options.</p>
+            <a href="example26.html" target="_blank">Open example</a>
+
+            <h3>Example 27: Display datasets with location from another table</h3>
+            <p>If there are datasets, that have their location in another, related database
+                they can also be displayed.</p>
+            <a href="example27.html" target="_blank">Open example</a>
+
+            <h3>Example 28: Show dataset values from other tables</h3>
+            <p>The DataAndMediaShowModal plugin can show data from tables connected with a datapoint displayed on map.</p>
+            <a href="example28.html" target="_blank">Open example</a>
+
+            <h3>Example 29: Show custom views for data (todo)</h3>
+            <p>The DataAndMediaShowModal plugin can show custom views for data for a datapoint.</p>
+            <a href="example30.html" target="_blank">Open example</a>
+
+            <h3>Example 30: Filter datapoints displayed on map (uncompleted)</h3>
+            <p>This map allows you to filter datapoints by category to only show data that is relevant for you.</p>
+            <a href="example30.html" target="_blank">Open example</a>
+
+            <h3>Example 31: Use data and models for viewport (todo)</h3>
+            <p>Loading all data on a map at once is in most cases not performant. Often APIs support viewport based requests.
+                Worldmap2D makes it easy to use viewport based APIs.</p>
+            <a href="example31.html" target="_blank">Open example</a>
+
+            <h3>Example 32: Advanced options for geoJSON models</h3>
+            <p>If you add geoJSON models to your map, you can improve user exprince with data display, iconised view, data based rotation and animation.</p>
+            <a href="example32.html" target="_blank">Open example</a>
+
+            <h3>Example 33: Create new datapoints on map</h3>
+            <p>The CreateObjectModal plugin allows you to create new datapoints on map. This is for creating datapoints that are saved as one dataset including values and geoposition.</p>
+            <a href="example33.html" target="_blank">Open example</a>
+
+            <h3>Example 34: Create new datapoints on map with external location table and aditional data</h3>
+            <p>If your database stores the location in a separate table and / or other values should be gathered while createing a data point use this configuration.</p>
+            <a href="example34.html" target="_blank">Open example</a>
+
+            <h3>Example 35: Show and create areas on map (not tested)</h3>
+            <p>With the area marker plugin areas can be created and maintained.</p>
+            <a href="example35.html" target="_blank">Open example</a>
+
+
+
+            <h1 class="uk-heading-line">Timeline functions</h1>
+            <p>The following features are all related to display data with time information
+            and depending on the time.</p>
+
+            <h3>Example 50: Show data within time bounds</h3>
+            <p>Shows data only from sets with a date within the given time bounds.
+                <br>Timeline symbols the time bound.</p>
+            <a href="example50.html" target="_blank">Open example</a>
+
+            <h3>Example 51: Play sets with timeline</h3>
+            <p>The datasets are shown from a time range. By running the timeline 
+                the sets appear and disapear accordingly to their time value.
+            </p>
+            <a href="example51.html" target="_blank">Open example</a> 
+
+            <h3>Example 52: Combine animation with datadescription</h3>
+            <p>This example shows the combination of time animation and coloring useing DataDescription component.</p>
+            <a href="example52.html" target="_blank">Open example</a>
+
+            <h3>Example 53: Useing model files with timeline</h3>
+            <p>Model files can be added with time information and will then be displayed 
+                in timeline mode only at matching times.</p>
+            <a href="example53.html" target="_blank">Open example</a>
+
+            <h3>Example 54: Fetch data from API for clicked location and timepoint</h3>
+            <p>The DataAPIShowModal plugin is also able to work with the Timeline plugin. On click requests can be send to an api giving time information</p>
+            <a href="exampleX 25.html" target="_blank">Open example</a>       
+        </article>
+        <footer>
+            <a href="../about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="../about/imprint.html">Imprint / Impressum</a>
+            <a class="toplink" href="#">Top</a>
+        </footer>
+    </body>
+</html>

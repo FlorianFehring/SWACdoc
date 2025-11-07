@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SWAC - Worldmap2d component - Example 24: Interpolate values</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
+
+        <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
+        <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
+        <script src="/SWAC/swac/swac.js" type="module"></script>
+        <script src="../../../js/visualisation/worldmap2d/example22.js"></script>
+    </head>
+    <body>
+        <header id="head_navigation" swa="Navigation FROM routes.json"></header>
+
+        <h3>Example 24: Interpolate values</h3>
+        <p>Values between points can be interpolated useing the Interpolator plugin. (Currently supports only data from geoJSON models)
+            <br></p>
+        
+        <div id="worldmap2d_example24" swa="Worldmap2d"></div>
+
+        <fieldset>
+            <legend>VIEW-Requestor</legend>
+            <pre><code class="lang-html">
+&lt;div id="worldmap2d_example24" swa="Worldmap2d"&gt;&lt;/div&gt;
+        </code></pre>
+        </fieldset>
+        <fieldset>
+            <legend>CONFIGURATION</legend>
+            <div id="worldmap2d_example24_conf" swa="Coder FROM ../../../js/visualisation/worldmap2d/example24.js"></div>
+        </fieldset>
+        <fieldset>
+            <legend>DATASOURCE</legend>
+            <p>There are 5 differend polygons given as geojson.</p>
+        </fieldset>
+
+        <footer>
+            <a href="../about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="../about/imprint.html">Imprint / Impressum</a>
+            <a class="toplink" href="#">Top</a>
+        </footer>
+    </body>
+</html>
