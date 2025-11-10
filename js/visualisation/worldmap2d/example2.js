@@ -1,4 +1,4 @@
-var worldmap2d_example2_options = {
+window['worldmap2d_example2_options'] = {
     // Latitude and longitude of map startpoint
     startPointLon: 8.905,
     startPointLat: 52.296,
