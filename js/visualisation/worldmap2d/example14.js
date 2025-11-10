@@ -1,6 +1,5 @@
 // Component onfiguration
-var worldmap2d_example14_options = {
-    plugins: new Map()
+window['worldmap2d_example14_options'] = {
 };
 
 // Functionallity outside the component

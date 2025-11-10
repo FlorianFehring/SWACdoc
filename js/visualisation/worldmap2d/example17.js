@@ -1,4 +1,4 @@
-var worldmap2d_example17_options = {
+window['worldmap2d_example17_options'] = {
     zoom: 18,
     // Activate DataAndMediaShowModal
     plugins: new Map([[
@@ -10,7 +10,7 @@ var worldmap2d_example17_options = {
 
 
 // DataAndMediaShowModal options
-var dataandmediashowmodal_worldmap2d_example17_options = {
+window['dataandmediashowmodal_worldmap2d_example17_options'] = {
     table_names: {
         locations_table: {
             table_name: 'tbl_location',
