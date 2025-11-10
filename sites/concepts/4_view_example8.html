@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SWAC - View - Example 8: Multiple components with same data</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../css/global.css">
+        <noscript>
+        <link rel="stylesheet" type="text/css" href="../../css/noscript.css">
+        </noscript>
+
+        <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
+        <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
+        <script src="/SWAC/swac/swac.js" type="module"></script>
+    </head>
+    <body>
+        <header id="head_navigation" swa="Navigation FROM ../../data/routes.json"></header>
+        <noscript>
+        <div class="noscript_nav">
+            <a href="sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
+            <br>Bitte aktiviere Javascript, um die bestmögliche Ansicht zu haben. / Please activate Javascript for the best experience.
+        </div>
+        </noscript>
+
+        <article class="uk-article">
+            <a href="3_data.html">Back to data overview</a>
+            <h1 class="uk-article-title">View Example 8: Multiple components with same data</h1>
+            <p>SWAC optimises data fetching to avoid unecessery requests for the same data. This is archived useing datasource based
+                databinding (going over the dataset based databinding in other frameworks). This has some advantages and disatvanages:
+            </p>
+            <ul>
+                <li>Saveing bandwith resulting in an speed up display with large numbers of datasets</li>
+                <li>Datasets are consistent over every component that uses the same datasource</li>
+                <li>Datasets added to one component are automatically added to all components useing the same datasource</li>
+                <li>Datasets loaded in one component useing lazy loading are loaded same time into the other components</li>
+            </ul>
+            <p>Important things to consider:</p>
+            <ul>
+                <li>Like always every component container must have it's own id.</li>
+                <li>Datasets are loaded over the quickest component first.</li>
+                <li>If you want to use lazy loading for one source all components must have lazy loading option set to true.</li>
+            </ul>
+
+            <fieldset>
+                <legend>VIEW-Requestor</legend>
+                <pre><code class="lang-html">
+&lt;div id="view_example8_1" swa="Present FROM http://localhost:8080/SmartDataTest/smartdata/records/tbl_observedobject?storage=smartmonitoring"&gt;
+    &lt;ol&gt;
+        &lt;li class="swac_repeatForSet" swac_id="{id}" swac_parent="{parent}"&gt;
+            {name}
+            &lt;ol class="swac_forChilds"&gt;
+                &lt;li class="swac_child" swac_id="{id}" swac_parent="{parent}"&gt;
+                    > {name}
+                    &lt;ol class="swac_forChilds"&gt;
+                        &lt;li class="swac_child" swac_id="{id}" swac_parent="{parent}"&gt;
+                            >> {name}
+                        &lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/li&gt;
+            &lt;/ol&gt;
+       &lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/div&gt;  
+        </code></pre>
+                The second component uses a where clause so got data is different from the first request even if its from same datasource:
+            <pre><code class="lang-html">
+&lt;div id="view_example8_2" swa="Present FROM http://localhost:8080/SmartDataTest/smartdata/records/tbl_observedobject?storage=smartmonitoring WHERE countonly=true"&gt;&lt;/div&gt;
+            </code></pre>
+
+            </fieldset>
+            <fieldset>
+                <legend>CONFIGURATION</legend>
+                <p swac_lang="no_configuraton_needed">No configuration needed</p>
+            </fieldset>
+            <fieldset>
+                <legend>DATASOURCE</legend>
+                This example needs a live datasource, because the outcoming depends on the given WHERE clauses, which is not simulateble with data files.
+                <!--<div id="view_example8_datasource" swa="Coder FROM ../../data/concepts/view_example7.json"></div>-->
+            </fieldset>
+
+            <div id="view_example8_1" swa="Present FROM http://localhost:8080/SmartDataTest/smartdata/records/tbl_observedobject?storage=smartmonitoring">
+                <ol>
+                    <li class="swac_repeatForSet" swac_id="{id}" swac_parent="{parent}">
+                        {name}
+                        <ol class="swac_forChilds">
+                            <li class="swac_child" swac_id="{id}" swac_parent="{parent}">
+                                > {name}
+                                <ol class="swac_forChilds">
+                                    <li class="swac_child" swac_id="{id}" swac_parent="{parent}">
+                                        >> {name}
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+
+            <div id="view_example8_2" swa="Present FROM http://localhost:8080/SmartDataTest/smartdata/records/tbl_observedobject?storage=smartmonitoring WHERE countonly=true"></div>
+
+
+            <a href="3_data.html">Back to data overview</a>
+        </article>
+
+        <footer>
+            <a href="about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="about/imprint.html">Imprint / Impressum</a>
+            <a class="toplink" href="#">Top</a>
+        </footer>
+    </body>
+</html>
