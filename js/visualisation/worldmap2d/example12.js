@@ -1,4 +1,4 @@
-var worldmap2d_example12_options = {
+window['worldmap2d_example12_options'] = {
     // You can use all worldmap2d options here
     zoom: 10
 };
