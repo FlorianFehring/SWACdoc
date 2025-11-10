@@ -8,5 +8,5 @@ window['worldmap2d_example5_options'] = {
 // Navigation plugin configuration
 window['navigation_worldmap2d_example5_options'] = {
     // Often a proxy is needed. This example uses SmartData proxy
-    searchurl: 'http://localhost:8080/SmartDataAirquality/smartdata/proxy/get?url=https://nominatim.openstreetmap.org/search'
+    searchurl: 'http://localhost:8080/SmartData/smartdata/proxy/get?url=https://nominatim.openstreetmap.org/search'
 };
