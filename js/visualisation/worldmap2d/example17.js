@@ -11,30 +11,25 @@ window['worldmap2d_example17_options'] = {
 
 // DataAndMediaShowModal options
 window['dataandmediashowmodal_worldmap2d_example17_options'] = {
-    table_names: {
-        locations_table: {
-            table_name: 'tbl_location',
-            idAttr: 'id',
-            geojsonattr: 'coordinates'
+    label_source: '../../../data/visualisation/worldmap2d_3d/example17/label_labels.json',
+    appliedlabels_source: '../../../data/visualisation/worldmap2d_3d/example17/appliedlabels.json',
+    media_source: '../../../data/visualisation/worldmap2d_3d/example17/appliedmedias.json',
+    media_target: '../../../data/visualisation/worldmap2d_3d/example17/mediatarget.json',
+    custom_tabs: [
+        {
+            title: 'my iframe',
+            type: 'iframe',
+            url: '../../../index.html'
         },
-        oo_table: {
-            table_name: 'tbl_observedobject',
-            idAttr: 'id',
-            completed: 'completed'
+        {
+            title: 'data table',
+            type: 'data-table',
+            url: '../../../data/visualisation/worldmap2d_3d/example17/ref_table1_data.json'
         },
-        file_table: {
-            table_name: 'tbl_file',
-            idAttr: 'id'
-        },
-        file_join_oo_table: {
-            table_name: 'tbl_file_join_oo',
-            idAttr: 'id',
-            file_id: 'file_id',
-            oo_id: 'oo_id'
-        },
-        uploadfile_options: {
-            uploadTargetURL: '/SmartFile/smartfile/file/map_pictures_Gewaesser',
-            docroot: '../../../'
+        {
+            title: 'data chart',
+            type: 'data-chart',
+            url: '../../../data/visualisation/worldmap2d_3d/example17/ref_table1_data.json'
         }
-    }
+    ]
 };
