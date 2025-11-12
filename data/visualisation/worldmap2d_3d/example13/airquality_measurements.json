@@ -7,7 +7,14 @@
             "pm10": 5,
             "temperature": 16.1,
             "id": 1,
-            "longitude": "8.9028"
+            "longitude": "8.9028",
+            "obj": {
+                "val1": 12.12,
+                "val2": [
+                    {"val2a": 44.44}
+                    
+                ]
+            }
         },
         {
             "measuredate": "2023-02-01T09:01:00",

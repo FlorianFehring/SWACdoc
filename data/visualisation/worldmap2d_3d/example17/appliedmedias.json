@@ -1,0 +1,14 @@
+{
+    "records": [
+        {
+            "id": 1,
+            "mimetype": "image/jpg",
+            "path": "SWACdoc/data/media/player/Hibiscus_Adrianna_Calvo.jpg"
+        },
+        {
+            "id": 2,
+            "mimetype": "video/mp4",
+            "path": "SWACdoc/data/media/player/water_Polina_Tankilevitch.mp4"
+        }
+    ]
+}
