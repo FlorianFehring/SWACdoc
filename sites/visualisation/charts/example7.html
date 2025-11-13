@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SWAC - charts component: Example 7: Chart with two y axis</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
+
+        <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
+        <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
+        <script src="/SWAC/swac/libs/uikit/js/uikit-icons.min.js"></script>
+        <script src="/SWAC/swac/swac.js" type="module"></script>
+
+        <script src="../../../js/visualisation/charts/example7.js"></script>
+    </head>
+    <body>
+        <header id="head_navigation" swa="Navigation FROM routes.json"></header>
+        <br><br>
+        <article>
+            <h3>Example 7: Chart with two y axis</h3>
+            <p>To create a chart with multiple y axis. Add the names of the attributes to use as y axis
+                into the yAxisAttrNames attribute.</p>
+            <div id="charts_example7" swa="Charts FROM ../../../data/visualisation/charts/example7_uicurve.json"></div>
+
+            <fieldset>
+                <legend>VIEW-Requestor</legend>
+                <pre><code class="lang-html">
+&lt;div id="charts_example7" swa="Charts FROM ../../../data/visualisation/charts/example7_uicurve.json"&gt;&lt;/div&gt;
+        </code></pre>
+            </fieldset>
+            <fieldset>
+                <legend>CONFIGURATION</legend>
+                <p>Chart component configuration</p>
+                <div id="charts_example7_conf" swa="Coder FROM ../../../js/visualisation/charts/example7.js"></div>
+            </fieldset>
+            <fieldset>
+                <legend>DATASOURCE</legend>
+                <div id="charts_example7_datasource" swa="Coder FROM ../../../data/visualisation/charts/example7_uicurve.json"></div>
+            </fieldset>
+        </article>
+        <footer>
+            <a href="about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="about/imprint.html">Imprint / Impressum</a>
+            <a class="toplink" href="#">Top</a>
+        </footer>
+    </body>
+</html>

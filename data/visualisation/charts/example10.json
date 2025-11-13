@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "name": "Election results",
+        "partyone": 23.2,
+        "partytwo": 25.3,
+        "partythree": 12.2,
+        "stringval": "Some additional info that should not been displayed"
+    }
+]
