@@ -49,7 +49,7 @@ document.addEventListener('swac_components_complete', function () {
             var randomInt = Math.round(Math.random() * (max - min)) + min;
 
             let newset = {
-//                id: newsetid,
+//                id: newsetid,                 // Not needed but possible
                 name: "Datensatz " + randomInt,
                 doubleval: randomDouble,
                 intval: randomInt,
@@ -75,7 +75,7 @@ document.addEventListener('swac_components_complete', function () {
             var randomInt = Math.round(Math.random() * (max - min)) + min;
 
             let newset = {
-//                id: newsetid,
+                id: randomInt,                  // Avoid overwriting sets from source 1
                 name: "Datensatz " + randomInt,
                 doubleval: randomDouble,
                 intval: randomInt,
