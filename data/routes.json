@@ -74,6 +74,7 @@
 {"id": 215, "rfrom": "*", "rto": "lowlevelapi/writeplugin.html", "name": "How to write a plugin", "parent": 210},
 {"id": 216, "rfrom": "*", "rto": "lowlevelapi/sample.html", "name": "Sample view & plugin", "parent": 210},
 {"id": 217, "rfrom": "*", "rto": "lowlevelapi/dynamiccomp.html", "name": "Dynamic component useage", "parent": 210},
+{"id": 218, "rfrom": "*", "rto": "lowlevelapi/translations.html", "name": "Translations", "parent": 210},
 
 {"id": 220, "rfrom": "*", "rto": "#", "name": "Deprecated Components:"},
 {"id": 221, "rfrom": "*", "rto": "jpars/Jpars.html", "name": "JPars", "parent": 220},
