@@ -17,7 +17,7 @@
         <script src="/SWAC/swac/swac.js" type="module"></script>
 
         <script src="../../../js/visualisation/present/example13.js"></script>
-        
+
         <!-- Datasources -->
         <script src="../../../data/exampledata_list.js"></script>
     </head>
@@ -35,19 +35,7 @@
             <h3>Example 13: Filter presentation with FilterSort plugin</h3>
             <p>Useing the FilterSort plugin, users can filter the datasets.</p>
 
-            <pre><code class="lang-javascript">
-window['present_example13_options'] = {
-    plugins: new Map()
-};
-window['present_example13_options'].plugins.set('FilterSort', {
-    id: 'FilterSort',
-    active: true
-});
-
-window['FilterSort_present_example13_options'] = {
-    sortable: false
-};       
-        </code></pre>
+            <div id="present_example13_conf" swa="Coder FROM ../../../js/visualisation/present/example13.js"></div>
 
             <div id="present_example13" swa="Present FROM exampledata_list"></div>
 
