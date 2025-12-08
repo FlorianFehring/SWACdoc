@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>SWAC - present component - Example 10: Live adding data over input</title>
+        <title>SWAC - present component - Example 3</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="icon" type="image/png" sizes="32x32" href="../../files/icons/32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../../files/icons/16x16.png">
-        <link rel="stylesheet" type="text/css" href="../../css/global.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
         <noscript>
-        <link rel="stylesheet" type="text/css" href="../../css/noscript.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/noscript.css">
         </noscript>
 
         <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
         <script src="/SWAC/swac/libs/uikit/js/uikit-icons.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
-        <script src="../../js/visualisation/present_example10.js"></script>
-
+        
+         <!-- Datasources -->
+        <script src="../../../data/exampledata_list.js"></script>
     </head>
     <body>
         <!--<header id="head_navigation" swa="Navigation FROM ../../data/routes.json"></header>-->
@@ -29,11 +30,14 @@
 
         <article>
 
-        <h3>Example 10: Live adding data over input</h3>
-        <p>This example shows how to add data to a component useing the add data dialog.
-            <br>For example try adding: exampledata_gaps.json</p>
+        <h3>Example 3: Show datasets with the "card_per_dataset" template</h3>
+        <p>description</p>
 
-        <div id="present_example10" swa="Present TEMPLATE table_for_all_datasets"></div>
+       <pre><code class="lang-html">
+&lt;div id="present_example3" swa="Present FROM exampledata_list TEMPLATE card_per_dataset"&gt;&lt;/div&gt;
+        </code></pre>
+
+        <div id="present_example3" swa="Present FROM exampledata_list TEMPLATE card_per_dataset"></div>
         
         </article>
         <footer>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SWAC - present component - Example 7</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
+        <noscript>
+        <link rel="stylesheet" type="text/css" href="../../../css/noscript.css">
+        </noscript>
+
+        <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
+        <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
+        <script src="/SWAC/swac/libs/uikit/js/uikit-icons.min.js"></script>
+        <script src="/SWAC/swac/swac.js" type="module"></script>
+
+        <script src="../../../js/visualisation/present/example7.js"></script>
+
+        <!-- Datasources -->
+        <script src="../../../data/exampledata_list.js"></script>
+    </head>
+    <body>
+        <!--<header id="head_navigation" swa="Navigation FROM ../../data/routes.json"></header>-->
+        <noscript>
+        <div class="noscript_nav">
+            <a href="../sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
+            <br>Bitte aktiviere Javascript, um die bestmögliche Ansicht zu haben. / Please activate Javascript for the best experience.
+        </div>
+        </noscript>
+
+        <article>
+
+            <h3>Example 7: Useing lazy loading</h3>
+            <p>Present component supports lazy loading of data, as any other component.</p>
+
+            <pre><code class="lang-html">
+&lt;div id="present_example7" swa="Present FROM exampledata_biglist.json TEMPLATE table_for_all_datasets"&gt;&lt;/div&gt;
+        </code></pre>
+
+            <pre><code class="lang-javascript">
+var present_example7_options = {
+    lazyLoading: 5
+};
+
+document.addEventListener('swac_present_example7_complete', function (evt) {
+    let present_example7_btn = document.querySelector('.present_example7_btn');
+    present_example7_btn.addEventListener('click', function (evt) {
+        evt.preventDefault();
+        let comp = document.querySelector('#present_example7').swac_comp;
+        comp.addDataLazy();
+    });
+});
+        </code></pre>
+
+            <div id="present_example7" swa="Present FROM exampledata_biglist.json TEMPLATE table_for_all_datasets"></div>
+            <button class="present_example7_btn uk-button uk-button-primary">Load next 5 sets</button>
+            <button class="present_example7_rem uk-button uk-button-primary">Remove all sets and add 5 new</button>
+
+        </article>
+        <footer>
+            <a href="about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="about/imprint.html">Imprint / Impressum</a>
+            <a class="toplink" href="#">Top</a>
+        </footer>
+    </body>
+</html>
