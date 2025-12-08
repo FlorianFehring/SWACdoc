@@ -39,11 +39,11 @@
             <a href="present/example1.html" target="_blank">See working example</a>
 
             <h3>Example 2: Show datasets with the "table_for_all_datasets" template</h3>
-            <p>description</p>
+            <p>Will output all data attributes using a custom template.</p>
             <a href="present/example2.html" target="_blank">See working example</a>
 
             <h3>Example 3: Show datasets with the "card_per_dataset" template</h3>
-            <p>description</p>
+            <p>Will print all data in a clean, card-based layout.</p>
             <a href="present/example3.html" target="_blank">See working example</a>
 
             <h3>Example 4: Show datasets with custom template</h3>
@@ -92,33 +92,30 @@
                 component is updated, too.</p>
             <a href="present/example8.html" target="_blank">See working example</a>
 
-
             <h3>Example 9: Create cells for missing attributes</h3>
             <p>Sometimes there are datasets where not all attributes are available. To avoid missleading display in those cases, table cells for missing attributes are generated when useing a table template</p>
             <a href="present/example9.html" target="_blank">See working example</a>
 
-            <!--
-            <div id="present_example9" swa="Present FROM exampledata_gaps.json TEMPLATE table_for_all_datasets"></div>
-            -->
             <h3>Example 10: Live adding data over input</h3>
             <p>View of any data accessable by URL can be allowed by useing the showAddDataInput option.
                 <br>Once activated a URL input box is displayed below the component and allows the addition of data.
                 <br>This option is available on all components and allows any datasources SWAC can use as pre configured datasource.</p>
-             <a href="present/example10.html" target="_blank">See working example</a>
-             
+            <a href="present/example10.html" target="_blank">See working example</a>
+
             <h3>Example 11: Show data from source given by URL</h3>
             <p>The datasource to show can also be given by URL parameter build from the id of the requestor and _data e.g. "present_example10_data". This way calling
                 pages to show data with custom datasources is easy to implement by create to pages with list components.
                 <br>First one with a list of all datasources, and second one that accepts the datasource by url.</p>
 
-            <a href="present_example10.html?present_example10_data=exampledata_gaps.json" target="_blank">Open example</a>
+            <a href="present/example10.html?present_example10_data=exampledata_gaps.json" target="_blank">Open example</a>
             <br><b>More examples:</b>
-            <br><a href="present_example10.html?present_example10_data=https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/rhein-kreis-neuss-windenergieanlagen/exports/json" target="_blank">Windenergieanlagen im Rhein-Neuss-Kreis</a>
-
+            <br><a href="present/example10.html?present_example10_data=https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/rhein-kreis-neuss-windenergieanlagen/exports/json" target="_blank">Windenergieanlagen im Rhein-Neuss-Kreis</a>
 
             <h3>Example 12: Sorting presentation with FilterSort plugin</h3>
             <p>Useing the FilterSort plugin, users can sort the datasets after each attribute.</p>
+            <a href="present/example12.html" target="_blank">See working example</a>
 
+            <!--
             <pre><code class="lang-javascript">
 window['present_example12_options'] = {
     plugins: new Map()
@@ -134,25 +131,11 @@ window['FilterSort_present_example12_options'] = {
         </code></pre>
 
             <div id="present_example12" swa="Present FROM exampledata_list"></div>
+            -->
 
             <h3>Example 13: Filter presentation with FilterSort plugin</h3>
             <p>Useing the FilterSort plugin, users can filter the datasets.</p>
-
-            <pre><code class="lang-javascript">
-window['present_example13_options'] = {
-    plugins: new Map()
-};
-window['present_example13_options'].plugins.set('FilterSort', {
-    id: 'FilterSort',
-    active: true
-});
-
-window['FilterSort_present_example13_options'] = {
-    sortable: false
-};       
-        </code></pre>
-
-            <div id="present_example13" swa="Present FROM exampledata_list"></div>
+            <a href="present/example13.html" target="_blank">See working example</a>
 
             <h3>Example 14: Useing hiearchical template</h3>
             <p>This example shows how to use the hieararchical template for showing hierarchical data.</p>
