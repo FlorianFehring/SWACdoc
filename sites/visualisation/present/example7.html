@@ -37,20 +37,7 @@
 &lt;div id="present_example7" swa="Present FROM exampledata_biglist.json TEMPLATE table_for_all_datasets"&gt;&lt;/div&gt;
         </code></pre>
 
-            <pre><code class="lang-javascript">
-var present_example7_options = {
-    lazyLoading: 5
-};
-
-document.addEventListener('swac_present_example7_complete', function (evt) {
-    let present_example7_btn = document.querySelector('.present_example7_btn');
-    present_example7_btn.addEventListener('click', function (evt) {
-        evt.preventDefault();
-        let comp = document.querySelector('#present_example7').swac_comp;
-        comp.addDataLazy();
-    });
-});
-        </code></pre>
+            <div id="present_example7_conf" swa="Coder FROM ../../../js/visualisation/present/example7.js"></div>
 
             <div id="present_example7" swa="Present FROM exampledata_biglist.json TEMPLATE table_for_all_datasets"></div>
             <button class="present_example7_btn uk-button uk-button-primary">Load next 5 sets</button>
