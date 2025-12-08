@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>SWAC - present component - Example X: C template</title>
+        <title>SWAC - present component - Example 12</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
@@ -15,8 +15,11 @@
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
         <script src="/SWAC/swac/libs/uikit/js/uikit-icons.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
+
+        <script src="../../../js/visualisation/present/example12.js"></script>
         
-        <script src="../../../js/visualisation/present/example14.js"></script>
+        <!-- Datasources -->
+        <script src="../../../data/exampledata_list.js"></script>
     </head>
     <body>
         <!--<header id="head_navigation" swa="Navigation FROM ../../data/routes.json"></header>-->
@@ -29,27 +32,25 @@
 
         <article>
 
-        <h3>Example Example X: X</h3>
-        <p>This example shows X</p>
+            <h3>Example 12: Sorting presentation with FilterSort plugin</h3>
+            <p>Useing the FilterSort plugin, users can sort the datasets after each attribute.</p>
 
-        <div id="present_exampleX" swa="Present FROM ../../../data/visualisation/present/example14/label_labels.json TEMPLATE hierarchical"></div>
-        
-        <fieldset>
-            <legend>VIEW-Requestor</legend>
-            <pre><code class="lang-html">
-&lt;div id="present_example14" swa="Present FROM ../../../data/visualisation/present/example14/label_labels.json TEMPLATE hierarchical"&gt;&lt;/div&gt;
+            <pre><code class="lang-javascript">
+window['present_example12_options'] = {
+    plugins: new Map()
+};
+window['present_example12_options'].plugins.set('FilterSort', {
+    id: 'FilterSort',
+    active: true
+});
+
+window['FilterSort_present_example12_options'] = {
+    filterable: false
+};     
         </code></pre>
-        </fieldset>
-        <fieldset>
-            <legend>CONFIGURATION</legend>
-            <div id="present_example14_conf" swa="Coder FROM ../../../js/visualisation/present/example14.js"></div>
-        </fieldset>
-        <fieldset>
-            <legend>DATASOURCE</legend>
-            <p>This example uses the same datasource as example 13.</p>
-            <div id="present_example14_datasource" swa="Coder FROM ../../../data/visualisation/present/example14/label_labels.json"></div>
-        </fieldset>
-        
+
+            <div id="present_example12" swa="Present FROM exampledata_list"></div>
+
         </article>
         <footer>
             <a href="about/privacy.html">Privacy policy / Datenschutzerklärung</a>
