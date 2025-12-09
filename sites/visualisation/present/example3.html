@@ -15,12 +15,13 @@
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
         <script src="/SWAC/swac/libs/uikit/js/uikit-icons.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
-        
-         <!-- Datasources -->
+
+        <!-- Datasources -->
         <script src="../../../data/exampledata_list.js"></script>
     </head>
     <body>
-        <!--<header id="head_navigation" swa="Navigation FROM ../../data/routes.json"></header>-->
+        <header id="head_navigation" swa="Navigation FROM ../../../data/routes.json"></header> 
+        
         <noscript>
         <div class="noscript_nav">
             <a href="../sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
@@ -30,15 +31,15 @@
 
         <article>
 
-        <h3>Example 3: Show datasets with the "card_per_dataset" template</h3>
-        <p>Will print all data in a clean, card-based layout</p>
+            <h3>Example 3: Show datasets with the "card_per_dataset" template</h3>
+            <p>Will print all data in a clean, card-based layout</p>
 
-       <pre><code class="lang-html">
+            <pre><code class="lang-html">
 &lt;div id="present_example3" swa="Present FROM exampledata_list TEMPLATE card_per_dataset"&gt;&lt;/div&gt;
         </code></pre>
 
-        <div id="present_example3" swa="Present FROM exampledata_list TEMPLATE card_per_dataset"></div>
-        
+            <div id="present_example3" swa="Present FROM exampledata_list TEMPLATE card_per_dataset"></div>
+
         </article>
         <footer>
             <a href="about/privacy.html">Privacy policy / Datenschutzerklärung</a>
