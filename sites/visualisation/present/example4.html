@@ -15,12 +15,13 @@
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
         <script src="/SWAC/swac/libs/uikit/js/uikit-icons.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
-        
-         <!-- Datasources -->
+
+        <!-- Datasources -->
         <script src="../../../data/exampledata_list.js"></script>
     </head>
     <body>
-        <!--<header id="head_navigation" swa="Navigation FROM ../../data/routes.json"></header>-->
+        <header id="head_navigation" swa="Navigation FROM ../../../data/routes.json"></header>
+
         <noscript>
         <div class="noscript_nav">
             <a href="../sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
@@ -30,11 +31,11 @@
 
         <article>
 
-        <h3>Example 4: Show datasets with custom template</h3>
-        <p>Custom template gives you full options on what and how to display. More 
-            on how to create your own template under <a href="../concepts/4_view.html">skinable</a></p>
+            <h3>Example 4: Show datasets with custom template</h3>
+            <p>Custom template gives you full options on what and how to display. More 
+                on how to create your own template under <a href="../concepts/4_view.html">skinable</a></p>
 
-       <pre><code class="lang-html">
+            <pre><code class="lang-html">
 &lt;div id="present_example4" swa="Present FROM exampledata_list"&gt;
     &lt;article class="swac_repeatForSet"&gt;
         &lt;header&gt;&lt;h1&gt;{stringval}&lt;/h1&gt;&lt;/header&gt;
@@ -42,15 +43,15 @@
     &lt;/article&gt;
 &lt;/div&gt;
         </code></pre>
-        Will print out the data attributes, u have placed bindpoints in your custom code.
+            Will print out the data attributes, u have placed bindpoints in your custom code.
 
-        <div id="present_example4" swa="Present FROM exampledata_list">
-            <article class="swac_repeatForSet">
-                <header><h1>{stringval}</h1></header>
-                <p>{doubleval}</p>
-            </article>
-        </div>
-        
+            <div id="present_example4" swa="Present FROM exampledata_list">
+                <article class="swac_repeatForSet">
+                    <header><h1>{stringval}</h1></header>
+                    <p>{doubleval}</p>
+                </article>
+            </div>
+
         </article>
         <footer>
             <a href="about/privacy.html">Privacy policy / Datenschutzerklärung</a>
