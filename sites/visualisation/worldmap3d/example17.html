@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SWAC - worldmap component - Example 17: Visualising timed data with timeline</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
+        <noscript>
+        <link rel="stylesheet" type="text/css" href="../../../css/noscript.css">
+        </noscript>
+
+        <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
+        <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
+        <script src="/SWAC/swac/swac.js" type="module"></script>
+        <script src="../../../js/visualisation/worldmap3d/example17.js"></script>
+    </head>
+    <body>
+        <header id="head_navigation" swa="Navigation FROM ../../../data/routes.json"></header>
+        <noscript>
+        <div class="noscript_nav">
+            <a href="../sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
+            <br>Bitte aktiviere Javascript, um die bestmögliche Ansicht zu haben. / Please activate Javascript for the best experience.
+        </div>
+        </noscript>
+
+        <h3>Example 17: Visualising timed data with timeline</h3>
+        <p>Visualising datasets that have time information with use of timeline.</p>
+
+        <div uk-grid>
+            <div class="uk-width-expand@m">
+                <div id="worldmap3d" swa="Worldmap3d"></div>
+            </div>
+            <div>
+                <div id="worldmap3d_legend" swa="Datadescription FROM worldmap_legend_data"></div>
+            </div>
+        </div>
+
+        <fieldset>
+            <legend>VIEW-Requestor</legend>
+            <pre><code class="lang-javascript">
+window.onload = function (evt) {
+    worldmap3d_options.datasources[0] = {
+        url: '../../data/worldmap3d/example15/co2timed.json',
+        showTimedDataAtOnce: false,
+        latattr: 'latitude',// Name of the attribute that stores the latitude information
+        lonattr: 'longitude', // Name of the attribute that stores the longitude information
+        heightattr: null, // Name of the attribute that stores the height information (null is default, clamps to ground)
+        datasetOffsetLat: 0, // This is the default value
+        datasetOffsetLon: 0, // This is the default value
+        datasetOffsetHeight: 1000,
+        excludeAttrs: ['id'], // This is the default value
+        displayKind: 'rect',
+        displayRadius: 2500,
+//        fillColor: 'yellow', // Default color of models (white if no setting is given)
+//        outlineColor: 'blue', // Default color of models border (black if no setting is given)
+//        outlineWidth: 10, // Width of the outline (1 if no setting is given)
+//        extrudeHeight: 10, // Default height of models
+//        fillColorProperty: 'Coloring property name', // Property from data that should be used as color for the model
+//        outlineColorProperty: 'Border coloring property name', // Property from data that should be used as color for the models outline
+//        extrudeHeightProperty: 'PHK_class', // Property from data that should be used for calculating the height
+//        datacaptionProperty: 'ts', // Property from data that should be used for model caption
+        datadescription: document.getElementById('worldmap3d_legend')
+    };
+};
+        </code></pre>
+        </fieldset>
+
+        <footer>
+            <a href="../about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="../about/imprint.html">Imprint / Impressum</a>
+            <a class="toplink" href="#">Top</a>
+        </footer>
+    </body>
+</html>

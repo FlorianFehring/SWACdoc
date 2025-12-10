@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SWAC - worldmap3d component - Example 9: Useing search for addresses</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
+        <noscript>
+        <link rel="stylesheet" type="text/css" href="../../../css/noscript.css">
+        </noscript>
+
+        <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
+        <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
+        <script src="/SWAC/swac/swac.js" type="module"></script>
+        <script src="../../../js/visualisation/worldmap3d/example9.js"></script>
+    </head>
+    <body>
+        <header id="head_navigation" swa="Navigation FROM ../../../data/routes.json"></header>
+        <noscript>
+        <div class="noscript_nav">
+            <a href="../sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
+            <br>Bitte aktiviere Javascript, um die bestmögliche Ansicht zu haben. / Please activate Javascript for the best experience.
+        </div>
+        </noscript>
+
+        <h3>Example 9: Useing search for addresses</h3>
+        <div id="worldmap3d" swa="Worldmap3d"></div>
+        <div id="worldmap3d_search" swa="Search"></div>
+        <div id="worldmap3d_geolocate" swa="Geolocation"></div>
+
+        <fieldset>
+            <legend>VIEW-Requestor</legend>
+            <pre><code class="lang-javascript">
+document.addEventListener('swac_components_complete', function () {
+  window.swac.reactions.addReaction(function(requestors){
+    // Get search and worldmap3d component
+    let searchcomp = requestors['worldmap3d_search'].swac_comp;
+    let worldmap3dcomp = requestors['worldmap3d'].swac_comp;
+    // Register searchsources
+    searchcomp.addSearchsource({
+        type: 'SearchProviderGeoREST',
+        url: 'https://nominatim.openstreetmap.org/search?q={expression}&format=geojson&addressdetails=1',
+        geolocationComp: requestors['worldmap3d_geolocate'].swac_comp
+    });
+
+    // Register searchEntryMaker
+    searchcomp.options.searchresultentrymakers[0] = new SearchEntryMakerGeoJson();
+    searchcomp.options.searchresultentrymakers[0].setOnClickEventListener(Worldmap3d.onClickSearchResult);
+
+    // Register search on worldmap3d
+    worldmap3dcomp.options.searchComp = searchcomp;
+  },'worldmap3d','worldmap3d_search','worldmap3d_geolocate');
+});
+        </code></pre>
+        </fieldset>
+
+        <footer>
+            <a href="../about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="../about/imprint.html">Imprint / Impressum</a>
+            <a class="toplink" href="#">Top</a>
+        </footer>
+    </body>
+</html>

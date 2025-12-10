@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SWAC - worldmap component - Example 14: Visualising point data expanded to areas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
+        <noscript>
+        <link rel="stylesheet" type="text/css" href="../../../css/noscript.css">
+        </noscript>
+
+        <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
+        <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
+        <script src="/SWAC/swac/swac.js" type="module"></script>
+        <script src="../../../js/visualisation/worldmap3d/example14.js"></script>
+    </head>
+    <body>
+        <header id="head_navigation" swa="Navigation FROM ../../../data/routes.json"></header>
+        <noscript>
+        <div class="noscript_nav">
+            <a href="../sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
+            <br>Bitte aktiviere Javascript, um die bestmögliche Ansicht zu haben. / Please activate Javascript for the best experience.
+        </div>
+        </noscript>
+
+        <h3>Example 14: Visualising point data expanded to areas</h3>
+        <p>Visualising datasets that contain position information in its columns.</p>
+
+        <div uk-grid>
+            <div class="uk-width-expand@m">
+                <div id="worldmap3d" swa="Worldmap3d"></div>
+            </div>
+            <div>
+                <div id="worldmap3d_legend" swa="Datadescription FROM worldmap_legend_data"></div>
+            </div>
+        </div>
+
+        <fieldset>
+            <legend>VIEW-Requestor</legend>
+            <pre><code class="lang-javascript">
+var worldmap3d_options = {
+    showTimedDataAtOnce: true
+};
+worldmap3d_options.datasources = [];
+
+window.onload = function (evt) {
+    worldmap3d_options.datasources[0] = {
+        url: '../../data/worldmap3d/example14/co2timed.json',
+        latattr: 'latitude', // Name of the attribute that stores the latitude information
+        lonattr: 'longitude', // Name of the attribute that stores the longitude information
+        heightattr: null, // Name of the attribute that stores the height information (null is default, clamps to ground)
+        datasetOffsetLat: 0, // This is the default value
+        datasetOffsetLon: 0, // This is the default value
+        datasetOffsetHeight: 1000,
+        excludeAttrs: ['id'], // This is the default value
+        displayKind: 'rect',
+        displayRadius: 2500,
+        datadescription: document.getElementById('worldmap3d_legend'),
+        zoomTo: true
+    };
+};
+
+worldmap3d_legend_data = {};
+worldmap3d_legend_data.sourcename = "ECCAD 2000 - 2019";
+worldmap3d_legend_data.sourcelink = "https://eccad3.sedoo.fr/";
+worldmap3d_legend_data.co2 = {};
+worldmap3d_legend_data.co2.txt_title = 'Anthropogene CO2 Emissionen';
+worldmap3d_legend_data.co2.txt_desc = 'Höhe der Anthropogenen CO2 Emissionen';
+worldmap3d_legend_data.co2.txt_uknw = 'unbekannt';
+worldmap3d_legend_data.co2.col = '0xAA00A5FF';
+worldmap3d_legend_data.co2.scale = 1000000000000;
+worldmap3d_legend_data.co2.calcmode = '<';
+worldmap3d_legend_data.co2.values = {};
+worldmap3d_legend_data.co2.values['1e-11'] = {};
+worldmap3d_legend_data.co2.values['1e-11'].col = '0x77930508';
+worldmap3d_legend_data.co2.values['1e-11'].txt = 'Sehr niedrige CO2 Emissionen';
+worldmap3d_legend_data.co2.values['1e-10'] = {};
+worldmap3d_legend_data.co2.values['1e-10'].col = '0x77fff836';
+worldmap3d_legend_data.co2.values['1e-10'].txt = 'Niedrige CO2 Emissionen';
+worldmap3d_legend_data.co2.values['1e-9'] = {};
+worldmap3d_legend_data.co2.values['1e-9'].col = '0x7742ff9b';
+worldmap3d_legend_data.co2.values['1e-9'].txt = 'Mittlere CO2 Emissionen';
+worldmap3d_legend_data.co2.values['1e-8'] = {};
+worldmap3d_legend_data.co2.values['1e-8'].col = '0x7700cafd';
+worldmap3d_legend_data.co2.values['1e-8'].txt = 'Hohe CO2 Emissionen';
+worldmap3d_legend_data.co2.values['1e-7'] = {};
+worldmap3d_legend_data.co2.values['1e-7'].col = '0x7700008c';
+worldmap3d_legend_data.co2.values['1e-7'].txt = 'Sehr hohe CO2 Emissionen';
+        </code></pre>
+        </fieldset>
+
+        <footer>
+            <a href="../about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="../about/imprint.html">Imprint / Impressum</a>
+            <a class="toplink" href="#">Top</a>
+        </footer>
+    </body>
+</html>

@@ -24,7 +24,7 @@ window.onload = function (evt) {
         datadescription: document.getElementById('worldmap_legend')
     };
 //    worldmap_options.datasources[1] = {
-//        url: '../data/worldmap_example11-2.geojson',
+//        url: '../data/worldmap3d_example11-2.geojson',
 //        fillColor: '0x67ADDFFF', // Default color of models (white if no setting is given)
 //        outlineColor: 'black', // Default color of models border (black if no setting is given)
 //        outlineWidth: 1, // Width of the outline (1 if no setting is given)
@@ -33,7 +33,7 @@ window.onload = function (evt) {
 //        datadescription: document.getElementById('worldmap_legend')
 //    };
 //    worldmap_options.datasources[2] = {
-//        url: '../data/worldmap_example11-3.geojson',
+//        url: '../data/worldmap3d_example11-3.geojson',
 //        fillColor: '0x67ADDFFF', // Default color of models (white if no setting is given)
 //        outlineColor: 'black', // Default color of models border (black if no setting is given)
 //        outlineWidth: 1, // Width of the outline (1 if no setting is given)

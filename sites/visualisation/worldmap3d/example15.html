@@ -4,20 +4,20 @@
         <title>SWAC - worldmap component - Example 15: Visualising point data with more than one dataset per position</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="icon" type="image/png" sizes="32x32" href="../../files/icons/32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../../files/icons/16x16.png">
-        <link rel="stylesheet" type="text/css" href="../../css/global.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
         <noscript>
-        <link rel="stylesheet" type="text/css" href="../../css/noscript.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/noscript.css">
         </noscript>
 
         <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
-        <script src="../../js/visualisation/worldmap_example15.js"></script>
+        <script src="../../../js/visualisation/worldmap3d/example15.js"></script>
     </head>
     <body>
-        <header id="head_navigation" swa="Navigation FROM ../../data/routes.json"></header>
+        <header id="head_navigation" swa="Navigation FROM ../../../data/routes.json"></header>
         <noscript>
         <div class="noscript_nav">
             <a href="../sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
@@ -26,12 +26,17 @@
         </noscript>
 
         <h3>Example 15: Visualising point data with more than one dataset per position</h3>
+        <p>When datasets with positioned data contains more than one dataset per 
+            position the data will be automatically stacked.
+            <br>Code is the same as in previous example, but the dataset contains
+            more than one dataset per position.</p>
+        
         <div uk-grid>
             <div class="uk-width-expand@m">
-                <div id="worldmap" swa="Worldmap"></div>
+                <div id="worldmap3d" swa="Worldmap3d"></div>
             </div>
             <div>
-                <div id="worldmap_legend" swa="Datadescription FROM worldmap_legend_data"></div>
+                <div id="worldmap3d_legend" swa="Datadescription FROM worldmap_legend_data"></div>
             </div>
         </div>
 

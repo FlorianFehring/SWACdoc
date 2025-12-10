@@ -4,20 +4,20 @@
         <title>SWAC - worldmap component - Example 16: Visualising massive point data as density map</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="icon" type="image/png" sizes="32x32" href="../../files/icons/32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../../files/icons/16x16.png">
-        <link rel="stylesheet" type="text/css" href="../../css/global.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
         <noscript>
-        <link rel="stylesheet" type="text/css" href="../../css/noscript.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/noscript.css">
         </noscript>
 
         <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
-        <script src="../../js/visualisation/worldmap_example16.js"></script>
+        <script src="../../../js/visualisation/worldmap3d/example16.js"></script>
     </head>
     <body>
-        <header id="head_navigation" swa="Navigation FROM ../../data/routes.json"></header>
+        <header id="head_navigation" swa="Navigation FROM ../../../data/routes.json"></header>
         <noscript>
         <div class="noscript_nav">
             <a href="../sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
@@ -26,12 +26,17 @@
         </noscript>
 
         <h3>Example 16: Visualising massive point data as density map</h3>
+        <p>This example visualises round about 68.000 datasets with anthropogenic 
+            co2 emission values, from a period of 12 month over a bounding rect 
+            including germany. The coloring options give a impression of value 
+            change over time. <br>But be aware this causes havy browser load.</p>
+
         <div uk-grid>
             <div class="uk-width-expand@m">
-                <div id="worldmap" swa="Worldmap"></div>
+                <div id="worldmap3d" swa="Worldmap3d"></div>
             </div>
             <div>
-                <div id="worldmap_legend" swa="Datadescription FROM worldmap_legend_data"></div>
+                <div id="worldmap3d_legend" swa="Datadescription FROM worldmap_legend_data"></div>
             </div>
         </div>
 

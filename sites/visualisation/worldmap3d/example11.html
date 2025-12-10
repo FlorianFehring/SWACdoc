@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SWAC - worldmap component - Example 11: 3D geojson</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
+        <noscript>
+        <link rel="stylesheet" type="text/css" href="../../../css/noscript.css">
+        </noscript>
+
+        <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
+        <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
+        <script src="/SWAC/swac/swac.js" type="module"></script>
+        <script src="../../../js/visualisation/worldmap3d/example11.js"></script>
+    </head>
+    <body>
+        <header id="head_navigation" swa="Navigation FROM ../../../data/routes.json"></header>
+        <noscript>
+        <div class="noscript_nav">
+            <a href="../sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
+            <br>Bitte aktiviere Javascript, um die bestmögliche Ansicht zu haben. / Please activate Javascript for the best experience.
+        </div>
+        </noscript>
+
+        <h3>Example 11: 3D geojson</h3>
+        <div uk-grid>
+            <div class="uk-width-expand@m">
+                <div id="worldmap" swa="Worldmap"></div>
+            </div>
+            <div>
+                <div id="worldmap_legend" swa="Datadescription FROM worldmap_legend_data"></div>
+            </div>
+        </div>
+
+        <fieldset>
+            <legend>VIEW-Requestor</legend>
+            <pre><code class="lang-javascript">
+ var worldmap3d_options = {};
+ worldmap3d_options.plugins = new Map();
+ worldmap3d_options.plugins.set('modelmenue', {
+    id: 'modelmenue',
+    active: true
+ });
+ window.onload = function (evt) {
+    worldmap3d_options.datasources[0] = {
+        url: '../../data/worldmap3d/example11/3dhouse.geojson',
+        fillColor: '0x67ADDFFF', // Default color of models (white if no setting is given)
+        outlineColor: 'black', // Default color of models border (black if no setting is given)
+        outlineWidth: 1, // Width of the outline (1 if no setting is given)
+        zoomTo: false,
+        datacaptionProperty: 'globalc', // Property from data that should be used for model caption
+        datadescription: document.getElementById('worldmap3d_legend')
+     };
+ };
+
+// Options defining WHAT is visualised
+worldmap3d_legend_options = {};
+worldmap3d_legend_options.visuAttribute = 'globalc';
+// Data defining HOW is visualised
+worldmap3d_legend_data = {};
+worldmap3d_legend_data.globalc = {};
+worldmap3d_legend_data.globalc.txt_title = 'Einstrahlungsklassen';
+worldmap3d_legend_data.globalc.txt_desc = 'Flächen mit solarer Einstrahlung';
+worldmap3d_legend_data.globalc.txt_uknw = 'Keine Berechnung vorhanden';
+worldmap3d_legend_data.globalc.values = {};
+worldmap3d_legend_data.globalc.values['100'] = {};
+worldmap3d_legend_data.globalc.values['100'].col = '0xFF00008B';
+worldmap3d_legend_data.globalc.values['100'].txt = 'Einstrahlungsklasse: 100';
+worldmap3d_legend_data.globalc.values['100'].desc = '100';
+worldmap3d_legend_data.globalc.values['200'] = {};
+worldmap3d_legend_data.globalc.values['200'].col = '0xFF0000FF';
+worldmap3d_legend_data.globalc.values['200'].txt = 'Einstrahlungsklasse: 200 ';
+worldmap3d_legend_data.globalc.values['200'].desc = '200';
+worldmap3d_legend_data.globalc.values['300'] = {};
+worldmap3d_legend_data.globalc.values['300'].col = '0xFF0045FF';
+worldmap3d_legend_data.globalc.values['300'].txt = 'Einstrahlungsklasse: 300';
+worldmap3d_legend_data.globalc.values['300'].desc = '300';
+worldmap3d_legend_data.globalc.values['400'] = {};
+worldmap3d_legend_data.globalc.values['400'].col = '0xFF008CFF';
+worldmap3d_legend_data.globalc.values['400'].txt = 'Einstrahlungsklasse: 400';
+worldmap3d_legend_data.globalc.values['400'].desc = '400';
+worldmap3d_legend_data.globalc.values['500'] = {};
+worldmap3d_legend_data.globalc.values['500'].col = '0xFF00FFFF';
+worldmap3d_legend_data.globalc.values['500'].txt = 'Einstrahlungsklasse: 500';
+worldmap3d_legend_data.globalc.values['500'].desc = '500';
+worldmap3d_legend_data.globalc.values['600'] = {};
+worldmap3d_legend_data.globalc.values['600'].col = '0xFF8CE6F0';
+worldmap3d_legend_data.globalc.values['600'].txt = 'Einstrahlungsklasse; 600';
+worldmap3d_legend_data.globalc.values['600'].desc = '600';
+worldmap3d_legend_data.globalc.values['700'] = {};
+worldmap3d_legend_data.globalc.values['700'].col = '0xFF90EE90';
+worldmap3d_legend_data.globalc.values['700'].txt = 'Einstrahlungsklasse: 700';
+worldmap3d_legend_data.globalc.values['700'].desc = '700';
+worldmap3d_legend_data.globalc.values['800'] = {};
+worldmap3d_legend_data.globalc.values['800'].col = '0xFF7CFC00';
+worldmap3d_legend_data.globalc.values['800'].txt = 'Einstrahlungsklasse: 800';
+worldmap3d_legend_data.globalc.values['800'].desc = '800';
+worldmap3d_legend_data.globalc.values['900'] = {};
+worldmap3d_legend_data.globalc.values['900'].col = '0xFF00FF00';
+worldmap3d_legend_data.globalc.values['900'].txt = 'Einstrahlungsklasse: 900';
+worldmap3d_legend_data.globalc.values['900'].desc = '900';
+worldmap3d_legend_data.globalc.values['1000'] = {};
+worldmap3d_legend_data.globalc.values['1000'].col = '0xFF228B22';
+worldmap3d_legend_data.globalc.values['1000'].txt = 'Einstrahlungsklasse: 1000';
+worldmap3d_legend_data.globalc.values['1000'].desc = '1000';
+worldmap3d_legend_data.globalc.values['1100'] = {};
+worldmap3d_legend_data.globalc.values['1100'].col = '0xFF006400';
+worldmap3d_legend_data.globalc.values['1100'].txt = 'Einstrahlungsklasse: 1100';
+worldmap3d_legend_data.globalc.values['1100'].desc = '1100';
+      </code></pre>
+        </fieldset>
+
+        <footer>
+            <a href="../about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="../about/imprint.html">Imprint / Impressum</a>
+            <a class="toplink" href="#">Top</a>
+        </footer>
+    </body>
+</html>
