@@ -13,7 +13,7 @@
 {"id": 12, "rfrom": "*", "rto": "concepts/libraries.html", "name": "Libraries & License", "parent": 1},
 
 {"id": 20, "rfrom": "*", "rto": "#", "name": "Visualisation Components:"},
-{"id": 21, "rfrom": "*", "rto": "visualisation/present.html", "name": "Present", "parent": 20},
+{"id": 21, "rfrom": "*", "rto": "visualisation/present/index.html", "name": "Present", "parent": 20},
 {"id": 22, "rfrom": "*", "rto": "visualisation/clock.html", "name": "Clock", "parent": 20},
 {"id": 23, "rfrom": "*", "rto": "visualisation/guide.html", "name": "Guide", "parent": 20},
 {"id": 24, "rfrom": "*", "rto": "visualisation/datadescription/index.html", "name": "Datadescription", "parent": 20},

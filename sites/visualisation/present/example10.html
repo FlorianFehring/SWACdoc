@@ -7,9 +7,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
         <link rel="stylesheet" type="text/css" href="../../../css/global.css">
-        <noscript>
-        <link rel="stylesheet" type="text/css" href="../../../css/noscript.css">
-        </noscript>
 
         <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
@@ -23,32 +20,35 @@
     </head>
     <body>
         <header id="head_navigation" swa="Navigation FROM ../../../data/routes.json"></header>
-
-        <noscript>
-        <div class="noscript_nav">
-            <a href="../sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
-            <br>Bitte aktiviere Javascript, um die bestmögliche Ansicht zu haben. / Please activate Javascript for the best experience.
-        </div>
-        </noscript>
-
         <article>
 
             <h3>Example 10: Live adding data over input</h3>
             <p>View of any data accessable by URL can be allowed by useing the showAddDataInput option.
                 <br>Once activated a URL input box is displayed below the component and allows the addition of data.
-                <br>This option is available on all components and allows any datasources SWAC can use as pre configured datasource.</p>
-
-            <div id="present_example10_conf" swa="Coder FROM ../../../js/visualisation/present/example10.js"></div>
-
-            <p>This example shows how to add data to a component useing the add data dialog.
-                <br>For example try adding: <b>exampledata_gaps.json</b></p>
+                <br>This option is available on all components and allows any datasources SWAC can use as pre configured datasource.
+                <br>This example shows how to add data to a component useing the add data dialog.
+                <br>For example try adding: <b>../../../data/visualisation/present/example9/exampledata_gaps.json</b></p>
 
             <div id="present_example10" swa="Present TEMPLATE table_for_all_datasets"></div>
 
+            <fieldset>
+                <legend>VIEW-Requestor</legend>
+                <pre><code class="lang-html">
+&lt;div id="present_example1" swa="Present FROM exampledata_list"&gt;&lt;/div&gt;
+        </code></pre>
+            </fieldset>
+            <fieldset>
+                <legend>CONFIGURATION</legend>
+                <div id="present_example10_conf" swa="Coder FROM ../../../js/visualisation/present/example10.js"></div>
+            </fieldset>
+            <fieldset>
+                <legend>DATASOURCE</legend>
+                <div id="present_example10_datasource" swa="Coder FROM ../../../data/visualisation/present/example9/exampledata_gaps.json"></div>
+            </fieldset>
         </article>
         <footer>
-            <a href="about/privacy.html">Privacy policy / Datenschutzerklärung</a>
-            <a href="about/imprint.html">Imprint / Impressum</a>
+            <a href="/sites/about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="/sites/about/imprint.html">Imprint / Impressum</a>
             <a class="toplink" href="#">Top</a>
         </footer>
     </body>

@@ -7,9 +7,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
         <link rel="stylesheet" type="text/css" href="../../../css/global.css">
-        <noscript>
-        <link rel="stylesheet" type="text/css" href="../../../css/noscript.css">
-        </noscript>
 
         <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
@@ -20,25 +17,31 @@
     </head>
     <body>
         <header id="head_navigation" swa="Navigation FROM ../../../data/routes.json"></header>
-        
-        <noscript>
-        <div class="noscript_nav">
-            <a href="../sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
-            <br>Bitte aktiviere Javascript, um die bestmögliche Ansicht zu haben. / Please activate Javascript for the best experience.
-        </div>
-        </noscript>
-
         <article>
 
             <h3>Example 9: Create cells for missing attributes</h3>
             <p>Sometimes there are datasets where not all attributes are available. To avoid missleading display in those cases, table cells for missing attributes are generated when useing a table template</p>
 
-            <div id="present_example9" swa="Present FROM exampledata_gaps.json TEMPLATE table_for_all_datasets"></div>
+            <div id="present_example9" swa="Present FROM visualisation/present/example9/exampledata_gaps.json TEMPLATE table_for_all_datasets"></div>
 
+            <fieldset>
+                <legend>VIEW-Requestor</legend>
+                <pre><code class="lang-html">
+&lt;div id="present_example9" swa="Present FROM visualisation/present/example9/exampledata_gaps.json TEMPLATE table_for_all_datasets"&gt;&lt;/div&gt;
+        </code></pre>
+            </fieldset>
+            <fieldset>
+                <legend>CONFIGURATION</legend>
+                <p>There is no configuration needed.</p>
+            </fieldset>
+            <fieldset>
+                <legend>DATASOURCE</legend>
+                <div id="present_example9_datasource" swa="Coder FROM ../../../data/visualisation/present/example9/exampledata_gaps.json"></div>
+            </fieldset>
         </article>
         <footer>
-            <a href="about/privacy.html">Privacy policy / Datenschutzerklärung</a>
-            <a href="about/imprint.html">Imprint / Impressum</a>
+            <a href="/sites/about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="/sites/about/imprint.html">Imprint / Impressum</a>
             <a class="toplink" href="#">Top</a>
         </footer>
     </body>

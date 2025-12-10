@@ -7,9 +7,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
         <link rel="stylesheet" type="text/css" href="../../../css/global.css">
-        <noscript>
-        <link rel="stylesheet" type="text/css" href="../../../css/noscript.css">
-        </noscript>
 
         <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
@@ -17,33 +14,37 @@
         <script src="/SWAC/swac/swac.js" type="module"></script>
 
         <!-- Datasources -->
-        <script src="../../../data/exampledata_list.js"></script>
+        <script src="../../../data/visualisation/present/example1/exampledata_list.js"></script>
     </head>
     <body>
         <header id="head_navigation" swa="Navigation FROM ../../../data/routes.json"></header>      
-
-        <noscript>
-        <div class="noscript_nav">
-            <a href="../sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
-            <br>Bitte aktiviere Javascript, um die bestmögliche Ansicht zu haben. / Please activate Javascript for the best experience.
-        </div>
-        </noscript>
-
         <article>
 
             <h3>Example 2: Show datasets with the "table_for_all_datasets" template</h3>
             <p>Will output all data attributes using a custom template.</p>
 
-            <pre><code class="lang-html">
-&lt;div id="present_example2" swa="Present FROM exampledata_list TEMPLATE table_for_all_datasets"&gt;&lt;/div&gt;
-        </code></pre>
-
             <div id="present_example2" swa="Present FROM exampledata_list TEMPLATE table_for_all_datasets"></div>
 
+            <fieldset>
+                <legend>VIEW-Requestor</legend>
+                <pre><code class="lang-html">
+&lt;div id="present_example2" swa="Present FROM exampledata_list TEMPLATE table_for_all_datasets"&gt;&lt;/div&gt;
+        </code></pre>
+            </fieldset>
+            <fieldset>
+                <legend>CONFIGURATION</legend>
+                There is no configuration needed.
+            </fieldset>
+            <fieldset>
+                <legend>DATASOURCE</legend>
+                <p>This uses the same datasource as example 1.</p>
+                <div id="present_example2_datasource" swa="Coder FROM ../../../data/visualisation/present/example1/exampledata_list.js"></div>
+            </fieldset>
+            
         </article>
         <footer>
-            <a href="about/privacy.html">Privacy policy / Datenschutzerklärung</a>
-            <a href="about/imprint.html">Imprint / Impressum</a>
+            <a href="/sites/about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="/sites/about/imprint.html">Imprint / Impressum</a>
             <a class="toplink" href="#">Top</a>
         </footer>
     </body>

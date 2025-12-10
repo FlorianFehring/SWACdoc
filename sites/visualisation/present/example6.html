@@ -7,9 +7,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
         <link rel="stylesheet" type="text/css" href="../../../css/global.css">
-        <noscript>
-        <link rel="stylesheet" type="text/css" href="../../../css/noscript.css">
-        </noscript>
 
         <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
@@ -23,31 +20,31 @@
     </head>
     <body>
         <header id="head_navigation" swa="Navigation FROM ../../../data/routes.json"></header>
-
-        <noscript>
-        <div class="noscript_nav">
-            <a href="../sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
-            <br>Bitte aktiviere Javascript, um die bestmögliche Ansicht zu haben. / Please activate Javascript for the best experience.
-        </div>
-        </noscript>
-
         <article>
-
             <h3>Example 6: Useing TableSort plugin</h3>
             <p>TableFilter plugin adds sorting possibility for table based presents.</p>
 
-            <pre><code class="lang-html">
-&lt;div id="present_example6" swa="Present FROM exampledata_list TEMPLATE table_for_all_datasets"&gt;&lt;/div&gt;
-        </code></pre>
-
-            <div id="present_example6_conf" swa="Coder FROM ../../../js/visualisation/present/example6.js"></div>
-
             <div id="present_example6" swa="Present FROM exampledata_list TEMPLATE table_for_all_datasets"></div>
 
+            <fieldset>
+                <legend>VIEW-Requestor</legend>
+                <pre><code class="lang-html">
+&lt;div id="present_example6" swa="Present FROM exampledata_list TEMPLATE table_for_all_datasets"&gt;&lt;/div&gt;
+        </code></pre>
+            </fieldset>
+            <fieldset>
+                <legend>CONFIGURATION</legend>
+                <div id="present_example6_conf" swa="Coder FROM ../../../js/visualisation/present/example6.js"></div>
+            </fieldset>
+            <fieldset>
+                <legend>DATASOURCE</legend>
+                <p>This example uses the same datasource as example 1.</p>
+                <div id="present_example6_datasource" swa="Coder FROM ../../../data/visualisation/present/example1/exampledata_list.js"></div>
+            </fieldset>
         </article>
         <footer>
-            <a href="about/privacy.html">Privacy policy / Datenschutzerklärung</a>
-            <a href="about/imprint.html">Imprint / Impressum</a>
+            <a href="/sites/about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="/sites/about/imprint.html">Imprint / Impressum</a>
             <a class="toplink" href="#">Top</a>
         </footer>
     </body>

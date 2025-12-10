@@ -4,32 +4,19 @@
         <title>SWAC - present component</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="icon" type="image/png" sizes="32x32" href="../../files/icons/32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../../files/icons/16x16.png">
-        <link rel="stylesheet" type="text/css" href="../../css/global.css">
-        <noscript>
-        <link rel="stylesheet" type="text/css" href="../../css/noscript.css">
-        </noscript>
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
 
         <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
         <script src="/SWAC/swac/libs/uikit/js/uikit-icons.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
-        <script src="../../js/visualisation/present.js"></script>
-
-        <!-- Datasources -->
-        <script src="../../data/exampledata_list.js"></script>
+        
+        <script src="../../../js/visualisation/present/index.js"></script>
     </head>
     <body>
-        <header id="head_navigation" swa="Navigation FROM ../../data/routes.json"></header>
-        
-        <noscript>
-        <div class="noscript_nav">
-            <a href="../sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
-            <br>Bitte aktiviere Javascript, um die bestmögliche Ansicht zu haben. / Please activate Javascript for the best experience.
-        </div>
-        </noscript>
-
+        <header id="head_navigation" swa="Navigation FROM ../../../data/routes.json"></header>
         <article>
             <div id="explaincomponent" swa="ExplainComponents"></div>
 
@@ -37,74 +24,74 @@
 
             <h3>Example 1: Present datasets with default template "table_per_dataset"</h3>
             <p>Will print out all data attributes from an plain old javascript object line by line.</p>
-            <a href="present/example1.html" target="_blank">See working example</a>
+            <a href="example1.html" target="_blank">See working example</a>
 
             <h3>Example 2: Show datasets with the "table_for_all_datasets" template</h3>
             <p>Will output all data attributes using a custom template.</p>
-            <a href="present/example2.html" target="_blank">See working example</a>
+            <a href="example2.html" target="_blank">See working example</a>
 
             <h3>Example 3: Show datasets with the "card_per_dataset" template</h3>
             <p>Will print all data in a clean, card-based layout.</p>
-            <a href="present/example3.html" target="_blank">See working example</a>
+            <a href="example3.html" target="_blank">See working example</a>
 
             <h3>Example 4: Show datasets with custom template</h3>
             <p>Custom template gives you full options on what and how to display. More 
                 on how to create your own template under <a href="../concepts/4_view.html">skinable</a></p>
-            <a href="present/example4.html" target="_blank">See working example</a>
+            <a href="example4.html" target="_blank">See working example</a>
 
             <h3>Example 5: Useing TableFilter plugin</h3>
             <p>TableFilter plugin adds filter possibility for table based presents.</p>
-            <a href="present/example5.html" target="_blank">See working example</a>
+            <a href="example5.html" target="_blank">See working example</a>
 
             <h3>Example 6: Useing TableSort plugin</h3>
             <p>TableFilter plugin adds sorting possibility for table based presents.</p>
-            <a href="present/example6.html" target="_blank">See working example</a>
+            <a href="example6.html" target="_blank">See working example</a>
 
             <h3>Example 7: Useing lazy loading</h3>
             <p>Present component supports lazy loading of data, as any other component.</p>
-            <a href="present/example7.html" target="_blank">See working example</a>
+            <a href="example7.html" target="_blank">See working example</a>
 
             <h3>Example 8: Automatic lazy loading</h3>
             <p>All components can lazyly load new data when the components end comes in the viewport (becomes visible to the user).
                 Be aware, that scince if one component recives data from a datasource that is used on another component too, the other
                 component is updated, too.</p>
-            <a href="present/example8.html" target="_blank">See working example</a>
+            <a href="example8.html" target="_blank">See working example</a>
 
             <h3>Example 9: Create cells for missing attributes</h3>
             <p>Sometimes there are datasets where not all attributes are available. To avoid missleading display in those cases, table cells for missing attributes are generated when useing a table template</p>
-            <a href="present/example9.html" target="_blank">See working example</a>
+            <a href="example9.html" target="_blank">See working example</a>
 
             <h3>Example 10: Live adding data over input</h3>
             <p>View of any data accessable by URL can be allowed by useing the showAddDataInput option.
                 <br>Once activated a URL input box is displayed below the component and allows the addition of data.
                 <br>This option is available on all components and allows any datasources SWAC can use as pre configured datasource.</p>
-            <a href="present/example10.html" target="_blank">See working example</a>
+            <a href="example10.html" target="_blank">See working example</a>
 
             <h3>Example 11: Show data from source given by URL</h3>
             <p>The datasource to show can also be given by URL parameter build from the id of the requestor and _data e.g. "present_example10_data". This way calling
                 pages to show data with custom datasources is easy to implement by create to pages with list components.
                 <br>First one with a list of all datasources, and second one that accepts the datasource by url.</p>
-            <a href="present/example10.html?present_example10_data=exampledata_gaps.json" target="_blank">Open example</a>
+            <a href="example10.html?present_example10_data=exampledata_gaps.json" target="_blank">Open example</a>
             <br><b>More examples:</b>
-            <br><a href="present/example10.html?present_example10_data=https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/rhein-kreis-neuss-windenergieanlagen/exports/json" target="_blank">Windenergieanlagen im Rhein-Neuss-Kreis</a>
+            <br><a href="example10.html?present_example10_data=https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/rhein-kreis-neuss-windenergieanlagen/exports/json" target="_blank">Windenergieanlagen im Rhein-Neuss-Kreis</a>
 
             <h3>Example 12: Sorting presentation with FilterSort plugin</h3>
             <p>Useing the FilterSort plugin, users can sort the datasets after each attribute.</p>
-            <a href="present/example12.html" target="_blank">See working example</a>
+            <a href="example12.html" target="_blank">See working example</a>
 
             <h3>Example 13: Filter presentation with FilterSort plugin</h3>
             <p>Useing the FilterSort plugin, users can filter the datasets.</p>
-            <a href="present/example13.html" target="_blank">See working example</a>
+            <a href="example13.html" target="_blank">See working example</a>
 
             <h3>Example 14: Useing hiearchical template</h3>
             <p>This example shows how to use the hieararchical template for showing hierarchical data.</p>
-            <a href="present/example14.html" target="_blank">See working example</a>
+            <a href="example14.html" target="_blank">See working example</a>
             <p></p>
             
         </article>
         <footer>
-            <a href="about/privacy.html">Privacy policy / Datenschutzerklärung</a>
-            <a href="about/imprint.html">Imprint / Impressum</a>
+            <a href="/sites/about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="/sites/about/imprint.html">Imprint / Impressum</a>
             <a class="toplink" href="#">Top</a>
         </footer>
     </body>
