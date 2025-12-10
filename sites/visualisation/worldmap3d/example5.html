@@ -4,20 +4,20 @@
         <title>SWAC - worldmap component - Example 5: Useing worldmap and geolocation components together</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="icon" type="image/png" sizes="32x32" href="../../files/icons/32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../../files/icons/16x16.png">
-        <link rel="stylesheet" type="text/css" href="../../css/global.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
         <noscript>
-        <link rel="stylesheet" type="text/css" href="../../css/noscript.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/noscript.css">
         </noscript>
 
         <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
-        <script src="../../js/visualmodel/worldmap_example5.js"></script>
+        <script src="../../../js/visualisation/worldmap3d/example5.js"></script>
     </head>
     <body>
-        <header id="head_navigation" swa="Navigation FROM ../../data/routes.json"></header>
+        <header id="head_navigation" swa="Navigation FROM ../../../data/routes.json"></header>
         <noscript>
         <div class="noscript_nav">
             <a href="../sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
@@ -25,10 +25,22 @@
         </div>
         </noscript>
 
-        <h3>Example 5: Useing worldmap and geolocation components together</h3>
-        <div id="worldmap" swa="Worldmap"></div>
+        <h3>Example 5: Useing worldmap3d and geolocation components together</h3>
+        <div id="worldmap3d" swa="Worldmap3d"></div>
         <div id="worldmap_geolocate" swa="Geolocation"></div>
 
+        <fieldset>
+            <legend>VIEW-Requestor</legend>
+            <pre><code class="lang-javascript">
+document.addEventListener('swac_components_complete', function () {
+  window.swac.reactions.addReaction(function(requestors){
+    let worldmap3dComp = requestors['worldmap3d'].swac_comp;
+    requestors['worldmap3d_geolocate'].swac_comp.options.onLocateFunctions[0] = worldmap3dComp.onUserLocation.bind(worldmap3dComp);
+  },'worldmap3d','worldmap3d_geolocate');
+});
+        </code></pre>
+        </fieldset>
+        
         <footer>
             <a href="../about/privacy.html">Privacy policy / Datenschutzerklärung</a>
             <a href="../about/imprint.html">Imprint / Impressum</a>

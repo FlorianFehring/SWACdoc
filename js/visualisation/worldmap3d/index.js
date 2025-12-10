@@ -1,3 +1,3 @@
 var explaincomponent_options = {
-  componentName: 'Worldmap',
+  componentName: 'Worldmap3d',
 }

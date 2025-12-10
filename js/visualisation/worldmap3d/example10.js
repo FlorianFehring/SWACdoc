@@ -1,5 +1,5 @@
 /* 
- * Configuration script for worldmap_example10
+ * Configuration script for worldmap3d_example10
  */
 
 var worldmap_options = {};

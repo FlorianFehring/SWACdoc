@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SWAC - worldmap3d component</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
+        <noscript>
+        <link rel="stylesheet" type="text/css" href="../../../css/noscript.css">
+        </noscript>
+
+        <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
+        <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
+        <script src="/SWAC/swac/swac.js" type="module"></script>
+        <script src="../../../js/visualisation/worldmap3d/index.js"></script>
+    </head>
+    <body>
+        <header id="head_navigation" swa="Navigation FROM ../../../data/routes.json"></header>
+        <noscript>
+        <div class="noscript_nav">
+            <a href="../sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
+            <br>Bitte aktiviere Javascript, um die bestmögliche Ansicht zu haben. / Please activate Javascript for the best experience.
+        </div>
+        </noscript>
+
+        <article>
+            <div id="explaincomponent" swa="ExplainComponents"></div>
+
+            The Worldmap3d component can visualise data. It supports GLTF, GeoJson, 
+            3DGeoJson, Tilesets and visualisation of any json data that has a 
+            latitude and longitude information in it.
+
+            <h3>Example 1: Simple map</h3>
+            <a href="example1.html" target="_blank">Open example</a>
+
+            <h3>Example 2: Including data from cesium ion</h3>
+            <a href="example2.html" target="_blank">Open example</a>
+
+            <h3>Example 3: Visualising a geojson area</h3>
+            <a href="example3.html" target="_blank">Open example</a>
+
+            <h3>Example 4: Visualising complex geojson with useage of the description component</h3>
+            <a href="example4.html" target="_blank">Open example</a>
+
+            <h3>Example 5: Useing worldmap3d and geolocation components together</h3>
+            <a href="example5.html" target="_blank">Open example</a>
+
+            <h3>Example 6: Useing worldmap3d and search components together</h3>
+            <a href="example6.html" target="_blank">Open example</a>
+
+            <h3>Example 7: Useing SmartMonitoring datasource</h3>
+            <a href="example7.html" target="_blank">Open example</a>
+
+            <h3>Example 8: Useing zoomlevels and viewport requests</h3>
+            <a href="example8.html" target="_blank">Open example</a>
+
+            <h3>Example 9: Useing search for addresses</h3>
+            <a href="example9.html" target="_blank">Open example</a>
+
+            <h3>Example 10: Useing modelmenue plugin</h3>
+            <a href="example10.html" target="_blank">Open example</a>
+
+            <h3>Example 11: Useing 3D geojson</h3>
+            <a href="example11.html" target="_blank">Open example</a>
+
+            <h3>Example 13: Simple map with sattelite photo useage</h3>
+            <a href="example13.html" target="_blank">Open example</a>
+
+            <h3>Example 14: Visualising point data expanded to areas</h3>
+            <p>Visualising datasets that contain position information in its columns.</p>
+            <a href="example14.html" target="_blank">Open example</a>
+
+            <h3>Example 15: Visualising point data with more than one dataset per position</h3>
+            <p>When datasets with positioned data contains more than one dataset per 
+            position the data will be automatically stacked.
+            <br>Code is the same as in previous example, but the dataset contains
+            more than one dataset per position.</p>
+            <a href="example15.html" target="_blank">Open example</a>
+
+            <h3>Example 16: Visualising massive point data as density map</h3>
+            <p>This example visualises round about 68.000 datasets with anthropogenic 
+            co2 emission values, from a period of 12 month over a bounding rect 
+            including germany. The coloring options give a impression of value 
+            change over time. <br>But be aware this causes havy browser load.</p>
+            <a href="example16.html" target="_blank">Open example</a>
+
+            <h3>Example 17: Visualising timed data with timeline</h3>
+            <p>Visualising datasets that have time information with use of timeline.</p>
+            <a href="example17.html" target="_blank">Open example</a>
+            
+        </article>
+        <footer>
+            <a href="../about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="../about/imprint.html">Imprint / Impressum</a>
+            <a class="toplink" href="#">Top</a>
+        </footer>
+    </body>
+</html>

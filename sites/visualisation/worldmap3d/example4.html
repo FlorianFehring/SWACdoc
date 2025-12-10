@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SWAC - worldmap component - Example 4: Visualising a complex geojson with useage of the description component</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
+        <noscript>
+        <link rel="stylesheet" type="text/css" href="../../../css/noscript.css">
+        </noscript>
+
+        <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
+        <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
+        <script src="/SWAC/swac/swac.js" type="module"></script>
+        <script src="../../../js/visualisation/worldmap3d/example4.js"></script>
+    </head>
+    <body>
+        <header id="head_navigation" swa="Navigation FROM ../../../data/routes.json"></header>
+        <noscript>
+        <div class="noscript_nav">
+            <a href="../sitemap.html" class="uk-button uk-button-primary">Sitemap</a>
+            <br>Bitte aktiviere Javascript, um die bestmögliche Ansicht zu haben. / Please activate Javascript for the best experience.
+        </div>
+        </noscript>
+
+        <h3>Example 4: Visualising a complex geojson with useage of the description component</h3>
+
+        <div uk-grid>
+            <div class="uk-width-expand@m">
+                <div id="worldmap3d" swa="Worldmap3d"></div>
+            </div>
+            <div>
+                <div id="worldmap3d_legend" swa="Datadescription FROM worldmap_legend_data"></div>
+            </div>
+        </div>
+
+        <fieldset>
+            <legend>VIEW-Requestor</legend>
+            <pre><code class="lang-javascript">
+var worldmap3d_options = {};
+worldmap3d_options.datasources = [];
+
+window.onload = function (evt) {
+   worldmap3d_options.datasources[0] = {
+      url: '../data/worldmap3d/example4/thermischewirkungen.geojson',
+      fillColor: 'yellow', // Default color of models (white if no setting is given)
+      outlineColor: 'blue', // Default color of models border (black if no setting is given)
+      outlineWidth: 10, // Width of the outline (1 if no setting is given)
+      extrudeHeight: 10, // Default height of models
+//        fillColorProperty: 'Coloring property name', // Property from data that should be used as color for the model
+//        outlineColorProperty: 'Border coloring property name', // Property from data that should be used as color for the models outline
+      extrudeHeightProperty: 'PHK_class', // Property from data that should be used for calculating the height
+      datacaptionProperty: 'PHK_text', // Property from data that should be used for model caption
+      datadescription: document.getElementById('worldmap3d_legend'),
+      zoomTo: false
+   };
+};
+
+// Options defining WHAT is visualised
+worldmap3d_legend_options = {};
+worldmap3d_legend_options.visuAttribute = 'PHK_class';
+// Data defining HOW is visualised
+worldmap3d_legend_data = {};
+worldmap3d_legend_data.PHK_class = {};
+worldmap3d_legend_data.PHK_class.values = {};
+worldmap3d_legend_data.PHK_class.values['1'] = {};
+worldmap3d_legend_data.PHK_class.values['1'].col = '0xAA00A5FF';
+worldmap3d_legend_data.PHK_class.values['2'] = {};
+worldmap3d_legend_data.PHK_class.values['2'].col = '0xAA4763FF';
+worldmap3d_legend_data.PHK_class.values['3'] = {};
+worldmap3d_legend_data.PHK_class.values['3'].col = '0xAA8080F0';
+worldmap3d_legend_data.PHK_class.values['4'] = {};
+worldmap3d_legend_data.PHK_class.values['4'].col = '0xAA3C14DC';
+worldmap3d_legend_data.PHK_class.values['5'] = {};
+worldmap3d_legend_data.PHK_class.values['5'].col = '0xAA0000FF';
+worldmap3d_legend_data.PHK_class.values['6'] = {};
+worldmap3d_legend_data.PHK_class.values['6'].col = '0x7700FF00';
+worldmap3d_legend_data.PHK_class.values['7'] = {};
+worldmap3d_legend_data.PHK_class.values['7'].col = '0x777CFC00';
+worldmap3d_legend_data.PHK_class.values['8'] = {};
+worldmap3d_legend_data.PHK_class.values['8'].col = '0x7790EE90';
+worldmap3d_legend_data.PHK_class.values['9'] = {};
+worldmap3d_legend_data.PHK_class.values['9'].col = '0x77228B22';
+worldmap3d_legend_data.PHK_class.values['10'] = {};
+worldmap3d_legend_data.PHK_class.values['10'].col = '0x77006400';
+        </code></pre>
+        </fieldset>
+
+        <footer>
+            <a href="../about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="../about/imprint.html">Imprint / Impressum</a>
+            <a class="toplink" href="#">Top</a>
+        </footer>
+    </body>
+</html>
