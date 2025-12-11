@@ -15,7 +15,7 @@ worldmap_options.plugins.set('modelmenue', {
 worldmap_options.datasources = [];
 window.onload = function (evt) {
     worldmap_options.datasources[0] = {
-        url: '../data/worldmap/example11/3dhouse.geojson',
+        url: '../data/worldmap3d/example11/3dhouse.geojson',
         fillColor: '0x67ADDFFF', // Default color of models (white if no setting is given)
         outlineColor: 'black', // Default color of models border (black if no setting is given)
         outlineWidth: 1, // Width of the outline (1 if no setting is given)
