@@ -1,8 +1,10 @@
-var explaincomponent_options = {
+window['explaincomponent_options'] = {
     componentName: 'Select'
 };
 
-var select_example1_options = {showWhenNoData: true};
+window['select_example1_options'] = {
+    showWhenNoData: true
+};
 
 // Example 6
 let onChangeFunc = function (evt) {
@@ -15,20 +17,43 @@ let onChangeFunc = function (evt) {
     alert(msg);
 };
 
-var select_example6_select_options = {onChange: onChangeFunc};
-var select_example6_multiselect_options = {onChange: onChangeFunc};
-var select_example6_checkboxes_options = {onChange: onChangeFunc};
-var select_example6_datalist_options = {onChange: onChangeFunc};
+window['select_example6_select_options'] = {
+    onChange: onChangeFunc
+};
+
+window['select_example6_multiselect_options'] = {
+    onChange: onChangeFunc
+};
+
+window['select_example6_checkboxes_options'] = {
+    onChange: onChangeFunc
+};
+
+window['select_example6_datalist_options'] = {
+    onChange: onChangeFunc
+};
+
 
 // Example 7
 let selectedsDataRequestor = {
     fromName: '../../data/input/select/exampleSelecteds.json'
 };
 
-var select_example7_select_options = {selectedsSource: selectedsDataRequestor};
-var select_example7_multiselect_options = {selectedsSource: selectedsDataRequestor};
-var select_example7_checkboxes_options = {selectedsSource: selectedsDataRequestor};
-var select_example7_datalist_options = {selectedsSource: selectedsDataRequestor};
+window['select_example7_select_options'] = {
+    selectedsSource: selectedsDataRequestor
+};
+
+window['select_example7_multiselect_options'] = {
+    selectedsSource: selectedsDataRequestor
+};
+
+window['select_example7_checkboxes_options'] = {
+    selectedsSource: selectedsDataRequestor
+};
+
+window['select_example7_datalist_options'] = {
+    selectedsSource: selectedsDataRequestor
+};
 
 // Example 9
 let expandSourcesMap = new Map();
@@ -44,7 +69,7 @@ expandSourcesMap.set('../../data/input/select/exampleHierarchical.json', {
     }
 });
 
-var select_example9_checkboxes_options = {
+window['select_example9_checkboxes_options'] = {
     expandSources: expandSourcesMap,
     onChange: onChangeFunc
 };
@@ -65,7 +90,7 @@ expandSourcesMap10.set('../../data/input/select/exampleHierarchical.json', {
     }
 });
 
-var select_example10_checkboxes_options = {
+window['select_example10_checkboxes_options'] = {
     expandSources: expandSourcesMap10,
     onChange: onChangeFunc
 };
