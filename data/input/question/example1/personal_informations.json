@@ -5,7 +5,7 @@
             "name": "Ihre Daten",
             "question": "Wir möchten ein wenig über Sie erfahren.",
             "type": "group",
-            "target": "ref://../../data/input/question/savetarget_persons.json"
+            "target": "ref://../../../data/input/question/example1/savetarget_persons.json"
         },
         {
             "id": 2,
@@ -58,7 +58,7 @@
             "name": "Ihre Veranstaltung",
             "question": "Wählen Sie ihre Veranstaltung aus",
             "type": "group",
-            "target": "ref://../../data/input/question/savetarget_events.json"
+            "target": "ref://../../../data/input/question/example1/savetarget_events.json"
         },
         {
             "id": 7,
