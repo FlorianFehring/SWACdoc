@@ -37,7 +37,6 @@
 {"id": 66, "rfrom": "*", "rto": "input/question.html", "name": "Question", "parent": 60},
 {"id": 67, "rfrom": "*", "rto": "input/upload.html", "name": "Upload", "parent": 60},
 {"id": 68, "rfrom": "*", "rto": "input/comments/index.html", "name": "Comments", "parent": 60},
-{"id": 69, "rfrom": "*", "rto": "input/screenboard.html", "name": "ScreenBoard", "parent": 60},
 {"id": 70, "rfrom": "*", "rto": "input/labeling.html", "name": "Labeling", "parent": 60},
 {"id": 71, "rfrom": "*", "rto": "input/jsonreader.html", "name": "JsonReader", "parent": 60},
 
@@ -54,6 +53,7 @@
 {"id": 90, "rfrom": "*", "rto": "userinterface/speech.html", "name": "Speech", "parent": 80},
 {"id": 91, "rfrom": "*", "rto": "userinterface/dashboard.html", "name": "Dashboard", "parent": 80},
 {"id": 92, "rfrom": "*", "rto": "userinterface/favourites.html", "name": "Favourites", "parent": 80},
+{"id": 93, "rfrom": "*", "rto": "userinterface/screenboard/index.html", "name": "ScreenBoard", "parent": 80},
 
 {"id": 100, "rfrom": "*", "rto": "#", "name": "Media Components:"},
 {"id": 101, "rfrom": "*", "rto": "media/download.html", "name": "Download", "parent": 100},
