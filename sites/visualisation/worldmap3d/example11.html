@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>SWAC - worldmap component - Example 11: 3D geojson</title>
+        <title>SWAC - Worldmap3d component - Example 11: 3D geojson</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
@@ -15,6 +15,7 @@
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
         <script src="../../../js/visualisation/worldmap3d/example11.js"></script>
+        <!-- <script> window.CESIUM_BASE_URL = '/Cesium/';</script>-->
     </head>
     <body>
         <header id="head_navigation" swa="Navigation FROM ../../../data/routes.json"></header>
@@ -28,10 +29,10 @@
         <h3>Example 11: 3D geojson</h3>
         <div uk-grid>
             <div class="uk-width-expand@m">
-                <div id="worldmap" swa="Worldmap"></div>
+                <div id="worldmap3d" swa="Worldmap3d"></div>
             </div>
             <div>
-                <div id="worldmap_legend" swa="Datadescription FROM worldmap_legend_data"></div>
+                <div id="worldmap3d_legend" swa="Datadescription FROM worldmap_legend_data"></div>
             </div>
         </div>
 
