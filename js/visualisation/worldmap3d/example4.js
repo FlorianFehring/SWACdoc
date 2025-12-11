@@ -7,7 +7,7 @@ worldmap_options.datasources = [];
 
 window.onload = function (evt) {
     worldmap_options.datasources[0] = {
-        url: '../data/worldmap/example4/thermischewirkungen.geojson',
+        url: '../data/worldmap3d/example4/thermischewirkungen.geojson',
         fillColor: 'yellow', // Default color of models (white if no setting is given)
         outlineColor: 'blue', // Default color of models border (black if no setting is given)
         outlineWidth: 10, // Width of the outline (1 if no setting is given)

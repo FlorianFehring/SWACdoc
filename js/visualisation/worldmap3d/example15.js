@@ -9,7 +9,7 @@ worldmap_options.datasources = [];
 
 window.onload = function (evt) {
     worldmap_options.datasources[0] = {
-        url: '../data/worldmap/example15/co2timed.json',
+        url: '../data/worldmap3d/example15/co2timed.json',
         latattr: 'latitude',// Name of the attribute that stores the latitude information
         lonattr: 'longitude', // Name of the attribute that stores the longitude information
         heightattr: null, // Name of the attribute that stores the height information (null is default, clamps to ground)

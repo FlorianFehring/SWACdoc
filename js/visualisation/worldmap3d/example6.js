@@ -9,11 +9,11 @@ document.addEventListener('swac_components_complete', function () {
         // Register searchsources
         searchcomp.addSearchsource({
             type: 'SearchProviderFile',
-            url: '/SWAC/data/worldmap/example6/{expression}.glb'
+            url: '/SWAC/data/worldmap3d/example6/{expression}.glb'
         });
         searchcomp.addSearchsource({
             type: 'SearchProviderFile',
-            url: '/SWAC/data/worldmap/example6/{expression}.geojson'
+            url: '/SWAC/data/worldmap3d/example6/{expression}.geojson'
         });
         searchcomp.addSearchsource({
             type: 'SearchProviderRest',
@@ -27,8 +27,8 @@ document.addEventListener('swac_components_complete', function () {
         searchcomp.options.searchresultentrymakers[1].setOnClickEventListener(Worldmap.onClickSearchResult);
         searchcomp.options.searchresultentrymakers[2] = new SearchEntryMakerHid();
         searchcomp.options.searchresultentrymakers[2].setOnClickEventListener(Worldmap.onClickSearchResult);
-        searchcomp.options.searchresultentrymakers[2].groundpath = '/SWAC/data/worldmal/example6/{hid}.geojson';
-        searchcomp.options.searchresultentrymakers[2].modelpath = '/SWAC/data/worldmap/example6/{hid}.glb';
+        searchcomp.options.searchresultentrymakers[2].groundpath = '/SWAC/data/worldmap3d/example6/{hid}.geojson';
+        searchcomp.options.searchresultentrymakers[2].modelpath = '/SWAC/data/worldmap3d/example6/{hid}.glb';
 
         // Register search on worldmap
         worldmapcomp.options.searchComp = searchcomp;
