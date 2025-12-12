@@ -2,7 +2,9 @@ var explaincomponent_options = {
     componentName: 'Select'
 };
 
-var select_example1_options = {showWhenNoData: true};
+window['select_example1_options'] = {
+    showWhenNoData: true
+};
 
 // Example 6
 let onChangeFunc = function (evt) {
