@@ -1,9 +1,10 @@
 // Example 10: Give a set of possible values
-var edit_example10_options = {
+window['edit_example10_options'] = {
     allowAdd: true,
     definitions: new Map()
 };
-edit_example10_options.definitions.set("input/edit/example10.json", [
+
+window['edit_example10_options'].definitions.set("input/edit/example10.json", [
     {
         name: 'name',
         type: 'string'

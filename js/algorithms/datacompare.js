@@ -1,4 +1,4 @@
-var DataCompare_options = {
+window['DataCompare_options'] = {
     excludeCompareAttrs: ['id','parent'],
     mainSource: '../../data/datacompare/datacompare_exampleA_A.json'
 };
