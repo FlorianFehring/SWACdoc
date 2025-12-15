@@ -1,8 +1,8 @@
-var explaincomponent_options = {
+window['explaincomponent_options'] = {
     componentName: 'Contentin'
 };
 
-var contentin_example1_options = {
+window['contentin_example1_options'] = {
     sourcedefs: [
         {
             id: 1,

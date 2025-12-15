@@ -1,13 +1,15 @@
-var explaincomponent_options = {
+window['explaincomponent_options'] = {
     componentName: 'Mapselect'
 };
+
 // Example 2
-var mapselect_example2_options = {
+window['mapselect_example2_options'] = {
     multiple: true
 };
 
+
 // Example 4
-var mapselect_example4_options = {
+window['mapselect_example4_options'] = {
     dataRequestor: {
         fromName: "../data/mapselect/examplegeodata.json",
         fromWheres: {
@@ -42,9 +44,9 @@ window.onload = function (evt) {
 };
 
 // Example 5
-var mapselect_example5_options = {
+window['mapselect_example5_options'] = {
     // Function to use as long the user has no table choosen
-    onSelectMethod : function (evt) {
+    onSelectMethod: function (evt) {
         let tablesel = document.querySelector('#selectTableNames');
         let inputs = tablesel.swac_comp.getInputs();
 
@@ -60,10 +62,11 @@ var mapselect_example5_options = {
                 filter: 'column_name,sib,{min_x},{min_y},{max_x},{max_y},3857,3035'
             }
         };
-        
+
         this.onSelectFetch(evt);
     }
 };
+
 // Options for the table selection Select component
-var selectTableNames_options = {};
-selectTableNames_options.showWhenNoData = true;
+window['selectTableNames_options'] = {};
+window['selectTableNames_options'].showWhenNoData = true;

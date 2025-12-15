@@ -1,8 +1,8 @@
-var explaincomponent_options = {
+window['explaincomponent_options'] = {
     componentName: 'Texteditor'
 };
 
-var texteditor_example2_options = {
+window['texteditor_example2_options'] = {
     tinymcePlugins: 'emoticons',
     tinymceToolbar: 'emoticons'
 };

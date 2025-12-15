@@ -1,4 +1,4 @@
-var speech_example4_options = {
+window['speech_example4_options'] = {
     lang: 'de-DE',
     startword: 'Computer',
     sources: [{

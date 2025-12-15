@@ -1,9 +1,9 @@
-var explaincomponent_options = {
+window['explaincomponent_options'] = {
     componentName: 'Search'
 };
 
 // Example 1
-search_example1_options = {
+window['search_example1_options'] = {
     searchsources: [
         {
             type: 'SearchProviderFile',
@@ -13,7 +13,7 @@ search_example1_options = {
 };
 
 // Example 2
-search_example2_options = {
+window['search_example2_options'] = {
     searchsources: [
         {
             type: 'SearchProviderRest',
@@ -23,7 +23,7 @@ search_example2_options = {
 };
 
 // Example 3
-search_example3_options = {
+window['search_example3_options'] = {
     searchsources: [
         {
             type: 'SearchProviderRest',
@@ -48,7 +48,7 @@ document.addEventListener('swac_components_complete', function () {
 });
 
 // Example 4
-search_example4_options = {
+window['search_example4_options'] = {
     searchsources: [
         {
             type: 'SearchProviderRest',
@@ -84,7 +84,7 @@ document.addEventListener('swac_components_complete', function () {
 });
 
 // Example 5
-search_example5_options = {
+window['search_example5_options'] = {
     searchsources: [
         {
             type: 'SearchProviderRest',
@@ -132,7 +132,7 @@ document.addEventListener('swac_components_complete', function () {
 });
 
 // Example 6
-search_example6_options = {
+window['search_example6_options'] = {
     searchsources: [
         {
             type: 'SearchProviderRest',
@@ -147,10 +147,10 @@ document.addEventListener('swac_components_complete', function () {
         // Register searchEntryMaker
         searchcomp.options.searchresultentrymakers = [];
         searchcomp.options.searchresultentrymakers[0] = new SearchEntryMakerDatasource({
-            nameAttrs: ['name','title'],        // Name of the attribute that holds the title
+            nameAttrs: ['name', 'title'], // Name of the attribute that holds the title
             descAttrs: ['description', 'desc'], // Name of the attribut that holds the description
-            urlAttrs: ['url'],                  // Attribute names where to find the url
-            knowntypesonly: false,               // Show results with unsupported file types, too
+            urlAttrs: ['url'], // Attribute names where to find the url
+            knowntypesonly: false, // Show results with unsupported file types, too
             importurl: '/SmartFile/smartfile/download?filespace=test&url=%url%&type=%type%',
             mapurl: '/SWAC/sites/visualisation/worldmap2d_example21.html?modelurl=%url%&type=%type%',
             listurl: '/SWAC/sites/visualisation/present_example10.html?url=%url%&type=%type%'

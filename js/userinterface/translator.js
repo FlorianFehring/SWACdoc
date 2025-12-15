@@ -1,7 +1,7 @@
-var explaincomponent_options = {
+window['explaincomponent_options'] = {
     componentName: 'Translator'
 };
 
-var translate_example1_options = {
+window['translate_example1_options'] = {
     contentlang: 'en'
 };

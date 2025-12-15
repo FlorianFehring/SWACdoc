@@ -1,4 +1,4 @@
-var speech_example2_options = {
+window['speech_example2_options'] = {
     lang: 'de-DE', // Sprache des Computers
     startword: 'Computer', // Auf diesen Namen hört der Computer
     commands: {

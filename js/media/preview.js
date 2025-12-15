@@ -1,3 +1,3 @@
-var explaincomponent_options = {
-  componentName: 'Mediapreview',
-}
+window['explaincomponent_options'] = {
+  componentName: 'Mediapreview'
+};

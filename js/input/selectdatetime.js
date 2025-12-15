@@ -1,16 +1,16 @@
-var explaincomponent_options = {
+window['explaincomponent_options'] = {
     componentName: 'Selectdatetime'
 };
 
-selectdatetime_example2_options = {
+window['selectdatetime_example2_options'] = {
     timepicker: false
 };
 
-selectdatetime_example3_options = {
+window['selectdatetime_example3_options'] = {
     datepicker: false
 };
 
-selectdatetime_example4_options = {
+window['selectdatetime_example4_options'] = {
     actualTimeForEmpty: true,
     reloadInterval: 5
 };
