@@ -1,0 +1,10 @@
+[
+    {
+        "swac_lng": "de",
+        "swac_files": ["data/visualisation/datadescription/example2/de.json"]
+    },
+    {
+        "swac_lng": "en",
+        "swac_files": ["data/visualisation/datadescription/example2/en.json"]
+    }
+]

@@ -1,0 +1,39 @@
+{
+    "sourcename": "source_name",
+    "sourcelink": "source_link",
+    "doubleval": {
+        "txt_title": "doubleval_title",
+        "txt_desc": "doubleval_desc",
+        "txt_uknw": "doubleval_unknown",
+        "col": "blue",
+        "values": {
+            "92.0123": {
+                "txt": "doubleval_value_low",
+                "col": "green"
+            },
+            "519.0234": {
+                "txt": "doubleval_value_mid",
+                "col": "yellow"
+            },
+            "1042.0345": {
+                "txt": "doubleval_value_hight",
+                "col": "red"
+            }
+        }
+    },
+    "stringval": {
+        "txt_title": "strings_title",
+        "txt_desc": "strings_desc",
+        "col": "red",
+        "values": {
+            "string": {
+                "txt": "strings_value_first",
+                "col": "green"
+            },
+            "string2": {
+                "txt": "strings_value_second",
+                "col": "yellow"
+            }
+        }
+    }
+}

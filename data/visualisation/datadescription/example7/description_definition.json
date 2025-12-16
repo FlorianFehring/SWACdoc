@@ -1,0 +1,27 @@
+{
+    "doubleval": {
+        "txt_title": "DoubleWert",
+        "txt_desc": "Ein Wert mit double Genauigkeit",
+        "txt_uknw": "Es wurde kein Wert angegeben",
+        "col": "blue",
+        "calcmode": "gradient",
+        "values": {
+            "10": {
+                "txt": "ein niedriger Wert",
+                "col": "#008000"
+            },
+            "100": {
+                "txt": "ein mittelniedriger Wert",
+                "col": "#0000FF"
+            },
+            "1000": {
+                "txt": "ein mittelhoher Wert",
+                "col": "#FFFF00"
+            },
+            "10000": {
+                "txt": "ein hoher Wert",
+                "col": "#FF0000"
+            }
+        }
+    }
+}
