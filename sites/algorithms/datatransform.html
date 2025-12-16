@@ -41,7 +41,7 @@
                 <dd>New value is calcualted by function. The function gets the original and transformed set as parameter.</dd>
             </dl>
             <pre><code class="lang-javascript">
-var DataTransform_example1_options = {
+    window['DataTransform_example1_options'] = {
     ignoredAttributes: ['id','parent'],  //Attributes listet here are not transformed and not transfered
     transformTarget: 'datatransform_example2_watchablesource', //Save the data in the named storage to inform watchers of these on data change
     transforms: {
@@ -122,7 +122,7 @@ document.addEventListener('swac_components_complete', function () {
 // Empty source where booth componente share their data
 var datatransform_example2_watchablesource = [];
 // Because the source is empty at load time set the view to always visable
-var datatransform_example2_view_options = {
+window['datatransform_example2_view_options'] = {
     showWhenNoData: true
 };
 ...

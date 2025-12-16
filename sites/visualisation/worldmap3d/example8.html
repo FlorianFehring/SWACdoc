@@ -24,10 +24,10 @@
         <fieldset>
             <legend>VIEW-Requestor</legend>
             <pre><code class="lang-javascript">
-var worldmap3d_options = {};
-worldmap3d_options.model_zoomlevels = [];
+window['worldmap3d_options'] = {};
+window['worldmap3d_options'].model_zoomlevels = [];
 window.onload = function (evt) {
-    worldmap3d_options.model_zoomlevels[0] = {
+    window['worldmap3d_options'].model_zoomlevels[0] = {
         below: 5000,
         hidurl: '/GeodataREST/geodataapi/building/ids/listByViewport?northlimit={northlat}&southlimit={southlat}&eastlimit={eastlon}&westlimit={westlon}',
         modelurl: '/SWAC/data/worldmap3d/example8/{hid}.geojson',
@@ -41,7 +41,7 @@ window.onload = function (evt) {
         datacaptionProperty: 'pv_wall', // Property from data that should be used for model caption
         datadescription: document.getElementById('worldmap3d_legend')
     };
-    worldmap3d_options.model_zoomlevels[1] = {
+    window['worldmap3d_options'].model_zoomlevels[1] = {
          below: 400,
          hidurl: '/GeodataREST/geodataapi/building/ids/listByViewport?northlimit={northlat}&southlimit={southlat}&eastlimit={eastlon}&westlimit={westlon}',
          modelurl: '/SWAC/data/worldmap3d/example8/{hid}.glb',
@@ -50,8 +50,9 @@ window.onload = function (evt) {
 };
 
 // Options defining WHAT is visualised
-worldmap3d_legend_options = {};
-worldmap3d_legend_options.visuAttribute = 'pv_wall';
+window['worldmap3d_legend_options'] = {};
+window['worldmap3d_legend_options'].visuAttribute = 'pv_wall';
+
 worldmap3d_legend_data = {};
 worldmap3d_legend_data.pv_wall = {};
 worldmap3d_legend_data.pv_wall.txt_title = 'Wand-Photovoltaik';

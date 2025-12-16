@@ -29,15 +29,15 @@
         <fieldset>
             <legend>VIEW-Requestor</legend>
             <pre><code class="lang-javascript">
-var worldmap3d_options = {};
-worldmap3d_options.plugins = new Map();
-worldmap3d_options.plugins.set('modelmenue', {
+window['worldmap3d_options'] = {};
+window['worldmap3d_options'].plugins = new Map();
+window['worldmap3d_options'].plugins.set('modelmenue', {
     id: 'modelmenue',
     active: true
 });
 window.onload = function (evt) {
-    worldmap3d_options.datasources = [];
-    worldmap3d_options.datasources[0] = {
+    window['worldmap3d_options'].datasources = [];
+    window['worldmap3d_options'].datasources[0] = {
         url: '../../data/worldmap3d/example6/house.glb',
         fillColor: '0x67ADDFFF', // Default color of models (white if no setting is given)
         outlineColor: 'blue', // Default color of models border (black if no setting is given)
@@ -49,8 +49,9 @@ window.onload = function (evt) {
 };
 
 // Options defining WHAT is visualised
-worldmap3d_legend_options = {};
-worldmap3d_legend_options.visuAttribute = 'pv_wall';
+window['worldmap3d_legend_options'] = {};
+window['worldmap3d_legend_options'].visuAttribute = 'pv_wall';
+
 worldmap3d_legend_data = {};
 worldmap3d_legend_data.pv_wall = {};
 worldmap3d_legend_data.pv_wall.txt_title = 'Wand-Photovoltaik';

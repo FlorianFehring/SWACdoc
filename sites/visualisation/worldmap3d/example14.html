@@ -31,13 +31,13 @@
         <fieldset>
             <legend>VIEW-Requestor</legend>
             <pre><code class="lang-javascript">
-var worldmap3d_options = {
+window['worldmap3d_options'] = {
     showTimedDataAtOnce: true
 };
-worldmap3d_options.datasources = [];
+window['worldmap3d_options'].datasources = [];
 
 window.onload = function (evt) {
-    worldmap3d_options.datasources[0] = {
+    window['worldmap3d_options'].datasources[0] = {
         url: '../../data/worldmap3d/example14/co2timed.json',
         latattr: 'latitude', // Name of the attribute that stores the latitude information
         lonattr: 'longitude', // Name of the attribute that stores the longitude information
