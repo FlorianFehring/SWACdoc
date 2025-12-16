@@ -1,4 +1,4 @@
-var present_example7_options = {
+window['present_example7_options'] = {
     lazyLoading: 5
 };
 

@@ -1,4 +1,4 @@
-var worldmap2d_example7_options = {
+window['worldmap2d_example7_options'] = {
     // Add shapefile sa model
     modelFiles: [{
             url: '../../../data/visualisation/worldmap2d_3d/example7/congress.zip',

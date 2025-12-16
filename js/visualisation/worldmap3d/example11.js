@@ -2,19 +2,21 @@
  * Configuration script for worldmap_example2 includeing data from worldmap ion
  */
 
-var worldmap_options = {};
-worldmap_options.plugins = new Map();
-worldmap_options.plugins.set('modelmenue', {
+window['worldmap_options'] = {};
+window['worldmap_options'].plugins = new Map();
+window['worldmap_options'].plugins.set('modelmenue', {
     id: 'modelmenue',
     active: true
 });
-//worldmap_options.ionAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJhMzJiZjEzOS05ZWI0LTRhMzEtOGQyZC05ZGQzYzIwY2EzMDIiLCJpZCI6MTUxNSwiaWF0IjoxNTI4ODA0Mzg1fQ.xHuoWaJsRIuvXJ7_-bxVoGVxDgilCddv0jz8ajltRNI';
-//worldmap_options.ionassets = [];
-//worldmap_options.ionassets[0] = 19199;
 
-worldmap_options.datasources = [];
+//window['worldmap_options'].ionAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJhMzJiZjEzOS05ZWI0LTRhMzEtOGQyZC05ZGQzYzIwY2EzMDIiLCJpZCI6MTUxNSwiaWF0IjoxNTI4ODA0Mzg1fQ.xHuoWaJsRIuvXJ7_-bxVoGVxDgilCddv0jz8ajltRNI';
+//window['worldmap_options'].ionassets = [];
+//window['worldmap_options'].ionassets[0] = 19199;
+
+window['worldmap_options'].datasources = [];
+
 window.onload = function (evt) {
-    worldmap_options.datasources[0] = {
+    window['worldmap_options'].datasources[0] = {
         url: '../data/worldmap3d/example11/3dhouse.geojson',
         fillColor: '0x67ADDFFF', // Default color of models (white if no setting is given)
         outlineColor: 'black', // Default color of models border (black if no setting is given)
@@ -23,7 +25,7 @@ window.onload = function (evt) {
         datacaptionProperty: 'globalc', // Property from data that should be used for model caption
         datadescription: document.getElementById('worldmap_legend')
     };
-//    worldmap_options.datasources[1] = {
+//    window['worldmap_options'].datasources[1] = {
 //        url: '../data/worldmap3d_example11-2.geojson',
 //        fillColor: '0x67ADDFFF', // Default color of models (white if no setting is given)
 //        outlineColor: 'black', // Default color of models border (black if no setting is given)
@@ -32,7 +34,7 @@ window.onload = function (evt) {
 //        datacaptionProperty: 'globalc', // Property from data that should be used for model caption
 //        datadescription: document.getElementById('worldmap_legend')
 //    };
-//    worldmap_options.datasources[2] = {
+//    window['worldmap_options'].datasources[2] = {
 //        url: '../data/worldmap3d_example11-3.geojson',
 //        fillColor: '0x67ADDFFF', // Default color of models (white if no setting is given)
 //        outlineColor: 'black', // Default color of models border (black if no setting is given)
@@ -44,8 +46,9 @@ window.onload = function (evt) {
 };
 
 // Options defining WHAT is visualised
-worldmap_legend_options = {};
-worldmap_legend_options.visuAttribute = 'globalc';
+window['worldmap_legend_options'] = {};
+window['worldmap_legend_options'].visuAttribute = 'globalc';
+
 // Data defining HOW is visualised
 worldmap_legend_data = {};
 worldmap_legend_data.globalc = {};

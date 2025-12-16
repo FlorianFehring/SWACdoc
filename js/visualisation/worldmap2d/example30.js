@@ -1,4 +1,4 @@
-var worldmap2d_example30_options = {
+window['worldmap2d_example30_options'] = {
     zoom: 20,
     showTimedDataAtOnce: true,
     customIconOptions: {
@@ -20,28 +20,29 @@ var worldmap2d_example30_options = {
     datasources: new Map([
         ['../../../data/visualisation/worldmap2d_3d/example30/tbl_observedobject.json', {
             datacapsule: {
-                fromName: '../../../data/visualisation/worldmap2d_3d/example30/tbl_observedobject.json',
+                fromName: '../../../data/visualisation/worldmap2d_3d/example30/tbl_observedobject.json'
             },
             latitudeAttr: 'tbl_location.coordinates[0]',
-            longitudeAttr: 'tbl_location.coordinates[1]',
-        }],
-    ]),
+            longitudeAttr: 'tbl_location.coordinates[1]'
+        }]
+    ])
 
 };
 
-worldmap2d_example30_options.plugins = new Map();
-worldmap2d_example30_options.plugins.set('FilterMeasurementPoints', {
+window['worldmap2d_example30_options'].plugins = new Map();
+window['worldmap2d_example30_options'].plugins.set('FilterMeasurementPoints', {
     id: 'filtermeasurementpoints',
     active: true
 });
-worldmap2d_example30_options.plugins.set('Help', {
+window['worldmap2d_example30_options'].plugins.set('Help', {
     id: 'help',
     active: true
 });
 
-var filtermeasurementpoints_worldmap2d_example30_options = {
+window['filtermeasurementpoints_worldmap2d_example30_options'] = {
     typeDatasource: '../../../data/visualisation/worldmap2d_3d/example30/tbl_observedobject_type.json'
-}
+};
+
 
 
 

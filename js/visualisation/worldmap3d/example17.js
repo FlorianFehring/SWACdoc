@@ -2,13 +2,13 @@
  * Configuration script for worldmap_example4
  */
 
-var worldmap_options = {
+window['worldmap_options'] = {
     showTimedDataAtOnce: true
 };
-worldmap_options.datasources = [];
+window['worldmap_options'].datasources = [];
 
 window.onload = function (evt) {
-    worldmap_options.datasources[0] = {
+    window['worldmap_options'].datasources[0] = {
         url: '../data/worldmap3d/example15/co2timed.json',
         showTimedDataAtOnce: false,
         latattr: 'latitude',// Name of the attribute that stores the latitude information
@@ -33,8 +33,9 @@ window.onload = function (evt) {
 };
 
 // Options defining WHAT is visualised
-worldmap_legend_options = {};
-worldmap_legend_options.visuAttribute = 'co2';
+window['worldmap_legend_options'] = {};
+window['worldmap_legend_options'].visuAttribute = 'co2';
+
 // Data defining HOW is visualised
 worldmap_legend_data = {};
 worldmap_legend_data.co2 = {};

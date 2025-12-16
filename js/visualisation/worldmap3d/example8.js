@@ -2,10 +2,10 @@
  * Configuration script for worldmap_example7
  */
 
-var worldmap_options = {};
-worldmap_options.model_zoomlevels = [];
+window['worldmap_options'] = {};
+window['worldmap_options'].model_zoomlevels = [];
 window.onload = function (evt) {
-    worldmap_options.model_zoomlevels[0] = {
+    window['worldmap_options'].model_zoomlevels[0] = {
         below: 5000,
         hidurl: '/GeodataREST/geodataapi/building/ids/listByViewport?northlimit={northlat}&southlimit={southlat}&eastlimit={eastlon}&westlimit={westlon}',
         modelurl: '/SWAC/data/worldmap_example8/{hid}.geojson',
@@ -19,7 +19,7 @@ window.onload = function (evt) {
         datacaptionProperty: 'pv_wall', // Property from data that should be used for model caption
         datadescription: document.getElementById('worldmap_legend')
     };
-    worldmap_options.model_zoomlevels[1] = {
+    window['worldmap_options'].model_zoomlevels[1] = {
         below: 400,
         hidurl: '/GeodataREST/geodataapi/building/ids/listByViewport?northlimit={northlat}&southlimit={southlat}&eastlimit={eastlon}&westlimit={westlon}',
         modelurl: '/SWAC/data/worldmap_example8/{hid}.glb',
@@ -28,8 +28,8 @@ window.onload = function (evt) {
 };
 
 // Options defining WHAT is visualised
-worldmap_legend_options = {};
-worldmap_legend_options.visuAttribute = 'pv_wall';
+window['worldmap_legend_options'] = {};
+window['worldmap_legend_options'].visuAttribute = 'pv_wall';
 
 worldmap_legend_data = {};
 worldmap_legend_data.pv_wall = {};

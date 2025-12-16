@@ -2,15 +2,16 @@
  * Configuration script for worldmap3d_example10
  */
 
-var worldmap_options = {};
-worldmap_options.plugins = new Map();
-worldmap_options.plugins.set('modelmenue', {
+window['worldmap_options'] = {};
+window['worldmap_options'].plugins = new Map();
+window['worldmap_options'].plugins.set('modelmenue', {
     id: 'modelmenue',
     active: true
 });
+
 window.onload = function (evt) {
-    worldmap_options.datasources = [];
-    worldmap_options.datasources[0] = {
+    window['worldmap_options'].datasources = [];
+    window['worldmap_options'].datasources[0] = {
         url: '../data/worldmap3d/example6/house.glb',
         fillColor: '0x67ADDFFF', // Default color of models (white if no setting is given)
         outlineColor: 'blue', // Default color of models border (black if no setting is given)
@@ -22,8 +23,8 @@ window.onload = function (evt) {
 };
 
 // Options defining WHAT is visualised
-worldmap_legend_options = {};
-worldmap_legend_options.visuAttribute = 'pv_wall';
+window['worldmap_legend_options'] = {};
+window['worldmap_legend_options'].visuAttribute = 'pv_wall';
 
 worldmap_legend_data = {};
 worldmap_legend_data.pv_wall = {};

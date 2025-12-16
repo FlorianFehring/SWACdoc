@@ -1,3 +1,3 @@
-var explaincomponent_options = {
-  componentName: 'Worldmap2d',
-}
+window['explaincomponent_options'] = {
+  componentName: 'Worldmap2d'
+};

@@ -2,13 +2,13 @@
  * Configuration script for worldmap_example4
  */
 
-var worldmap_options = {
+window['worldmap_options'] = {
     showTimedDataAtOnce: true
 };
-worldmap_options.datasources = [];
+window['worldmap_options'].datasources = [];
 
 window.onload = function (evt) {
-    worldmap_options.datasources[0] = {
+    window['worldmap_options'].datasources[0] = {
         url: '../data/worldmap3d/example14_1/sealing.json',
         latattr: 'point_y',// Name of the attribute that stores the latitude information
         lonattr: 'point_x', // Name of the attribute that stores the longitude information

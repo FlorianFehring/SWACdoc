@@ -1,4 +1,4 @@
-var worldmap2d_example6_options = {
+window['worldmap2d_example6_options'] = {
     // Add geojson model file
     modelFiles: [
         {

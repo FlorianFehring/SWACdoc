@@ -1,4 +1,4 @@
-var worldmap2d_example9_options = {
+window['worldmap2d_example9_options'] = {
     modelFiles: [
         {
             url: '../../../data/visualisation/worldmap2d_3d/example6/stadtgebiet.geojson',
