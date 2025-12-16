@@ -1,0 +1,10 @@
+[
+    {
+        "swac_lng": "de",
+        "swac_files": ["data/userinterface/translator/example3/app_de.js"]
+    },
+    {
+        "swac_lng": "en",
+        "swac_files": ["data/userinterface/translator/example3/app_en.js"]
+    }
+]

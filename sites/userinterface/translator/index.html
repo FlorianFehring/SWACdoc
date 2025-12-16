@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SWAC - Translator component</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
+
+        <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
+        <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
+        <script src="/SWAC/swac/swac.js" type="module"></script>
+        
+        <script src="../../../js/userinterface/translator/index.js" type="module"></script>
+    </head>
+    <body>
+        <header id="head_navigation" swa="Navigation FROM routes.json"></header>
+        <article>
+            <div id="explaincomponent" swa="ExplainComponents"></div>
+            <p>Translator component translates page contents with help of language files.
+                <br>The choosen language is rememberd for the next users visit.</p>
+
+            <h2>Examples</h2>
+            <h3>Example 1: Include localisation tools</h3>
+            <p>Include the localisation tools and use the defined languages and translations files.
+                <br>Allows users to select their language and changes the gui language on the fly.</p>
+            <a href="example1.html" target="_blank">See working example</a>
+
+            <h3>Example 2: Mark contents as translateable with translation file</h3>
+            <p>By useing the swac_lang HTML attribute you can define the content of 
+                tags and attributes as translatebale. This example shows on which 
+                tags and attributes translation is useable.</p>
+            <a href="example2.html" target="_blank">See working example</a>
+
+            <h3>Example 3: Useing appwide language entries</h3>
+            <p>If you want to use a general translation without need to use a 
+                prefix, you can define an app language. This can be used to translate 
+                even attribute names.</p>
+            <a href="example3.html" target="_blank">See working example</a>
+            
+            <h3>Example 4: Change component language with Translator</h3>
+            <p>Many components come with their own language files and use language 
+            marks in their templates. With the Translator component these areas 
+            translated too.</p>
+            <a href="example4.html" target="_blank">See working example</a>
+
+            <h3>Example 5: Overwriting component default language entries with custom translations</h3>
+            <p>The translations delivered by the components can be overwritten. 
+                This example shows how.</p>
+            <a href="example5.html" target="_blank">See working example</a>
+
+            <h3>Example 6: Language dependend locale formats</h3>
+            <p>Format of numbers and dates can be different from country to country.
+                <br>This aspect can be held by the language files, too.</p>
+            <a href="example6.html" target="_blank">See working example</a>
+        </article>
+        <footer>
+            <a href="../about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="../about/imprint.html">Imprint / Impressum</a>
+            <a class="toplink" href="#">Top</a>
+        </footer>
+    </body>
+</html>

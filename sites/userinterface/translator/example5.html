@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SWAC - Translator - Example 5: Overwriting component default language entries with custom translations</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
+
+        <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
+        <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
+        <script src="/SWAC/swac/swac.js" type="module"></script>
+    </head>
+    <body>
+        <header id="head_navigation" swa="Navigation FROM routes.json"></header>
+        <article>
+            <br>
+            <h1>Example 5: Overwriting component default language entries with custom translations</h1>
+            <p>The translations delivered by the components can be overwritten. 
+                <br>Simply use in the app translation file the notation you would use in swac_lang attributes and define the new translation.</p>
+            <div id="translate_example5" swa="Translator FROM ../../../data/userinterface/translator/example5/translation_files.json"></div>
+
+            <div id="translator_example4_present" swa="Present FROM ../../../data/userinterface/translator/example4/example_datasets.json TEMPLATE table_per_dataset"></div>
+            
+            <fieldset>
+                <legend>VIEW-Requestor</legend>
+                <pre><code class="lang-html">
+&lt;div id="translator_example5" swa="Translator FROM ../../../data/userinterface/translator/example5/translation_files.json"&gt;&lt;/div&gt;
+        </code></pre>
+            </fieldset>
+            <fieldset>
+                <legend>CONFIGURATION</legend>
+                <p>There is no configuration needed.</p>
+            </fieldset>
+            <fieldset>
+                <legend>DATASOURCE</legend>
+                <div id="translator_example5_datasource" swa="Coder FROM ../../../data/userinterface/translator/example5/translation_files.json"></div>
+
+                <p>English translation file</p>
+                <div id="translator_example5_translation_en" swa="Coder FROM ../../../data/userinterface/translator/example5/app_en.js"></div>
+
+                <p>German translation file</p>
+                <div id="translator_example5_translation_de" swa="Coder FROM ../../../data/userinterface/translator/example5/app_de.js"></div>
+            </fieldset>
+            
+        </article>
+        <footer>
+            <a href="../../about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="../../about/imprint.html">Imprint / Impressum</a>
+            <a class="toplink" href="#">Top</a>
+        </footer>
+    </body>
+</html>

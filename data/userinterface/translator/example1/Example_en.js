@@ -3,6 +3,10 @@ var Example_en = {
     "myPlaceholder": "My Placeholder",
     "myButtonCaption": "My button caption",
     "myLinkCaption": "My link caption",
-    "myLabel": "My label"
+    "myLabel": "My label",
+    "myTitle": "My Title text",
+    "myAlt": "My Alt description",
+    "myTooltip": "My Tooltip",
+    "myDataTranslated": "My translated data attribute"
 };
 export default Example_en;

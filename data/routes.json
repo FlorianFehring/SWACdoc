@@ -42,7 +42,7 @@
 
 {"id": 80, "rfrom": "*", "rto": "#", "name": "Userinterface Components:"},
 {"id": 81, "rfrom": "*", "rto": "userinterface/navigation.html", "name": "Navigation", "parent": 80},
-{"id": 82, "rfrom": "*", "rto": "userinterface/translator.html", "name": "Translator", "parent": 80},
+{"id": 82, "rfrom": "*", "rto": "userinterface/translator/index.html", "name": "Translator", "parent": 80},
 {"id": 83, "rfrom": "*", "rto": "userinterface/loadingbar.html", "name": "Loadingbar", "parent": 80},
 {"id": 84, "rfrom": "*", "rto": "userinterface/geolocation.html", "name": "Geolocation", "parent": 80},
 {"id": 85, "rfrom": "*", "rto": "userinterface/forwarding.html", "name": "Forwarding", "parent": 80},

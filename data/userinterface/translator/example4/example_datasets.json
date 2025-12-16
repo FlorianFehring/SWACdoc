@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Dataset 1",
+        "doubleval": 92.0123,
+        "intval": 1234,
+        "boolval": true
+    },
+    {
+        "id": 2,
+        "name": "Dataset 2",
+        "doubleval": 519.0234,
+        "intval": 2345,
+        "boolval": false
+    }, {
+        "id": 3,
+        "name": "Dataset 3",
+        "doubleval": 1042.0345,
+        "intval": 3456,
+        "boolval": true
+    }
+]
