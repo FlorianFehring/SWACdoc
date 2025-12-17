@@ -200,7 +200,6 @@ window['visualmodel_example8_options'].plugins.set('Visucreator', {
 });
 
 // Example 9
-// Example 9
 window['visualmodel_example9_options'] = {
     stageHeight: 120,
     showScenegraph: false,
