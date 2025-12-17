@@ -7,7 +7,7 @@ window['labeling_example1_options'] = {
     labelidAttr: 'label_id',
     labeledidAttr: 'oo_id',
     labelSource: {
-        fromName: '../../data/input/labeling/label_labels.json'
+        fromName: '../../../data/input/labeling/label_labels.json'
     },
     showNoDataInfo: false
 };

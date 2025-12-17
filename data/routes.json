@@ -37,7 +37,7 @@
 {"id": 66, "rfrom": "*", "rto": "input/question/index.html", "name": "Question", "parent": 60},
 {"id": 67, "rfrom": "*", "rto": "input/upload.html", "name": "Upload", "parent": 60},
 {"id": 68, "rfrom": "*", "rto": "input/comments/index.html", "name": "Comments", "parent": 60},
-{"id": 69, "rfrom": "*", "rto": "input/labeling.html", "name": "Labeling", "parent": 60},
+{"id": 69, "rfrom": "*", "rto": "input/labeling/index.html", "name": "Labeling", "parent": 60},
 {"id": 70, "rfrom": "*", "rto": "input/jsonreader/index.html", "name": "JsonReader", "parent": 60},
 
 {"id": 80, "rfrom": "*", "rto": "#", "name": "Userinterface Components:"},
