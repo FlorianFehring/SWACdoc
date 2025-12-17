@@ -1,12 +1,12 @@
 var app_en = {
-    "doubleval_title": "Double-Wert",
-    "doubleval_desc": "Ein Double-Wert",
-    "doubleval_value_low": "Ein niedriger Wert",
-    "doubleval_value_mid": "Ein mittlerer Wert",
-    "doubleval_value_heigh": "Ein hoher Wert",
+    "doubleval_title": "Double value",
+    "doubleval_desc": "A double value",
+    "doubleval_value_low": "A low value",
+    "doubleval_value_mid": "A middle value",
+    "doubleval_value_hi": "A high value",
     "strings_title": "String",
-    "strings_desc": "Ein String-Wert",
-    "strings_value_first": "Erster String Wert",
-    "strings_value_second": "Zweiter String Wert"
+    "strings_desc": "A String value",
+    "strings_value_first": "First String value",
+    "strings_value_second": "Second String value"
 };
 export default app_en;
