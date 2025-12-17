@@ -1,12 +1,12 @@
 // Empty source where booth componente share their data
-var datatransform_example2_watchablesource = [];
+window['datatransform_example2_watchablesource'] = [];
 // Because the source is empty at load time set the view to always visable
-var datatransform_example2_view_options = {
+window['datatransform_example2_view_options'] = {
     showWhenNoData: true
 };
 
-var DataTransform_example1_options = {
-    ignoredAttributes: ['id','parent'],
+window['DataTransform_example1_options'] = {
+    ignoredAttributes: ['id', 'parent'],
     transformTarget: 'datatransform_example2_watchablesource', //Save the data in global variable for use in example 2
     transforms: {
         "../../data/datatransform/datatransform_exampleA.json": {
@@ -34,11 +34,11 @@ var DataTransform_example1_options = {
                 '3"': 89
             },
             // Gets the original dataset, must return the new value for the named attribute
-            "x": function(set, transset) {
+            "x": function (set, transset) {
                 return set.y;
             },
             // When changeing y recalculateing x and leave y
-            "y": function(set, transset) {
+            "y": function (set, transset) {
                 transset.x = set.y;
                 return set.y;
             }
@@ -48,14 +48,14 @@ var DataTransform_example1_options = {
 
 document.addEventListener('swac_components_complete', function () {
     let example2_viewElem = document.getElementById('datatransform_example2_view');
-    
+
     // Load DataTransform
-    window.swac.loadAlgorithm('DataTransform_example1','DataTransform').then(function (requestor) {
+    window.swac.loadAlgorithm('DataTransform_example1', 'DataTransform').then(function (requestor) {
         // Get instantiated DataTransform
         let dt = requestor.swac_comp;
-        dt.addDataFromReference('ref://../../data/datatransform/datatransform_exampleA.json').then(function() {
-           let transformeddata = dt.transform('../../data/datatransform/datatransform_exampleA.json');
-           example2_viewElem.swac_comp.addData('datatransform_example2_watchablesource',transformeddata);
+        dt.addDataFromReference('ref://../../data/datatransform/datatransform_exampleA.json').then(function () {
+            let transformeddata = dt.transform('../../data/datatransform/datatransform_exampleA.json');
+            example2_viewElem.swac_comp.addData('datatransform_example2_watchablesource', transformeddata);
         });
     });
 });

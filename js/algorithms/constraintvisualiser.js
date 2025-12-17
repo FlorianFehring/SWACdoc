@@ -1,10 +1,10 @@
-var explaincomponent_options = {
+window['explaincomponent_options'] = {
     componentName: 'ConstraintVisualiser'
 };
 
-var constraintvisualiser_example1_options = {};
-constraintvisualiser_example1_options.typeDefs = new Map();
-constraintvisualiser_example1_options.typeDefs.set('../../data/example_rohre.json', [
+window['constraintvisualiser_example1_options'] = {};
+window['constraintvisualiser_example1_options'].typeDefs = new Map();
+window['constraintvisualiser_example1_options'].typeDefs.set('../../data/example_rohre.json', [
     {
 //        name: 'id',
 //        type: 'int',

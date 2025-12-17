@@ -1,4 +1,4 @@
-var worldmap2d_example8_options = {
+window['worldmap2d_example8_options'] = {
     modelFiles: [
         {
             url: '../../../data/visualisation/worldmap2d_3d/example8/example_australia.tif',

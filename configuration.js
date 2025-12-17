@@ -61,13 +61,14 @@ var SWAC_config = {
  * Options for swac_user component
  * Used on every page
  */
-var user_options = {
+window['user_options'] = {
     loginurl: '../data/userinterface//user/exampleuserdata.json',
     afterLoginLoc: '../sites/user_example1.html',
     afterLogoutLoc: '../sites/user.html',
     loggedinRedirects: new Map()
 };
-user_options.loggedinRedirects.set('user_example3.html', '../sites/user_example2.html');
+
+window['user_options'].loggedinRedirects.set('user_example3.html', '../sites/user_example2.html');
 
 // Links for footer navigation
 var footerlinks = [
@@ -77,6 +78,6 @@ var footerlinks = [
     {id: 4, rfrom: "*", rto: "http://git01-ifm-min.ad.fh-bielefeld.de/scl/2015_03_SCL_SmartMonitoring_Frontend/wikis/home", name: "Über SmartMonitoring"}
 ];
 
-var swac_devhelper_options = {
+window['swac_devhelper_options'] = {
     showNoDataInfo: false
 };

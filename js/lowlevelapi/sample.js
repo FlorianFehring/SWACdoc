@@ -1,11 +1,11 @@
-var explaincomponent_options = {
+window['explaincomponent_options'] = {
     componentName: 'Sample'
 };
 
-var example2_options = {
+window['example2_options'] = {
     plugins: new Map()
 };
-example2_options.plugins.set('SamplePlugin', {
+window['example2_options'].plugins.set('SamplePlugin', {
     id: 'SamplePlugin',
     active: true
 });

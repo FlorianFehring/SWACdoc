@@ -189,8 +189,8 @@ solver.calcAllDomainCollections();
             <p>The CSP is set as an option of the ConstraintSolver component.</p>
             <pre><code class="lang-javascript">
 // Variable "example_rohrnet_csp" contains the CSP object as shown above
-ConstraintSolver_options = {};
-ConstraintSolver_options.domainDefs = example_rohrnetz_csp;
+window['ConstraintSolver_options'] = {};
+window['ConstraintSolver_options'].domainDefs = example_rohrnetz_csp;
             </code></pre>
             <p>The ConstraintsSolver has to calculate some constraint functions 
             from the CSD, and create cloneable CSDs per domaincollection 

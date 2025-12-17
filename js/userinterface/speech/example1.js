@@ -1,4 +1,4 @@
-var speech_example1_options = {
+window['speech_example1_options'] = {
     lang: 'de-DE',
     commands: {
         'de-DE': {

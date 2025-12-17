@@ -24,7 +24,7 @@
                 <div id="worldmap3d" swa="Worldmap3d"></div>
             </div>
             <div>
-                <div id="worldmap3d_legend" swa="Datadescription FROM worldmap_legend_data"></div>
+                <div id="worldmap3d_legend" swa="Datadescription FROM worldmap3d_legend_data"></div>
             </div>
         </div>
 
@@ -32,7 +32,7 @@
             <legend>VIEW-Requestor</legend>
             <pre><code class="lang-javascript">
 window.onload = function (evt) {
-    worldmap3d_options.datasources[0] = {
+    window['worldmap3d_options'].datasources[0] = {
         url: '../../data/worldmap3d/example15/co2timed.json',
         showTimedDataAtOnce: false,
         latattr: 'latitude',// Name of the attribute that stores the latitude information

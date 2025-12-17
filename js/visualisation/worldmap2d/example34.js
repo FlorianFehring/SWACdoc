@@ -2,19 +2,20 @@
  * Configuration script for worldmap2d_example10
  */
 
-var worldmap2d_example34_options = {
-
+window['worldmap2d_example34_options'] = {
+    
 };
 
 
 //add plugin to the worldmap2d component
-worldmap2d_example34_options.plugins = new Map();
-worldmap2d_example34_options.plugins.set('CreateObjectModal', {
+window['worldmap2d_example34_options'].plugins = new Map();
+window['worldmap2d_example34_options'].plugins.set('CreateObjectModal', {
     id: 'createobjectmodal',
     active: true
 });
 
-var createobjectmodal_worldmap2d_example34_options = {
+
+window['createobjectmodal_worldmap2d_example34_options'] = {
     saveMapping: {
         ooNameAttr: 'name',
         ooDescriptionAttr: 'description',

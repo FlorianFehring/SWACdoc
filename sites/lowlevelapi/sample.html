@@ -40,10 +40,10 @@
 &lt;div id="example2" swa="Sample"&gt;&lt;/div&gt;
         </code></pre>
             <pre><code class="lang-javascript">
-var example2_options = {
+window['example2_options'] = {
     plugins: new Map()
 };
-example2_options.plugins.set('SamplePlugin', {
+window['example2_options'].plugins.set('SamplePlugin', {
     id: 'SamplePlugin',
     active: true
 });

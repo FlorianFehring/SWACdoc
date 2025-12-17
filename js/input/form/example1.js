@@ -1,4 +1,3 @@
-var form_example1_options = {
+window['form_example1_options'] = {
     target: 'not_existing_reciver'
 };
-

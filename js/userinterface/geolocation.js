@@ -1,9 +1,9 @@
-var explaincomponent_options = {
+window['explaincomponent_options'] = {
     componentName: 'Geolocation'
 };
 
 // Example 1
-var geoloc_example1_options = {
+window['geoloc_example1_options'] = {
     onLocateFunctions: [
       function(position){
           alert("position recived. See javascript console for more information");
@@ -19,10 +19,10 @@ document.addEventListener('swac_geoloc_example1_geolocation_newlocation',functio
 });
 
 // Example 3
-var geoloc_example3_options = {
+window['geoloc_example3_options'] = {
     plugins: new Map()
 };
-geoloc_example3_options.plugins.set('MagicMapperInterface', {
+window['geoloc_example3_options'].plugins.set('MagicMapperInterface', {
     id: 'MagicMapperInterface',
     active: true
-});   
+});

@@ -21,15 +21,15 @@
         <article>
             <h1>DataCompare</h1>
             <p>The DataCompare Algorithm allows you to compare datasources and 
-            datasets. It makes it possible to find duplicated datasets.</p>
+                datasets. It makes it possible to find duplicated datasets.</p>
 
             <!--<div id="explaincomponent" swa="ExplainComponents"></div>-->
-            
+
             <h3>Example 1: Loading DataCompare as standalone</h3>
             <p>This example demonstrates how to load the DataCompare as a 
                 single object to use in various usecases without need for a view 
                 component.</p>
-            
+
             <pre><code class="lang-javascript">
 document.addEventListener('swac_components_complete', function () {
     // Load DataCompare
@@ -92,11 +92,11 @@ document.addEventListener('swac_components_complete', function () {
             </code></pre>
             <p>Configuration:</p>
             <pre><code class="lang-javascript">
-var DataCompare_options = {
+window['DataCompare_options'] = {
     excludeCompareAttrs: ['id','parent'],
     mainSource: '../../data/datacompare/datacompare_exampleA_A.json'
 };
-            </code></pre>
+        </code></pre>
             <p>Call of compare:</p>
             <pre><code class="lang-javascript">
 // Get instantiated DataCompare

@@ -1,2 +1,2 @@
-var mytext_options = {};
-mytext_options.showWhenNoData = true;
+window['mytext_options'] = {};
+window['mytext_options'].showWhenNoData = true;

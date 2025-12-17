@@ -1,8 +1,8 @@
-var explaincomponent_options = {
+window['explaincomponent_options'] = {
     componentName: 'Labeling'
 };
 
-var labeling_example1_options = {
+window['labeling_example1_options'] = {
     showWhenNoData: true,
     labelidAttr: 'label_id',
     labeledidAttr: 'oo_id',

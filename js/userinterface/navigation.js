@@ -1,3 +1,3 @@
-var explaincomponent_options = {
-  componentName: 'Navigation',
-}
+window['explaincomponent_options'] = {
+  componentName: 'Navigation'
+};

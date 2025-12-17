@@ -1,3 +1,3 @@
-var explaincomponent_options = {
+window['explaincomponent_options'] = {
     componentName: 'Communicator'
 };

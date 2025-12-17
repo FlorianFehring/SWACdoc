@@ -1,16 +1,16 @@
 /* 
- * Configuration script for worldmap_example4
+ * Configuration script for worldmap3d_example16
  */
 
-var worldmap_options = {
+window['worldmap3d_options'] = {
     showTimedDataAtOnce: true
 };
-worldmap_options.datasources = [];
+window['worldmap3d_options'].datasources = [];
 
 window.onload = function (evt) {
-    worldmap_options.datasources[0] = {
+    window['worldmap3d_options'].datasources[0] = {
         url: '../data/worldmap3d/example16/co2_germany_1year.json',
-        latattr: 'latitude',// Name of the attribute that stores the latitude information
+        latattr: 'latitude', // Name of the attribute that stores the latitude information
         lonattr: 'longitude', // Name of the attribute that stores the longitude information
         heightattr: null, // Name of the attribute that stores the height information (null is default, clamps to ground)
         datasetOffsetLat: 0, // This is the default value
@@ -27,32 +27,33 @@ window.onload = function (evt) {
 //        outlineColorProperty: 'Border coloring property name', // Property from data that should be used as color for the models outline
 //        extrudeHeightProperty: 'PHK_class', // Property from data that should be used for calculating the height
 //        datacaptionProperty: 'ts', // Property from data that should be used for model caption
-        datadescription: document.getElementById('worldmap_legend')
+        datadescription: document.getElementById('worldmap3d_legend')
     };
 };
 
 // Options defining WHAT is visualised
-worldmap_legend_options = {};
-worldmap_legend_options.visuAttribute = 'co2';
+window['worldmap3d_legend_options'] = {};
+window['worldmap3d_legend_options'].visuAttribute = 'co2';
+
 // Data defining HOW is visualised
-worldmap_legend_data = {};
-worldmap_legend_data.co2 = {};
-worldmap_legend_data.co2.txt_title = 'Anthropogene CO2 Emissionen';
-worldmap_legend_data.co2.txt_desc = 'Höhe der Anthropogenen CO2 Emissionen';
-worldmap_legend_data.co2.txt_uknw = 'unbekannt';
-worldmap_legend_data.co2.col = '0xAA00A5FF';
-worldmap_legend_data.co2.scale = 1000000000000;
-worldmap_legend_data.co2.calcmode = '<';
-worldmap_legend_data.co2.values = {};
-worldmap_legend_data.co2.values['1e-11'] = {};
-worldmap_legend_data.co2.values['1e-11'].col = '0x77228B22';
-worldmap_legend_data.co2.values['1e-11'].txt = 'Niedrige CO2 Emissionen';
-worldmap_legend_data.co2.values['1e-10'] = {};
-worldmap_legend_data.co2.values['1e-10'].col = '0x7700FF00';
-worldmap_legend_data.co2.values['1e-10'].txt = 'Mittlere CO2 Emissionen';
-worldmap_legend_data.co2.values['1e-9'] = {};
-worldmap_legend_data.co2.values['1e-9'].col = '0xAA00A5FF';
-worldmap_legend_data.co2.values['1e-9'].txt = 'Hohe CO2 Emissionen';
-worldmap_legend_data.co2.values['1e-8'] = {};
-worldmap_legend_data.co2.values['1e-8'].col = '0xAA0000FF';
-worldmap_legend_data.co2.values['1e-8'].txt = 'Sehr hohe CO2 Emissionen';
+worldmap3d_legend_data = {};
+worldmap3d_legend_data.co2 = {};
+worldmap3d_legend_data.co2.txt_title = 'Anthropogene CO2 Emissionen';
+worldmap3d_legend_data.co2.txt_desc = 'Höhe der Anthropogenen CO2 Emissionen';
+worldmap3d_legend_data.co2.txt_uknw = 'unbekannt';
+worldmap3d_legend_data.co2.col = '0xAA00A5FF';
+worldmap3d_legend_data.co2.scale = 1000000000000;
+worldmap3d_legend_data.co2.calcmode = '<';
+worldmap3d_legend_data.co2.values = {};
+worldmap3d_legend_data.co2.values['1e-11'] = {};
+worldmap3d_legend_data.co2.values['1e-11'].col = '0x77228B22';
+worldmap3d_legend_data.co2.values['1e-11'].txt = 'Niedrige CO2 Emissionen';
+worldmap3d_legend_data.co2.values['1e-10'] = {};
+worldmap3d_legend_data.co2.values['1e-10'].col = '0x7700FF00';
+worldmap3d_legend_data.co2.values['1e-10'].txt = 'Mittlere CO2 Emissionen';
+worldmap3d_legend_data.co2.values['1e-9'] = {};
+worldmap3d_legend_data.co2.values['1e-9'].col = '0xAA00A5FF';
+worldmap3d_legend_data.co2.values['1e-9'].txt = 'Hohe CO2 Emissionen';
+worldmap3d_legend_data.co2.values['1e-8'] = {};
+worldmap3d_legend_data.co2.values['1e-8'].col = '0xAA0000FF';
+worldmap3d_legend_data.co2.values['1e-8'].txt = 'Sehr hohe CO2 Emissionen';

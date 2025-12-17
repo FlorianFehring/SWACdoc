@@ -1,4 +1,4 @@
-var create_user_options = {
+window['create_user_options'] = {
     showWhenNoData: true,
     allowAdd: true,
     directOpenNew: true,

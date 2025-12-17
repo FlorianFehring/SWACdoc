@@ -27,7 +27,7 @@
 &lt;div id="userexample1" swa="User TEMPLATE user_form"&gt;&lt;/div&gt;
         </code></pre>
             <pre><code class="lang-javascript">
-var user_options = {
+window['user_options'] = {
     loginURL: '../../data/userinterface/user/exampleuserdata.json'   // URL where to verify user
 };
         </code></pre>
@@ -42,7 +42,7 @@ var user_options = {
 &lt;div id="userexample2" swa="User TEMPLATE user_modal"&gt;&lt;/div&gt;
         </code></pre>
             <pre><code class="lang-javascript">
-var user_options = {
+window['user_options'] = {
     loginURL: '../../data/userinterface/user/exampleuserdata.json'
 };
         </code></pre>
@@ -58,7 +58,7 @@ var user_options = {
 &lt;div id="user" swa="User"&gt;&lt;/div&gt;
         </code></pre>
             <pre><code class="lang-javascript">
-var user_options = {
+window['user_options'] = {
     loginURL: '../../data/userinterface/user/exampleuserdata.json',
     afterLoginLoc: '../sites/user_example1.html',
     afterLogoutLoc: '../sites/user.html'
@@ -109,7 +109,7 @@ var user_options = {
         </code></pre>
             <br>Sample Edit component configuration for registration form:
             <pre><code class="lang-javascript">
-var create_user_options = {
+window['create_user_options'] = {
     showWhenNoData: true,
     allowAdd: true,
     directOpenNew: true,

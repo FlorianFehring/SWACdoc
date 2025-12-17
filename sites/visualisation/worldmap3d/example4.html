@@ -23,18 +23,18 @@
                 <div id="worldmap3d" swa="Worldmap3d"></div>
             </div>
             <div>
-                <div id="worldmap3d_legend" swa="Datadescription FROM worldmap_legend_data"></div>
+                <div id="worldmap3d_legend" swa="Datadescription FROM worldmap3d_legend_data"></div>
             </div>
         </div>
 
         <fieldset>
             <legend>VIEW-Requestor</legend>
             <pre><code class="lang-javascript">
-var worldmap3d_options = {};
-worldmap3d_options.datasources = [];
+window['worldmap3d_options'] = {};
+window['worldmap3d_options'].datasources = [];
 
 window.onload = function (evt) {
-   worldmap3d_options.datasources[0] = {
+    window['worldmap3d_options'].datasources[0] = {
       url: '../data/worldmap3d/example4/thermischewirkungen.geojson',
       fillColor: 'yellow', // Default color of models (white if no setting is given)
       outlineColor: 'blue', // Default color of models border (black if no setting is given)
@@ -50,8 +50,9 @@ window.onload = function (evt) {
 };
 
 // Options defining WHAT is visualised
-worldmap3d_legend_options = {};
-worldmap3d_legend_options.visuAttribute = 'PHK_class';
+window['worldmap3d_legend_options'] = {};
+window['worldmap3d_legend_options'].visuAttribute = 'PHK_class';
+
 // Data defining HOW is visualised
 worldmap3d_legend_data = {};
 worldmap3d_legend_data.PHK_class = {};

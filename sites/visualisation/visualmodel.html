@@ -203,10 +203,10 @@
             On click events are defined within the component options. You can set
             other defaults here, too:
             <pre><code class="lang-javascript">
-var visualmodel_example2_options = {
+window['visualmodel_example2_options'] = {
     defaults: new Map()
 };
-visualmodel_example2_options.defaults.set('example2', {
+window['visualmodel_example2_options'].defaults.set('example2', {
     width: 100,
     height: 50,
     fillColor: '#000',
@@ -351,7 +351,7 @@ var example4 = [
                     </code></pre>
             <p>More datasets are added by addDataFromReference():</p>
             <pre><code class="lang-javascript">
-            var visualmodel_example5_options = {
+            window['visualmodel_example5_options'] = {
                 stageHeight: 100,
                 showScenegraph: false,
                 customAfterLoad: function (requestor) {
@@ -375,7 +375,7 @@ var example4 = [
             <div id="visualmodel_example6" swa="Visualmodel FROM example5_1"></div>
 
             <pre><code class="lang-javascript">
-            var visualmodel_example6_options = {
+            window['visualmodel_example6_options'] = {
                 stageHeight: 100,
                 showScenegraph: false,
                 customAfterLoad: function (requestor) {
@@ -383,8 +383,8 @@ var example4 = [
                     requestor.swac_comp.addDataFromReference('ref://../data/visualisation/visualmodel/example5_2.json?filter=parent;eq;1', 'id');
                 }
             };
-            visualmodel_example6_options.defaults = new Map();
-            visualmodel_example6_options.defaults.set('example5_1', {
+            window['visualmodel_example6_options'].defaults = new Map();
+            window['visualmodel_example6_options'].defaults.set('example5_1', {
                 xAttr: 'position',  // Value of the attibute 'position' gives the x value, also possible: yAttr
                 xOffset: 50,        // Offset to add to the x value
                 xFactor: 0.1,       // Scale factor for the x value
@@ -412,11 +412,11 @@ var example4 = [
                 conTension: 0.5,
                 conOnClick: null
             });
-            visualmodel_example6_options.legendMap = new Map();
-            visualmodel_example6_options.legendMap.set('Kk', 'Kupferkabel');
-            visualmodel_example6_options.legendMap.set('Ke', 'Eisenkabel');
-            visualmodel_example6_options.legendMap.set('Kl', 'Lichtphaserkabel');
-            visualmodel_example6_options.plugins = new Map();
+            window['visualmodel_example6_options'].legendMap = new Map();
+            window['visualmodel_example6_options'].legendMap.set('Kk', 'Kupferkabel');
+            window['visualmodel_example6_options'].legendMap.set('Ke', 'Eisenkabel');
+            window['visualmodel_example6_options'].legendMap.set('Kl', 'Lichtphaserkabel');
+            window['visualmodel_example6_options'].plugins = new Map();
                     </code></pre>
 
             <h3>Example 7: Rotate elements depending on attributes and positions</h3>
@@ -432,7 +432,7 @@ var example4 = [
         </code></pre>
 
             <pre><code class="lang-javascript">
-visualmodel_example7_options.defaults.set('../data/visualmodel/example7_2.json', {
+window['visualmodel_example7_options'].defaults.set('../data/visualmodel/example7_2.json', {
     zRotateAttr: 'rotation',    // Name of the attribute that contains rotation in degrees
     zRotateApplyOn: 'below',    // Apply when child is below / above / before / after
     xRotateAttr: 'rotation',    // Name of the attribute that contains rotation in degrees
@@ -453,12 +453,12 @@ visualmodel_example7_options.defaults.set('../data/visualmodel/example7_2.json',
 
             Creating visualmodels can be activated by useing the Visucreator Plugin.
             <pre><code class="lang-javascript">
-var visualmodel_example8_options = {
+window['visualmodel_example8_options'] = {
     stageHeight: 200,
     showScenegraph: false
 };
-visualmodel_example8_options.plugins = new Map();
-visualmodel_example8_options.plugins.set('Visucreator', {
+window['visualmodel_example8_options'].plugins = new Map();
+window['visualmodel_example8_options'].plugins.set('Visucreator', {
     id: 'Visucreator',
     active: true
 });
@@ -492,12 +492,12 @@ visualmodel_example8_options.plugins.set('Visucreator', {
 
             Configuration:
             <pre><code class="lang-javascript">
-var visualmodel_example11_options = {
+window['visualmodel_example11_options'] = {
     stageHeight: 120,
     showScenegraph: false,
     plugins: new Map()
 };
-visualmodel_example11_options.plugins.set('Data', {
+window['visualmodel_example11_options'].plugins.set('Data', {
     id: 'Data',
     active: true
 });

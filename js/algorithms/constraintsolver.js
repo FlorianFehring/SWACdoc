@@ -1,6 +1,6 @@
-var ConstraintSolver_options = {};
-ConstraintSolver_options.typeDefs = new Map();
-ConstraintSolver_options.typeDefs.set('../../data/example_rohre.json', [
+window['ConstraintSolver_options'] = {};
+window['ConstraintSolver_options'].typeDefs = new Map();
+window['ConstraintSolver_options'].typeDefs.set('../../data/example_rohre.json', [
     {
 //        name: 'id',
 //        type: 'int',
@@ -60,7 +60,7 @@ document.addEventListener('swac_components_complete', function () {
     ConstraintSolver_options.domainDefs = example_rohrnetz_csp;
 
     // Load ConstraintSolver
-    window.swac.loadAlgorithm('ConstraintSolver','ConstraintSolver').then(function (requestor) {
+    window.swac.loadAlgorithm('ConstraintSolver', 'ConstraintSolver').then(function (requestor) {
         // Get instantiated ConstraintSolver
         let cs = requestor.swac_comp;
         cs.calcCollections();
@@ -83,10 +83,10 @@ document.addEventListener('swac_components_complete', function () {
         // Now there should only a length between 50 and 7800 possible
         // Should be run without problem
         rohrset.laenge = 7800;
-         // Set abschluss rechts
+        // Set abschluss rechts
         rohrset.abschluss_links = 'Nut';
         // Now there should only a durchmesser one of DN... possible
-            // Set durchmesser
+        // Set durchmesser
 //        set.durchmesser = '1/2"'; // Failes only DN... allowed
 //        set.durchmesser = 'DN32';
 //        set.abgeklebt = true;
