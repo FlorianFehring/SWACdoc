@@ -1,7 +1,7 @@
 /* 
- * Configuration script for worldmap_example3
+ * Configuration script for worldmap3d_example3
  */
-window['worldmap_options'] = {
+window['worldmap3d_options'] = {
     datasources: [
         {
             url: '../../data/worldmap3d/example3/stadtgebiet.geojson',
