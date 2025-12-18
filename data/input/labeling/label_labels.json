@@ -2,11 +2,18 @@
     "records": [
         {
             "id": 1,
-            "name": "Label1"
+            "name": "Label1",
+            "color": "#ff0000"
         },
         {
             "id": 2,
-            "name": "Label2"
+            "name": "Label2",
+            "color": ""
+        },
+        {
+            "id": 3,
+            "name": "Label3",
+            "color": ""
         }
     ]
 }

@@ -11,17 +11,17 @@
         <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
-        <script src="../../../js/input/labeling/index.js"></script>
+        <script src="../../../js/input/labeling/example2.js"></script>
     </head>
     <body>
         <header id="head_navigation" swa="Navigation FROM routes.json"></header>
         <article>       
 
-            <h3>Example 1: Simple labeling</h3>
-            <p>Add a simple labeling feature to your datasets.
+            <h3>Example 2: Advanced labeling</h3>
+            <p>Add an advanced labeling feature to your datasets.
                 <br>Note that adding a label by click on the labels name will not 
                 work in this example, because the example file is not writeable.</p>
-            
+
             <pre><code class="lang-javascript">
 window['labeling_example1_options'] = {
     showWhenNoData: true,
@@ -32,12 +32,14 @@ window['labeling_example1_options'] = {
     },
     showNoDataInfo: false
 };
-</code></pre>
-            
+            </code></pre>
+
             <pre><code class="lang-html">
-&lt;div id="labeling_example1" swa="Labeling FROM input/labeling/label_example.json"&gt;&lt;/div&gt;
-        </code></pre>
-            <div id="labeling_example1" swa="Labeling FROM input/labeling/label_example.json"></div>
+&lt;div id="labeling_example1" swa="LabelingNew FROM input/labeling/label_example.json"&gt;&lt;/div&gt;
+            </code></pre>
+
+
+            <div id="labeling_example1" swa="LabelingNew FROM input/labeling/label_example.json"></div>
 
         </article>
         <footer>
