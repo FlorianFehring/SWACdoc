@@ -1,20 +1,3 @@
-window['explaincomponent_options'] = {
-    componentName: 'Selectdatetime'
-};
-
-window['selectdatetime_example2_options'] = {
-    timepicker: false
-};
-
-window['selectdatetime_example3_options'] = {
-    datepicker: false
-};
-
-window['selectdatetime_example4_options'] = {
-    actualTimeForEmpty: true,
-    reloadInterval: 5
-};
-
 window.onload = function () {
     let example5Btn = document.querySelector('#selectdatetime_example5btn');
     // Avoid error if example is commented out

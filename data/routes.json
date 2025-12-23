@@ -32,7 +32,7 @@
 {"id": 61, "rfrom": "*", "rto": "input/form/index.html", "name": "Form", "parent": 60},
 {"id": 62, "rfrom": "*", "rto": "input/edit/index.html", "name": "Edit", "parent": 60},
 {"id": 63, "rfrom": "*", "rto": "input/select/index.html", "name": "Select", "parent": 60},
-{"id": 64, "rfrom": "*", "rto": "input/selectdatetime.html", "name": "Select Datetime", "parent": 60},
+{"id": 64, "rfrom": "*", "rto": "input/selectdatetime/index.html", "name": "Select Datetime", "parent": 60},
 {"id": 65, "rfrom": "*", "rto": "input/search/index.html", "name": "Search", "parent": 60},
 {"id": 66, "rfrom": "*", "rto": "input/question/index.html", "name": "Question", "parent": 60},
 {"id": 67, "rfrom": "*", "rto": "input/upload.html", "name": "Upload", "parent": 60},
