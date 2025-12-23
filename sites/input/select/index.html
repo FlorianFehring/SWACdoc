@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SWAC - select component</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
+
+        <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
+        <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
+        <script src="/SWAC/swac/swac.js" type="module"></script>
+        <script src="../../../js/input/select/index.js"></script>
+    </head>
+    <body>
+        <header id="head_navigation" swa="Navigation FROM routes.json"></header>
+        <article>
+            <div id="explaincomponent" swa="ExplainComponents"></div>         
+
+            <h3>Example 1: Useing template "selectbox"</h3>
+            <p>This example creates an simple selectbox where you can choose a value.</p>
+            <a href="example1.html" target="_blank">Show working example</a>
+
+            <h3>Example 2: Useing Template "multiselectbox"</h3>
+            <p>This example modificates the first example by useing the multiselectbox template.</p>
+            <a href="example2.html" target="_blank">Show working example</a>
+
+            <h3>Example 3: Useing Template "checkboxes"</h3>
+            <p>This example modificates the first example by useing the checkboxes template.</p>
+            <a href="example3.html" target="_blank">Show working example</a>
+
+            <h3>Example 4: Useing Template "datalist"</h3>
+            <p>This example modificates the first example by useing the datalist template.</p>
+            <a href="example4.html" target="_blank">Show working example</a>
+
+            <h3>Example 5: Custom Template</h3>
+            <p>This example modificates the first example by useing a custom template.</p>
+            <a href="example5.html" target="_blank">Show working example</a>
+
+            <h3>Example 6: Execute a function when the selection changed and get the selected values</h3>
+            <p>This example shows how to react on users selection.</p>
+
+            <a href="example6.html" target="_blank">Show working example</a>
+
+            <h3>Example 7: Useing a datasource for preselecting elements</h3>
+            <p>You can select elements in a selectbox by useing a datasource.</p>
+            <a href="example7.html" target="_blank">Show working example</a>
+
+            <h3>Example 8: Select with parent entries</h3>
+            <p>Hierarchies of options are supported within the checkboxes template.</p>
+            <a href="example8.html" target="_blank">Show working example</a>
+
+            <h3>Example 9: Lazy loading subsets</h3>
+            <p>The checkboxselect template is able to lazy loading suboptions. You can
+                define a requestor that fetches the size of available subsets. If this
+                size is grater than 0 a expand button is displayed.
+                When clicking on the expand button the subsets are loaded useing a
+                dataRequestor.</p>
+            <a href="example9.html" target="_blank">Show working example</a>
+
+            <h3>Example 10: Clustering big subsets</h3>
+            <p>If there is a large number of subsets, you can cluster tham into select
+                entries. In addition to the use of the sizeRequestor and dataRequestor
+                set the "clusterPercentage" attribute. This clusters the datasets.
+                If you want a minimum number of subsets to cluster, use the "clusterMinimum"
+                attribute.<p>
+                <a href="example10.html" target="_blank">Show working example</a>
+
+            <h3>Example 11: Make a selection required</h3>
+            <p>If you want to make at least one selection required simply add the required attribute to the swa-DIV.</p>
+            <a href="example11.html" target="_blank">Show working example</a>
+
+        </article>
+        <footer>
+            <a href="../../about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="../../about/imprint.html">Imprint / Impressum</a>
+            <a class="toplink" href="#">Top</a>
+        </footer>
+    </body>
+</html>
