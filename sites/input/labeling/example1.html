@@ -17,8 +17,8 @@
         <header id="head_navigation" swa="Navigation FROM routes.json"></header>
         <article>       
 
-            <h3>Example 1: Simple labeling</h3>
-            <p>Add a simple labeling feature to your datasets.
+            <h3>Example 1: Dropdown labeling</h3>
+            <p>Add a dropdown labeling feature to your datasets.
                 <br>Note that adding a label by click on the labels name will not 
                 work in this example, because the example file is not writeable.</p>
 
@@ -35,9 +35,9 @@ window['labeling_example1_options'] = {
 </code></pre>
 
             <pre><code class="lang-html">
-&lt;div id="labeling_example1" swa="Labeling FROM input/labeling/label_example.json"&gt;&lt;/div&gt;
+&lt;div id="labeling_example1" swa="Labeling FROM input/labeling/label_example.json TEMPLATE dropdown"&gt;&lt;/div&gt;
         </code></pre>
-            <div id="labeling_example1" swa="Labeling FROM input/labeling/label_example.json"></div>
+            <div id="labeling_example1" swa="Labeling FROM input/labeling/label_example.json TEMPLATE dropdown"></div>
 
         </article>
         <footer>
