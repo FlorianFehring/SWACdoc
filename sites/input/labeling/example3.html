@@ -7,43 +7,51 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
         <link rel="stylesheet" type="text/css" href="../../../css/global.css">
-
         <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../data/input/labeling/example3/label.css">
+
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
-        <script src="../../../js/input/labeling/example2.js"></script>
+        <script src="../../../js/input/labeling/example3.js"></script>
     </head>
     <body>
         <header id="head_navigation" swa="Navigation FROM routes.json"></header>
         <article>       
 
-            <h3>Example 2: Datalist labeling</h3>
-            <p>Add a datalist labeling feature to your datasets.
+            <h3>Example 3: Datalist labeling with classes</h3>
+            <p>Add a datalist labeling feature to your datasets.<br>This example shows how to use classes to change the design of the labels.
                 <br>Note that removing label  will not 
                 work in this example, because the example file cant remove form database or json file.</p>
 
             <fieldset>
                 <legend>VIEW-Requestor</legend>
                 <pre><code class="lang-html">
-&lt;div id="labeling_example2" swa="Labeling FROM input/labeling/label_example.json TEMPLATE datalist"&gt;&lt;/div&gt;
+&lt;div id="labeling_example3" swa="Labeling FROM input/labeling/label_example.json TEMPLATE datalist"&gt;&lt;/div&gt;
             </code></pre>
             </fieldset>
 
             <fieldset>
                 <legend>Example</legend>
-                <div id="labeling_example2" swa="Labeling FROM input/labeling/label_example.json TEMPLATE datalist"></div>
+                <div id="labeling_example3" swa="Labeling FROM input/labeling/label_example.json TEMPLATE datalist"></div>
             </fieldset>
-            
+
             <fieldset>
                 <legend>CONFIGURATION</legend>
-                <div id="labeling_example2_conf" swa="Coder FROM ../../../js/input/labeling/example2.js"></div>
+                <div id="labeling_example3_conf" swa="Coder FROM ../../../js/input/labeling/example3.js"></div>
             </fieldset>
 
             <fieldset>
                 <legend>DATASOURCE</legend>
-                <p>This uses the same datasource as example 2.</p>
-                <div id="labeling_example1_datasource" swa="Coder FROM ../../../data/input/labeling/label_labels.json"></div>
+                <p>This uses the same datasource as example 3.</p>
+                <div id="labeling_example3_datasource" swa="Coder FROM ../../../data/input/labeling/example3/label_example3.json"></div>
             </fieldset>
+
+            <fieldset>
+                <legend>CSS-CLASS</legend>
+                <p>label.css</p>
+                <div id="labeling_example3_class_datasource" swa="Coder FROM ../../../data/input/labeling/example3/label.css"></div>
+            </fieldset>
+
         </article>
         <footer>
             <a href="../about/privacy.html">Privacy policy / Datenschutzerklärung</a>
