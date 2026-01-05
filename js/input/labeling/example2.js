@@ -1,4 +1,4 @@
-window['labeling_example1_options'] = {
+window['labeling_example2_options'] = {
     showWhenNoData: true,
     labelidAttr: 'label_id',
     labeledidAttr: 'oo_id',
