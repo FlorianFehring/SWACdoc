@@ -1,9 +1,4 @@
-window['explaincomponent_options'] = {
-    componentName: 'Geolocation'
-};
-
-// Example 1
-window['geoloc_example1_options'] = {
+window['geoloc_example3_options'] = {
     onLocateFunctions: [
       function(position){
           alert("position recived. See javascript console for more information");
@@ -12,13 +7,12 @@ window['geoloc_example1_options'] = {
     ]
 };
 
-// Example 2
 document.addEventListener('swac_geoloc_example1_geolocation_newlocation',function(e) {
     console.log('New geolocation recived: ', e.detail.position);
     console.log('New geolocations address: ', e.detail.address);
 });
 
-// Example 3
+
 window['geoloc_example3_options'] = {
     plugins: new Map()
 };

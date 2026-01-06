@@ -1,12 +1,5 @@
-window['explaincomponent_options'] = {
-    componentName: 'Loadingbar'
-};
-
 window['loadingbar_default_options'] = {};
 window['loadingbar_default_options'].max = 100;
-
-window['loadingbar_error_options'] = {};
-window['loadingbar_error_options'].max = 100;
 
 document.addEventListener('swac_components_complete', function () {
     window.swac.reactions.addReaction(function () {
@@ -20,11 +13,4 @@ document.addEventListener('swac_components_complete', function () {
         }, 1000);
 
     }, "loadingbar_default");
-
-
-    window.swac.reactions.addReaction(function () {
-        let loading_requestor = document.getElementById("loadingbar_error");
-        loading_requestor.swac_comp.showAll();
-        loading_requestor.swac_comp.errorState();
-    }, "loadingbar_error");
 });
