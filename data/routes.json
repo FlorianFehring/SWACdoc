@@ -51,7 +51,7 @@
 {"id": 88, "rfrom": "*", "rto": "userinterface/privacypopup/index.html", "name": "Privacy popup", "parent": 80},
 {"id": 89, "rfrom": "*", "rto": "userinterface/copy/index.html", "name": "Copy", "parent": 80},
 {"id": 90, "rfrom": "*", "rto": "userinterface/speech/index.html", "name": "Speech", "parent": 80},
-{"id": 91, "rfrom": "*", "rto": "userinterface/dashboard.html", "name": "Dashboard", "parent": 80},
+{"id": 91, "rfrom": "*", "rto": "userinterface/dashboard/index.html", "name": "Dashboard", "parent": 80},
 {"id": 92, "rfrom": "*", "rto": "userinterface/favourites/index.html", "name": "Favourites", "parent": 80},
 {"id": 93, "rfrom": "*", "rto": "userinterface/screenboard/index.html", "name": "ScreenBoard", "parent": 80},
 
