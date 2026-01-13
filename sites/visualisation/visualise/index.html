@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SWAC - visualise component</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../files/icons/16x16.png">
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css">
+
+        <link rel="stylesheet" type="text/css" href="/SWAC/swac/libs/uikit/css/uikit.min.css">
+        <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
+        <script src="/SWAC/swac/swac.js" type="module"></script>
+        <script src="../../../js/visualisation/visualise/index.js"></script>
+
+        <!-- Datasources -->
+        <script src="../../../data/exampledata_list.js"></script>
+    </head>
+    <body>
+        <header id="head_navigation" swa="Navigation FROM routes.json"></header>
+        <article>
+            <div id="explaincomponent" swa="ExplainComponents"></div>
+
+            <h2>Examples</h2>
+            <h3>Example 1: Create a thermometer for a specific value in each dataset</h3>
+            <p>This visualisation visualises only one value from all datasets.
+                <br>It uses the Datadescription component for formatting scales.</p>        
+            <a href="example1.html" target="_blank">Open example</a>
+
+            <h3>Example 2: Useing hygrometer</h3>
+            <p>This example shows the useage of the hygrometer with other data.</p>
+            <a href="example2.html" target="_blank">Open example</a>
+
+            <h3>Example 3: Createing icons depending on one or more attributes</h3>
+            <p>With easy understandable definitions it's possible to choose icons
+                for your data on single attribute or more than one.
+                <br>Supported compare methods are &lt;,&gt;,=, &lt;=, &gt;= </p>
+            <a href="example3.html" target="_blank">Open example</a>
+
+            <h3>Example 4: Useing visualise as subcomponent</h3>
+            <p>You can combine visualise with present to create visualisations for differend datasets.
+                <br>Note that every subcomponent needs a unique id.</p>            
+            <a href="example4.html" target="_blank">Open example</a>
+
+            <h3>Example 5: CircleProgress visualisation</h3>
+            <p>Visualise data as a circle progress. Values should be given within range of 0 - 100.</p>
+            <a href="example5.html" target="_blank">Open example</a>
+
+            <h3>Example 6: StatusDisplay visualisation</h3>
+            <p>Visualise data as a circle progress. Values should be given within range of 0 - 100.</p>
+            <a href="example6.html" target="_blank">Open example</a>
+
+        </article>
+        <footer>
+            <a href="../../about/privacy.html">Privacy policy / Datenschutzerklärung</a>
+            <a href="../../about/imprint.html">Imprint / Impressum</a>
+            <a class="toplink" href="#">Top</a>
+        </footer>
+    </body>
+</html>

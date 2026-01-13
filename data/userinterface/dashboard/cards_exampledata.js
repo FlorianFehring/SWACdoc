@@ -15,6 +15,7 @@ var cards_energyconsumption = [{
 ];
 
 var cards_temperatur = [{
+         txt_desc: 'The air temperature',
         temp: 22.3,
         ts: "2020-09-30T00:00:00"
 }];
