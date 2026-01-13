@@ -3,7 +3,10 @@
         {
             "id": 1,
             "label_id": 1,
-            "oo_id": 1
+            "oo_id": 1,
+             "label": {
+                "name": "1"
+            }
         }
     ]
 }

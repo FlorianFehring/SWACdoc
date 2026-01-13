@@ -1,0 +1,30 @@
+.label1 {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.label2 {
+    color: black;
+    font-family: "Comic Sans MS", cursive;
+    background-color: #ffe6aa;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    border: 1px solid #66b3ff;
+}
+
+.label3 {
+    color: black;
+    font-family: "Times New Roman", serif;
+    background-color: #e6ffe6;
+    padding: 4px 12px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    border: 2px dashed #66cc66;
+}
