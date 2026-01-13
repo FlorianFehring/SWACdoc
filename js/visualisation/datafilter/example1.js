@@ -1,7 +1,3 @@
-window['explaincomponent_options'] = {
-    componentName: 'Datafilter'
-};
-
 // Empty data for filteredDataSource (used by another component)
 var filtered_data = [];
 
