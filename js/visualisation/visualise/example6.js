@@ -16,15 +16,15 @@ window['statusdata_legend'] = {
         maxValue: 100,
         calcmode: '<',
         values: {
-            '10': {
+            '20': {
                 txt: 'ein niedriger Wert',
                 col: 'green'
             },
-            '20': {
+            '30': {
                 txt: 'ein mittelniedriger Wert',
                 col: 'blue'
             },
-            '30': {
+            '40': {
                 txt: 'ein mittelhoher Wert',
                 col: 'yellow'
             },
