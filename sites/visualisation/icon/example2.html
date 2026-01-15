@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>SWAC - icon component</title>
+        <title>SWAC - icon - Example 2: Show only icons for the "mimetype" attributes</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="icon" type="image/png" sizes="32x32" href="../../../files/icons/32x32.png">
@@ -13,10 +13,7 @@
         <script src="/SWAC/swac/libs/uikit/js/uikit-icons.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
 
-        <script src="../../../js/visualisation/icon/index.js"></script>
-
-        <!-- Datasources -->
-        <script src="../../../data/exampledata_list.js"></script>
+        <script src="../../../js/visualisation/icon/example2.js"></script>
     </head>
     <body>
         <header id="head_navigation" swa="Navigation FROM routes.json"></header>
@@ -24,18 +21,23 @@
 
             <h3>Example 2: Show only icons for the "mimetype" attributes</h3>
             <p>You can choose which attribute of an dataset should be visualised.</p>
-            <div id="icon_example2" swa="Icon FROM exampledata_list"></div>
+            <div id="icon_example2" swa="Icon FROM ../../../data/visualisation/icon/example1/datasets.json"></div>
 
-            <pre><code class="lang-html">
-&lt;div id="icon_example2" swa="Icon FROM exampledata_list"&gt;&lt;/div&gt;
+            <fieldset>
+                <legend>VIEW-Requestor</legend>
+                <pre><code class="lang-html">
+&lt;div id="icon_example2" swa="Icon FROM ../../../data/visualisation/icon/example1/datasets.json"&gt;&lt;/div&gt;
         </code></pre>
-
-            <pre><code class="lang-javascript">
-window['icon_example2_options'] = {
-    showAttributes: ['mimetype']
-};
-        </code></pre>
-            
+            </fieldset>
+            <fieldset>
+                <legend>CONFIGURATION</legend>
+                <div id="icon_example2_config" swa="Coder FROM ../../../js/visualisation/icon/example2.js"></div>
+            </fieldset>
+            <fieldset>
+                <legend>DATASOURCE</legend>
+                <p>This example uses same datasource as example 1.</p>
+                <div id="icon_example2_datasource" swa="Coder FROM ../../../data/visualisation/icon/example1/datasets.json"></div>
+            </fieldset>
         </article>
         <footer>
             <a href="../../about/privacy.html">Privacy policy / Datenschutzerklärung</a>

@@ -11,6 +11,7 @@
 {"id": 10, "rfrom": "*", "rto": "concepts/plugins.html", "name": "Plugins", "parent": 1},
 {"id": 11, "rfrom": "*", "rto": "concepts/debug.html", "name": "Debuging", "parent": 1},
 {"id": 12, "rfrom": "*", "rto": "concepts/libraries.html", "name": "Libraries & License", "parent": 1},
+{"id": 13, "rfrom": "*", "rto": "concepts/legacybrowsers.html", "name": "Legacy browser support", "parent": 1},
 
 {"id": 20, "rfrom": "*", "rto": "#", "name": "Visualisation Components:"},
 {"id": 21, "rfrom": "*", "rto": "visualisation/present/index.html", "name": "Present", "parent": 20},
