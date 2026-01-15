@@ -14,9 +14,6 @@
         <script src="/SWAC/swac/swac.js" type="module"></script>
 
         <script src="../../../js/visualisation/present/example6.js"></script>
-
-        <!-- Datasources -->
-        <script src="../../../data/exampledata_list.js"></script>
     </head>
     <body>
         <header id="head_navigation" swa="Navigation FROM routes.json"></header>
@@ -24,12 +21,12 @@
             <h3>Example 6: Useing TableSort plugin</h3>
             <p>TableFilter plugin adds sorting possibility for table based presents.</p>
 
-            <div id="present_example6" swa="Present FROM exampledata_list TEMPLATE table_for_all_datasets"></div>
+            <div id="present_example6" swa="Present FROM ../../../data/visualisation/present/example1/exampledata_list.js TEMPLATE table_for_all_datasets"></div>
 
             <fieldset>
                 <legend>VIEW-Requestor</legend>
                 <pre><code class="lang-html">
-&lt;div id="present_example6" swa="Present FROM exampledata_list TEMPLATE table_for_all_datasets"&gt;&lt;/div&gt;
+&lt;div id="present_example6" swa="Present FROM ../../../data/visualisation/present/example1/exampledata_list.js TEMPLATE table_for_all_datasets"&gt;&lt;/div&gt;
         </code></pre>
             </fieldset>
             <fieldset>
