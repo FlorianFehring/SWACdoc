@@ -12,7 +12,7 @@
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
         <script src="/SWAC/swac/libs/uikit/js/uikit-icons.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
-        
+
         <script src="../../../js/userinterface/forwarding/index.js"></script>
     </head>
     <body>
@@ -20,13 +20,27 @@
         <article>
 
             <h3>Example 1: Simple forwarding</h3>
-            <p>This component automatically redirects the user to another page after a specified number of seconds. The target URL and the delay before forwarding are defined via the provided dataset.
-</p>
-            <div id="forwarding_example1" swa="Forwarding FROM ../../../data/forwarding/forwarding.json"></div>
+            <p>
+                This component automatically redirects the user to another page 
+                after a specified number of seconds. The target URL and the delay 
+                before forwarding are defined via the provided dataset.
+            </p>
+            <div id="forwarding_example1" swa="Forwarding FROM ../../../data/userinterface/forwarding/example1/forwardset.json"></div>
 
-            <pre><code class="lang-html">
-&lt;div id="forwarding_example1" swa="Forwarding FROM /SWAC/data/forwarding.json"&gt;&lt;/div&gt;
+            <fieldset>
+                <legend>VIEW-Requestor</legend>
+                <pre><code class="lang-html">
+&lt;div id="forwarding_example1" swa="Forwarding FROM ../../../data/userinterface/forwarding/example1/forwardset.json"&gt;&lt;/div&gt;
         </code></pre>
+            </fieldset>
+            <fieldset>
+                <legend>CONFIGURATION</legend>
+                <p>There is no configuration needed for this example.</p>
+            </fieldset>
+            <fieldset>
+                <legend>DATASOURCE</legend>
+                <div id="forwarding_example1_datasource" swa="Coder FROM ../../../data/userinterface/forwarding/example1/forwardset.json"></div>
+            </fieldset>
         </article>
         <footer>
             <a href="../../about/privacy.html">Privacy policy / Datenschutzerklärung</a>
