@@ -1,0 +1,26 @@
+{
+    "list": [
+        {
+            "id": 5,
+            "title": "Put the needle down",
+            "path": "../../../data/media/player/example1/Put_the_Needle_Down.mp3",
+            "mimetype": "audio/mp3",
+            "artist": "Benjamin Orth",
+            "album": "ccMixter",
+            "license": "CC BY-3.0",
+            "trackNum": 1,
+            "image": "../../../data/media/player/example1/cover.jpg",
+            "duration": 207
+        },
+        {
+            "id": 7,
+            "title": "I Remember U",
+            "path": "../../../data/media/player/example10/I Remember U.mp3",
+            "mimetype": "audio/ogg",
+            "artist": "Cartoon",
+            "album": "NCS - NoCopyrightSounds",
+            "image": "../../../data/media/player/example1/cover.jpg",
+            "duration": 223
+        }
+    ]
+}
