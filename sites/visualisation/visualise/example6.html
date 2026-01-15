@@ -12,9 +12,6 @@
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
         <script src="../../../js/visualisation/visualise/example6.js"></script>
-
-        <!-- Datasources -->
-        <script src="../../../data/exampledata_list.js"></script>
     </head>
     <body>
         <header id="head_navigation" swa="Navigation FROM routes.json"></header>
@@ -26,15 +23,20 @@
             <div id="visualise_example6" swa="Visualise FROM visualisation/visualise/statusdata.json"></div>
             <div id="visualise_example6_legend" swa="Datadescription FROM statusdata_legend"></div>
 
-            <pre><code class="lang-html">
-&lt;div id="visualise_example6" swa="Visualise FROM visualisation/visualise/statusdata.json"&gt;&lt;/div&gt;                
-</code></pre>
-
+            <fieldset>
+                <legend>VIEW-Requestor</legend>
+                <pre><code class="lang-html">
+&lt;div id="visualise_example6" swa="Visualise FROM visualisation/visualise/statusdata.json"&gt;&lt;/div&gt;  
+        </code></pre>
+            </fieldset>
             <fieldset>
                 <legend>CONFIGURATION</legend>
                 <div id="visualise_example6_conf" swa="Coder FROM ../../../js/visualisation/visualise/example6.js"></div>
             </fieldset>
-
+            <fieldset>
+                <legend>DATASOURCE</legend>
+                <div id="visualise_example6_datasource" swa="Coder FROM ../../../data/visualisation/visualise/statusdata.json"></div>
+            </fieldset>
         </article>
         <footer>
             <a href="../../about/privacy.html">Privacy policy / Datenschutzerklärung</a>

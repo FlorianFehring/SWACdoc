@@ -12,9 +12,6 @@
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
         <script src="../../../js/visualisation/visualise/example5.js"></script>
-
-        <!-- Datasources -->
-        <script src="../../../data/exampledata_list.js"></script>
     </head>
     <body>
         <header id="head_navigation" swa="Navigation FROM routes.json"></header>
@@ -26,15 +23,20 @@
             <div id="visualise_example5" swa="Visualise FROM visualisation/visualise/weatherdata.json"></div>
             <div id="visualise_legend" swa="Datadescription FROM weatherdata_legend"></div>
 
-            <pre><code class="lang-html">
-&lt;div id="visualise_example5" swa="Visualise FROM visualisation/visualise/weatherdata.json"&gt;&lt;/div&gt;                
-</code></pre>
-
+            <fieldset>
+                <legend>VIEW-Requestor</legend>
+                <pre><code class="lang-html">
+&lt;div id="visualise_example5" swa="Visualise FROM visualisation/visualise/weatherdata.json"&gt;&lt;/div&gt;    
+        </code></pre>
+            </fieldset>
             <fieldset>
                 <legend>CONFIGURATION</legend>
                 <div id="visualise_example5_conf" swa="Coder FROM ../../../js/visualisation/visualise/example5.js"></div>
             </fieldset>
-
+            <fieldset>
+                <legend>DATASOURCE</legend>
+                <div id="player_example1_datasource" swa="Coder FROM ../../../data/visualisation/visualise/weatherdata.json"></div>
+            </fieldset>
         </article>
         <footer>
             <a href="../../about/privacy.html">Privacy policy / Datenschutzerklärung</a>

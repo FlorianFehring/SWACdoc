@@ -12,9 +12,6 @@
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
         <script src="../../../js/visualisation/visualise/example3.js"></script>
-
-        <!-- Datasources -->
-        <script src="../../../data/exampledata_list.js"></script>
     </head>
     <body>
         <header id="head_navigation" swa="Navigation FROM routes.json"></header>
@@ -26,16 +23,22 @@
                 <br>Supported compare methods are &lt;,&gt;,=, &lt;=, &gt;= </p>
 
             <div id="example3_weathermeter" swa="Visualise FROM visualisation/visualise/weatherdata.json"></div>
-            
-            
-<!--            <button class="example3_weathermeter_clear uk-button">Clear datasets</button>
-            <button class="example3_weathermeter_add uk-button">Add a dataset</button>-->
 
-             <fieldset>
+
+            <!--            <button class="example3_weathermeter_clear uk-button">Clear datasets</button>
+                        <button class="example3_weathermeter_add uk-button">Add a dataset</button>-->
+
+            <fieldset>
+                <legend>VIEW-Requestor</legend>
+                <pre><code class="lang-html">
+&lt;div id="example3_weathermeter" swa="Visualise FROM visualisation/visualise/weatherdata.json"&gt;&lt;/div&gt;
+        </code></pre>
+            </fieldset>
+            <fieldset>
                 <legend>CONFIGURATION</legend>
                 <div id="visualise_example3_conf" swa="Coder FROM ../../../js/visualisation/visualise/example3.js"></div>
             </fieldset>
-            
+
             <fieldset>
                 <legend>DATASOURCE</legend>
                 <div id="visualise_example3_data" swa="Coder FROM ../../../data/visualisation/visualise/weatherdata.json"></div>

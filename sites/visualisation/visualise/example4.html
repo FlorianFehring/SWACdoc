@@ -12,15 +12,12 @@
         <script src="/SWAC/swac/libs/uikit/js/uikit.min.js"></script>
         <script src="/SWAC/swac/swac.js" type="module"></script>
         <script src="../../../js/visualisation/visualise/example4.js"></script>
-
-        <!-- Datasources -->
-        <script src="../../../data/exampledata_list.js"></script>
     </head>
     <body>
         <header id="head_navigation" swa="Navigation FROM routes.json"></header>
         <article>
-            
-<h3>Example 4: Useing visualise as subcomponent</h3>
+
+            <h3>Example 4: Useing visualise as subcomponent</h3>
             <p>You can combine visualise with present to create visualisations for differend datasets.
                 <br>Note that every subcomponent needs a unique id.</p>            
 
@@ -35,7 +32,9 @@
             </div>
             <button class="example4_addset uk-button uk-button-primary">Add set</button>
 
-            <pre><code class="lang-html">
+            <fieldset>
+                <legend>VIEW-Requestor</legend>
+                <pre><code class="lang-html">
 &lt;div id="example4_repeatvisualise" swa="Present FROM ../../data/visualise/visualsets.json"&gt;
     &lt;div class="swac_repeatForSet"&gt;
         &lt;div&gt;
@@ -46,9 +45,16 @@
         &lt;div id="visu_{id}" swa="Visualise OPTIONS example4_weathermeter_options">&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-</code></pre>
-
-            
+        </code></pre>
+            </fieldset>
+            <fieldset>
+                <legend>CONFIGURATION</legend>
+                <p>There is no configuration needed for this example.</p>
+            </fieldset>
+            <fieldset>
+                <legend>DATASOURCE</legend>
+                <div id="player_example1_datasource" swa="Coder FROM ../../../data/visualisation/visualise/visualsets.json"></div>
+            </fieldset>
         </article>
         <footer>
             <a href="../../about/privacy.html">Privacy policy / Datenschutzerklärung</a>
