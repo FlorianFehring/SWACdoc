@@ -54,6 +54,7 @@
 {"id": 92, "rfrom": "*", "rto": "userinterface/favourites/index.html", "name": "Favourites", "parent": 80},
 {"id": 93, "rfrom": "*", "rto": "userinterface/screenboard/index.html", "name": "ScreenBoard", "parent": 80},
 {"id": 94, "rfrom": "*", "rto": "userinterface/guide/index.html", "name": "Guide", "parent": 80},
+{"id": 95, "rfrom": "*", "rto": "userinterface/sync/index.html", "name": "Sync", "parent": 80},
 
 {"id": 100, "rfrom": "*", "rto": "#", "name": "Media Components:"},
 {"id": 101, "rfrom": "*", "rto": "media/download/index.html", "name": "Download", "parent": 100},
