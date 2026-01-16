@@ -67,6 +67,9 @@ let dataPromise = Model.load({
                                     // Note: When you need to use two or more filters, add them in the filter attribute: id,gt,5&filter=id,lt,10
         other: 'This is another attribute to send with request'
     },
+    fromHeaders: {
+        X-Requested-By": "SWAC"     // Send headers along the request
+    },
     idAttr: 'id',                   // Name of sets attribute that contains the id
     attributeDefaults: new Map(),   // Map of attributname / value for default values when the attribute is missing
     attributeRenames: new Map(),    // Map of set attributename / wished attributename for renameing attributes
@@ -198,6 +201,9 @@ let dataPromise = Model.load({
     fromWheres: {
         filter: 'id,lt,10',         // Filter datasets (when use TreeQL / SmartData)
         other: 'This is another attribute to send with request'
+    },
+    fromHeaders: {
+        X-Requested-By": "SWAC"     // Send headers along the request
     },
     observers: [observer]
 });
