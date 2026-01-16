@@ -77,7 +77,7 @@
 &lt;div id="data_example5" swa="Present FROM ../../data/concepts/ical.ics"&gt;&lt;/div&gt;
             </code></pre>
             <a href="3_data_example5.html">See working example here</a>
-            
+
             <h3>Useing single datasources (URL)</h3>
             <p>SWAC supports useing single datasources instead of configured ones.
                 <br>Be aware that if you use single datasources you loose the advantage of global configuration. Also some data related features (as after fetch dataset filtering) may not work.
@@ -206,6 +206,10 @@ SWAC_config.globalparams = {
                 <tr><td>&#123;&#123;date:day+X&#125;&zwnj;&#125;</td><td>{{date:day+14}}</td><td>Replaced by the current date added with X days.</td></tr>
                 <tr><td>&#123;&#123;date:mon-X&#125;&zwnj;&#125;</td><td>{{date:mon-12}}</td><td>Replaced by the current date substracted with X month.</td></tr>
                 <tr><td>&#123;&#123;date:mon+X&#125;&zwnj;&#125;</td><td>{{date:mon+12}}</td><td>Replaced by the current date added with X month.</td></tr>
+                <tr><td>&#123;&#123;hostname&#125;&zwnj;&#125;</td><td>{{hostname}}</td><td>Replaced by the pages hostname</td></tr>
+                <tr><td>&#123;&#123;protocol&#125;&zwnj;&#125;</td><td>{{protocol}}</td><td>Replaced by the pages protocol</td></tr>
+                <tr><td>&#123;&#123;port&#125;&zwnj;&#125;</td><td>{{port}}</td><td>Replaced by the pages port</td></tr>
+                <tr><td>&#123;&#123;href&#125;&zwnj;&#125;</td><td>{{href}}</td><td>Replaced by the pages internetaddress</td></tr>
             </table>
 
             <h3>Global filtering</h3>
@@ -387,11 +391,11 @@ var SWAC_config = {
             <h3>Example 30: Save modified data back to datasource</h3>
             <p>Once a component has modified data (by calculation or by user interaction) it can be updated in the original source.</p>
             <a href="3_data_example30.html" target="_blank">Show example</a>
-            
+
             <h3>Example 31: Save modified data back to javascript variables</h3>
             <p>Components can use data from javascript variables. This example shows how data can be saved back to those variables afert modification.</p>
             <a href="3_data_example31.html" target="_blank">Show example</a>
-            
+
             <h2 class="uk-heading-divider">Accessing data programaticly</h2>
             <p>If you need to access the components data from a custom script, have a look at the Low Level API > </p>
 
