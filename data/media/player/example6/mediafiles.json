@@ -51,9 +51,10 @@
             "path": "../../../data/media/player/example1/Put_the_Needle_Down.mp3",
             "mimetype": "audio/webm",
             "startonkey": "q",
-            "fadein": 2,
+            "fadein": 30,
             "stoponkey": "a",
-            "fadeout": 5
+            "fadeout": 5,
+            "volume": 50
         }
     ]
 }
